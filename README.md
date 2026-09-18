@@ -4,7 +4,7 @@
 - 仓库：<https://github.com/SEmmmer/hexo>
 - 发布进度：<https://github.com/SEmmmer/hexo/actions>
 
-使用 Hexo 8 和 Landscape 主题，支持中文、文章归档、标签、分类与 RSS。源码保存在 `main` 分支；每次推送后，GitHub Actions 会自动生成网站并发布到 GitHub Pages。
+使用 Hexo 8 和 Landscape 主题，支持中文、文章归档、标签、分类与 RSS。源码保存在 `main` 分支；每次推送后，GitHub Actions 会自动生成网站并发布到 GitHub Pages。云端构建与本机统一使用上海时区，保持文章日期和链接一致。
 
 ## 本机使用
 
