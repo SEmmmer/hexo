@@ -4,8 +4,8 @@
   "private": true,
   "description": "Emmmer 的 Hexo 博客",
   "scripts": {
-    "dev": "hexo server --ip 127.0.0.1 --config _config.yml,_config.local.yml",
-    "server": "hexo server --ip 127.0.0.1 --config _config.yml,_config.local.yml",
+    "dev": "hexo server --ip 127.0.0.1 --config _config.yml,_config.local.yml --output .cache/local",
+    "server": "hexo server --ip 127.0.0.1 --config _config.yml,_config.local.yml --output .cache/local",
     "build": "hexo generate",
     "clean": "hexo clean",
     "new": "hexo new",

@@ -1,3 +1,4 @@
 # npm run dev 使用此配置，本地预览保留根路径。
 url: http://localhost:4000
 root: /
+public_dir: .cache/local/public
