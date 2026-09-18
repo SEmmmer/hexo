@@ -58,7 +58,8 @@
   overflow-wrap: anywhere;
 }
 
-/* This photo essay already includes its captions in the Markdown source. */
-#post-birdwatching-june-2026 .article-entry .caption {
+/* These photo essays already include their captions in the Markdown sources. */
+#post-birdwatching-june-2026 .article-entry .caption,
+#post-birdwatching-july-2026 .article-entry .caption {
   display: none;
 }
