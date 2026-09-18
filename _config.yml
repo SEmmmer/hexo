@@ -69,6 +69,12 @@ feed:
   limit: 20
   content: false
 
+# 原图保留；构建时自动生成网页展示用 WebP，PNG 图表使用无损编码。
+image_optimization:
+  widths: [480, 800, 1280, 1920]
+  quality: 86
+  effort: 5
+
 # 源码推送由 npm run sync 完成。
 deploy:
   type: ''
