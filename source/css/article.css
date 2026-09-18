@@ -57,3 +57,8 @@
 .article-table-compact td {
   overflow-wrap: anywhere;
 }
+
+/* This photo essay already includes its captions in the Markdown source. */
+#post-birdwatching-june-2026 .article-entry .caption {
+  display: none;
+}
