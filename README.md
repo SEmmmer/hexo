@@ -77,7 +77,7 @@ npm run sync -- "发布新文章"
 | `_config.local.yml` | 本地预览网址与根路径 |
 | `_config.landscape.yml` | 导航、侧栏、主题设置 |
 | `scaffolds/` | 新文章、页面、草稿模板 |
-| `scripts/theme-menu.js` | 使用本站导航配置，避免默认菜单重复 |
+| `scripts/theme-config.js` | 使用本站导航和侧栏配置，避免默认菜单重复 |
 | `tools/sync.mjs` | 检查、提交、推送的一键命令 |
 | `.github/workflows/pages.yml` | GitHub Pages 自动发布 |
 
