@@ -1,0 +1,132 @@
+{
+  "birdwatching-june-2026": {
+    "version": "v3",
+    "markdown": "blog-v2.md",
+    "month": "2026-06",
+    "label": "6 月",
+    "route": "2026/07/01/birdwatching-june-2026/",
+    "photos": [
+      {
+        "id": "B01",
+        "image": "downloads/birdwatching-june-2026/exports/B01_EMR_4132.jpg",
+        "comparison": "downloads/birdwatching-june-2026/previews/raw/B01_EMR_4132_embedded.jpg",
+        "status": "nef_embedded_jpeg",
+        "sha256": "c21ed0062af9edfbeac55aec39033b50bf3395bcda6daa567b48ab8314050d57",
+        "alt": "B01 原片：相机记录的完整画面，NEF 内嵌 JPEG，未额外裁切或调色。",
+        "label": "原片 · NEF 内嵌 JPEG · 8256 × 5504",
+        "button": "查看原片",
+        "state": "成片"
+      },
+      {
+        "id": "B02",
+        "image": "downloads/birdwatching-june-2026/exports/B02_DSC_8406.jpg",
+        "comparison": "downloads/birdwatching-june-2026/previews/raw/B02_DSC_8406_embedded.jpg",
+        "status": "nef_embedded_jpeg",
+        "sha256": "6f009b3df0ab4051e433a145af02f818f16990a0c286804a1a51db92e200e76a",
+        "alt": "B02 原片：相机记录的完整画面，NEF 内嵌 JPEG，未额外裁切或调色。",
+        "label": "原片 · NEF 内嵌 JPEG · 6048 × 4032",
+        "button": "查看原片",
+        "state": "成片"
+      },
+      {
+        "id": "B03",
+        "image": "downloads/birdwatching-june-2026/exports/B03_DSC_1929.jpg",
+        "comparison": "downloads/birdwatching-june-2026/previews/raw/B03_DSC_1929_embedded.jpg",
+        "status": "nef_embedded_jpeg",
+        "sha256": "1347f6231bc6e18940900aca3bcc28624b63ba40c5e06907bb273df7ccc07d1a",
+        "alt": "B03 原片：相机记录的完整画面，NEF 内嵌 JPEG，未额外裁切或调色。",
+        "label": "原片 · NEF 内嵌 JPEG · 3984 × 2656",
+        "button": "查看原片",
+        "state": "成片"
+      },
+      {
+        "id": "B04",
+        "image": "downloads/birdwatching-june-2026/exports/B04_DSC_0972.jpg",
+        "comparison": "downloads/birdwatching-june-2026/originals/B04_DSC_0972.JPG",
+        "status": "earlier_edited_jpeg",
+        "sha256": "72c45b5e89c492aeea50ab660fc7f9318f108b2abc9ba1e0602812cda9a3f15c",
+        "alt": "B04 麻雀的早期 JPEG：已有裁切和后期，不能视为未裁切 RAW。",
+        "label": "早期 JPEG · 已有裁切／后期，非 RAW",
+        "button": "查看早期 JPEG",
+        "state": "成片 · 未找到 NEF，可查看早期 JPEG"
+      },
+      {
+        "id": "B05",
+        "image": "downloads/birdwatching-june-2026/exports/B05_DSC_3700.jpg",
+        "comparison": "downloads/birdwatching-june-2026/previews/raw/B05_DSC_3700_embedded.jpg",
+        "status": "nef_embedded_jpeg",
+        "sha256": "1f22d7c8a1d96ac498af0b890a799e531e6f86244cfd26a9c9c065cfa66a3323",
+        "alt": "B05 原片：相机记录的完整画面，NEF 内嵌 JPEG，未额外裁切或调色。",
+        "label": "原片 · NEF 内嵌 JPEG · 3984 × 2656",
+        "button": "查看原片",
+        "state": "成片"
+      }
+    ],
+    "note": "原片预览直接提取自 NEF 中的相机 JPEG，保留拍摄时的画幅与机内色彩；未再裁切或调色。它用于对照原始构图与相机呈色，并非线性 RAW 解码。 网页展示图经过等比例缩小和压缩，点击图片可查看完整 JPEG。"
+  },
+  "birdwatching-july-2026": {
+    "version": "v3",
+    "markdown": "blog-v2.md",
+    "month": "2026-07",
+    "label": "7 月",
+    "route": "2026/08/01/birdwatching-july-2026/",
+    "photos": [
+      {
+        "id": "B01",
+        "image": "downloads/birdwatching-july-2026/previews/B01_EMB_3974.jpg",
+        "comparison": "downloads/birdwatching-july-2026/previews/raw/B01_EMB_3974_embedded.jpg",
+        "status": "nef_embedded_jpeg",
+        "sha256": "4336d0201c3bdeaff2992abc7806c0ca1bb447c09a596e9be5e56aeed840c794",
+        "alt": "B01 原片：相机记录的完整画面，NEF 内嵌 JPEG，未额外裁切或调色。",
+        "label": "原片 · NEF 内嵌 JPEG · 8256 × 5504",
+        "button": "查看原片",
+        "state": "成片"
+      },
+      {
+        "id": "B02",
+        "image": "downloads/birdwatching-july-2026/previews/B02_EMD_8213.jpg",
+        "comparison": "downloads/birdwatching-july-2026/previews/raw/B02_EMD_8213_embedded.jpg",
+        "status": "nef_embedded_jpeg",
+        "sha256": "0195122513abb072e4ea1fbabb6732766297ac0dbf5ff04b165ae51d3e222b79",
+        "alt": "B02 原片：相机记录的完整画面，NEF 内嵌 JPEG，未额外裁切或调色。",
+        "label": "原片 · NEF 内嵌 JPEG · 8256 × 5504",
+        "button": "查看原片",
+        "state": "成片"
+      },
+      {
+        "id": "B03",
+        "image": "downloads/birdwatching-july-2026/previews/B03_EMB_5589.jpg",
+        "comparison": "downloads/birdwatching-july-2026/previews/raw/B03_EMB_5589_embedded.jpg",
+        "status": "nef_embedded_jpeg",
+        "sha256": "ad3c818909c6befc241cc0f147c9a01f4747d1429b3a84a29ba283e7efba1e35",
+        "alt": "B03 原片：相机记录的完整画面，NEF 内嵌 JPEG，未额外裁切或调色。",
+        "label": "原片 · NEF 内嵌 JPEG · 8256 × 5504",
+        "button": "查看原片",
+        "state": "成片"
+      },
+      {
+        "id": "B04",
+        "image": "downloads/birdwatching-july-2026/previews/B04_EMB_9956.jpg",
+        "comparison": "downloads/birdwatching-july-2026/previews/raw/B04_EMB_9956_embedded.jpg",
+        "status": "nef_embedded_jpeg",
+        "sha256": "e108d05e82ca4be65a3bb87eab1ca547c3b52ed5c5c28df9d81a8368039ac159",
+        "alt": "B04 原片：相机记录的完整画面，NEF 内嵌 JPEG，未额外裁切或调色。",
+        "label": "原片 · NEF 内嵌 JPEG · 8256 × 5504",
+        "button": "查看原片",
+        "state": "成片"
+      },
+      {
+        "id": "B05",
+        "image": "downloads/birdwatching-july-2026/previews/B05_EMB_0440.jpg",
+        "comparison": null,
+        "status": "raw_not_found",
+        "sha256": null,
+        "alt": null,
+        "label": null,
+        "button": "原片暂缺",
+        "state": "尚未找到对应 NEF"
+      }
+    ],
+    "note": "原片预览直接提取自 NEF 中的相机 JPEG，保留拍摄时的画幅与机内色彩；未再裁切或调色。它用于对照原始构图与相机呈色，并非线性 RAW 解码。 网页展示图经过等比例缩小和压缩，点击图片可查看完整 JPEG。"
+  }
+}

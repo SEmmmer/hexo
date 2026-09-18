@@ -7,7 +7,8 @@
     "dev": "hexo server --ip 127.0.0.1 --config _config.yml,_config.local.yml --output .cache/local",
     "server": "hexo server --ip 127.0.0.1 --config _config.yml,_config.local.yml --output .cache/local",
     "build": "hexo generate",
-    "test:images": "node --test test/image-optimizer.test.cjs",
+    "test:images": "node --test test/image-optimizer.test.cjs test/photo-comparisons.test.cjs",
+    "import:birdwatching": "node tools/import-birdwatching.cjs",
     "clean": "hexo clean",
     "new": "hexo new",
     "sync": "node tools/sync.mjs"

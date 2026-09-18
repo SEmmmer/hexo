@@ -54,6 +54,16 @@ npm run dev
 
 ### 更新并发布
 
+观鸟小结使用 **NEF 原片对照版 v3**。同步已经发布的月份时，先从相邻的“观鸟小结”项目导入：
+
+```powershell
+npm run import:birdwatching -- 2026-06 2026-07
+```
+
+导入器优先读取该月份的 `blog-v3.md`，目前没有 v3 Markdown 时读取最新 `blog-v2.md`；从 `blog-v3.html` 和 `raw-preview-manifest.json` 导入对照图片及来源说明。正文文字以 Markdown 为准，保留本博客的元信息、发布日期和链接。只复制文章引用的 JPEG/PNG，不上传 NEF 文件或原项目的内部记录。新月份先创建文章并设置发布日期，再用相同命令导入。
+
+页面默认显示成片，点击按钮才加载原片对照的响应式 WebP，返回时恢复成片及裁切参数。原片按完整画幅展示，点击图片可放大查看未经改写的 JPEG。“早期 JPEG”与“原片暂缺”分别保留来源说明。对照数据在 `source/_data/photo_comparisons.json`；不要在后续导入时删掉。相关检查与图片测试一起由 `npm run test:images` 执行。
+
 写完后运行一条命令：
 
 ```powershell
