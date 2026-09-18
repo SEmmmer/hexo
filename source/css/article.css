@@ -57,12 +57,3 @@
 .article-table-compact td {
   overflow-wrap: anywhere;
 }
-
-.article-picture {
-  display: block;
-}
-
-.article-entry .article-picture img {
-  width: 100%;
-  height: auto;
-}
