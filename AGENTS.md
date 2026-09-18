@@ -6,7 +6,7 @@
 - 网站：`https://semmmer.github.io/hexo/`。
 - 发布文章以 Markdown 原稿为准，HTML 和 preview 渲染结果仅用于检查排版。用户给出 HTML 路径时，先查找同目录对应的 `.md`；二者不一致时采用 Markdown 当前内容，不把 HTML 中已删减的段落、表格或附件链接补回正文。
 - 导入时保留 Markdown 的原意、数字和结构，只做 Hexo 元信息、图片路径、摘要分隔及必要的排版适配。提交前重新核对原稿，避免发布原稿编辑前的旧副本。
-- 观鸟小结以后按用户指定的 **NEF 原片对照版 v3** 发布。来源是相邻项目 `../观鸟小结/reports/YYYY-MM/`：正文优先读取 `blog-v3.md`，没有该文件时读取最新 `blog-v2.md`；同时从 `blog-v3.html` 和 `raw-preview-manifest.json` 导入原片对照关系与来源标注，不用旧 HTML 的文字覆盖最新 Markdown。同步已发布月份使用 `npm run import:birdwatching -- 2026-06 2026-07`（按需替换月份），它保留本博客元信息和发布日期。6 月发布日期为 2026-07-01，7 月为 2026-08-01。
+- 观鸟小结以后按用户指定的 **NEF 原片对照版 v3** 发布。来源是相邻项目 `../观鸟小结/reports/YYYY-MM/`：优先读取 `manifest.json` 的 `active_documents.markdown/html` 指定的当前稿；未指定时，Markdown 依次查找 `blog-v3.md`、`blog-v2.md`、`blog.md`，交互阅读版依次查找 `blog-v3.html`、`blog.html`。同时从当前 HTML 和 `raw-preview-manifest.json` 导入原片对照关系与来源标注，不用旧 HTML 的文字覆盖最新 Markdown。同步已发布月份使用 `npm run import:birdwatching -- 2026-06 2026-07 2026-08`（按需替换月份），它保留本博客元信息和发布日期。6 月发布日期为 2026-07-01，7 月为 2026-08-01，8 月为 2026-09-01。
 - v3 对照数据保存在 `source/_data/photo_comparisons.json`。保留“查看原片／返回成片”、月份导航、完整构图和拍摄参数切换；早期 JPEG 和原片暂缺必须如实标注。只复制正文引用的成片、已提取的 NEF 内嵌 JPEG 或明确标注的早期 JPEG，不复制 NEF 文件、NAS 路径或内部工作记录。对照展示图也由构建生成 WebP，点击切换才加载；完整 JPEG 保持原文件，通过点击图片查看。不得因后续同步 Markdown 丢失这些功能。
 - 文章图片保留原始文件，构建时自动生成多种尺寸的 WebP 展示图；JPEG 照片使用质量 86，PNG 图表使用无损编码。不要覆盖原图或手工改写 Markdown 为压缩图路径。首屏主图优先加载，其余图片延迟加载，点击大图读取原图。新增或调整图片处理时运行 `npm run test:images` 并检查构建结果和实际画质。
 - 在完成用户要求的文章或配置修改后，运行 `npm run sync -- "简要中文更新说明"`，提交并推送这次工作；用户明确要求暂不提交或发布时遵循用户指示。

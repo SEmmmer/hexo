@@ -128,5 +128,71 @@
       }
     ],
     "note": "原片预览直接提取自 NEF 中的相机 JPEG，保留拍摄时的画幅与机内色彩；未再裁切或调色。它用于对照原始构图与相机呈色，并非线性 RAW 解码。 网页展示图经过等比例缩小和压缩，点击图片可查看完整 JPEG。"
+  },
+  "birdwatching-august-2026": {
+    "version": "v3",
+    "markdown": "blog.md",
+    "html": "blog.html",
+    "month": "2026-08",
+    "label": "8 月",
+    "route": "2026/09/01/birdwatching-august-2026/",
+    "photos": [
+      {
+        "id": "B01",
+        "image": "downloads/birdwatching-august-2026/previews/B01_EMB_3755.jpg",
+        "comparison": "downloads/birdwatching-august-2026/previews/raw/B01_EMB_3755_embedded.jpg",
+        "status": "available",
+        "sha256": "1f555be7e3cf6151f36c47a034197feef34be7cb825c652fd46aa1d2446a432f",
+        "alt": "黑鸢原片：相机记录的完整FX画幅，NEF 内嵌 JPEG，未额外裁切或调色。",
+        "label": "原片 · NEF 内嵌 JPEG · 8256 × 5504",
+        "button": "查看原片",
+        "state": "成片"
+      },
+      {
+        "id": "B02",
+        "image": "downloads/birdwatching-august-2026/previews/B02_EMB_7021.jpg",
+        "comparison": "downloads/birdwatching-august-2026/previews/raw/B02_EMB_7021_embedded.jpg",
+        "status": "available",
+        "sha256": "eb00cea517cf8b8f8b5ed45167181bfe1c9ae997bea663de56116861e39282b9",
+        "alt": "棕头鸦雀原片：相机记录的完整FX画幅，NEF 内嵌 JPEG，未额外裁切或调色。",
+        "label": "原片 · NEF 内嵌 JPEG · 8256 × 5504",
+        "button": "查看原片",
+        "state": "成片"
+      },
+      {
+        "id": "B03",
+        "image": "downloads/birdwatching-august-2026/previews/B03_EMC_2802.jpg",
+        "comparison": "downloads/birdwatching-august-2026/previews/raw/B03_EMC_2802_embedded.jpg",
+        "status": "available",
+        "sha256": "131d9fca3ed97147169838b4f071e8a75b2b29f61254f30df03601c96e1da410",
+        "alt": "绿鹭原片：相机记录的完整DX画幅，NEF 内嵌 JPEG，未额外裁切或调色。",
+        "label": "原片 · NEF 内嵌 JPEG · 5392 × 3592 · 机内 DX",
+        "button": "查看原片",
+        "state": "成片"
+      },
+      {
+        "id": "B04",
+        "image": "downloads/birdwatching-august-2026/previews/B04_EMB_0710.jpg",
+        "comparison": "downloads/birdwatching-august-2026/previews/raw/B04_EMB_0710_embedded.jpg",
+        "status": "available",
+        "sha256": "8cf9ddd8e04ad6c06d43a75f7818ae64d415f83fcb850c676508d9d7545db029",
+        "alt": "小鸊鷉原片：相机记录的完整FX画幅，NEF 内嵌 JPEG，未额外裁切或调色。",
+        "label": "原片 · NEF 内嵌 JPEG · 8256 × 5504",
+        "button": "查看原片",
+        "state": "成片"
+      },
+      {
+        "id": "B05",
+        "image": "downloads/birdwatching-august-2026/previews/B05_EMB_3767.jpg",
+        "comparison": "downloads/birdwatching-august-2026/previews/raw/B05_EMB_3767_embedded.jpg",
+        "status": "available",
+        "sha256": "f529831199109cc3e8b4d5419dee18f62a0b9fc78173521225a2a4817c14bde7",
+        "alt": "黄苇鳽原片：相机记录的完整FX画幅，NEF 内嵌 JPEG，未额外裁切或调色。",
+        "label": "原片 · NEF 内嵌 JPEG · 8256 × 5504",
+        "button": "查看原片",
+        "state": "成片"
+      }
+    ],
+    "note": "成片为供网页浏览的缩小预览。原片对照直接提取 NEF 内嵌 JPEG，保留相机拍摄时的画幅与机内呈色，未再裁切或调色；它不是线性 RAW 解码。机内 DX 画幅仅包含拍摄时记录的范围。 网页展示图经过等比例缩小和压缩，点击图片可查看完整 JPEG。"
   }
 }

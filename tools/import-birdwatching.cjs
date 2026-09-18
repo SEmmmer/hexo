@@ -30,13 +30,23 @@ for (const month of months) {
   const frontmatter = current.match(/^---\n[\s\S]*?\n---\n/)[0];
   const date = frontmatter.match(/^date:\s*(\d{4}-\d{2}-\d{2})/m)[1];
   const directory = path.join(reports, month);
-  const markdownName = fs.existsSync(path.join(directory, 'blog-v3.md')) ? 'blog-v3.md' : 'blog-v2.md';
+  const articleManifestPath = path.join(directory, 'manifest.json');
+  const active = fs.existsSync(articleManifestPath) ? JSON.parse(read(articleManifestPath)).active_documents || {} : {};
+  const documentName = (kind, candidates) => {
+    const name = active[kind] || candidates.find(candidate => fs.existsSync(path.join(directory, candidate)));
+    assert.ok(typeof name === 'string' && !path.isAbsolute(name) && !name.includes('\\') && !name.split('/').includes('..'), `${month}: 缺少或无效的 ${kind} 原稿路径`);
+    assert.ok(fs.existsSync(path.join(directory, name)), `${month}: 当前 ${kind} 原稿不存在：${name}`);
+    return name;
+  };
+  const markdownName = documentName('markdown', ['blog-v3.md', 'blog-v2.md', 'blog.md']);
+  const htmlName = documentName('html', ['blog-v3.html', 'blog.html']);
   const markdown = read(path.join(directory, markdownName)).toString('utf8').replace(/\r\n/g, '\n');
-  const html = read(path.join(directory, 'blog-v3.html')).toString('utf8');
+  const html = read(path.join(directory, htmlName)).toString('utf8');
   const manifest = JSON.parse(read(path.join(directory, 'raw-preview-manifest.json')));
   const $ = cheerio.load(html);
   const images = [...markdown.matchAll(/!\[[^\]]*\]\(([^\s)]+)\)/g)];
   const figures = $('figure').toArray();
+  assert.ok(figures.length && figures.every(element => $(element).find('.photo-toggle').length), `${month}: 阅读版缺少原片对照功能`);
   assert.equal(images.length, figures.length, `${month}: Markdown 与 v3 照片数量不一致`);
   const route = relative => `downloads/${slug}/${relative}`;
   const copy = relative => {
@@ -54,7 +64,7 @@ for (const month of months) {
     const comparison = figure.attr('data-original-src') || null;
     const record = manifest.items.find(item => item.id === figure.attr('id'));
     assert.ok(record, `${month}: 缺少原片来源记录`);
-    assert.equal(comparison, record.relative_path || null);
+    assert.equal(comparison, record.relative_path || record.preview_relative_path || null);
     if (comparison) assert.equal(hash(copy(comparison)), record.sha256, `${month}: 原片校验失败`);
     return {
       id: figure.attr('id'), image: route(image), comparison: comparison ? route(comparison) : null,
@@ -65,15 +75,19 @@ for (const month of months) {
   });
   let body = markdown.replace(/^# [^\n]+\n+/, '').trim();
   body = body.replace(/(!\[[^\]]*\]\()([^\s)]+)(\))/g, (_, start, image, end) => `${start}/${route(image)}${end}`);
+  const articleRoute = `${date.replaceAll('-', '/')}/${slug}/`;
+  // The standalone reading-version link now points to this published article.
+  body = body.replace(/^\[([^\]\n]+)\]\(([^\s)]+)\)$/gm, (match, label, target) =>
+    target === htmlName ? `<p>{% post_link ${slug} ${JSON.stringify(label)} %}</p>` : match);
   const nextImage = [...body.matchAll(/!\[[^\]]*\]\([^\s)]+\)/g)][1];
   if (nextImage && !body.includes('<!-- more -->')) body = `${body.slice(0, nextImage.index).trimEnd()}\n\n<!-- more -->\n\n${body.slice(nextImage.index)}`;
   writes.set(postPath, `${frontmatter}\n${body}\n`);
   articles[slug] = {
-    version: 'v3', markdown: markdownName, month, label: `${number} 月`,
-    route: `${date.replaceAll('-', '/')}/${slug}/`, photos,
+    version: 'v3', markdown: markdownName, html: htmlName, month, label: `${number} 月`,
+    route: articleRoute, photos,
     note: `${$('.raw-note').text()} 网页展示图经过等比例缩小和压缩，点击图片可查看完整 JPEG。`,
   };
-  console.log(`${month}: ${markdownName} + blog-v3.html，${photos.length} 张成片，${photos.filter(photo => photo.comparison).length} 张对照图，发布日期 ${date}`);
+  console.log(`${month}: ${markdownName} + ${htmlName}，${photos.length} 张成片，${photos.filter(photo => photo.comparison).length} 张对照图，发布日期 ${date}`);
 }
 
 // Check every source again before applying this import, including current post metadata.
@@ -84,4 +98,5 @@ for (const [file, content] of writes) {
   if (!fs.existsSync(file) || !fs.readFileSync(file).equals(Buffer.from(content))) fs.writeFileSync(file, content);
 }
 fs.mkdirSync(path.join(root, '.cache'), { recursive: true });
-fs.writeFileSync(path.join(root, '.cache', 'birdwatching-import.json'), JSON.stringify([...sources], null, 2));
+fs.writeFileSync(path.join(root, '.cache', 'birdwatching-import.json'), JSON.stringify(
+  [...sources].map(([file, digest]) => [file, writes.has(file) ? hash(Buffer.from(writes.get(file))) : digest]), null, 2));
