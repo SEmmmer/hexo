@@ -1,0 +1,22 @@
+# Dependencies and generated files
+node_modules/
+public/
+db.json
+.deploy_git/
+_multiconfig.yml
+
+# Local state and credentials
+.cache/
+.env
+.env.*
+!.env.example
+*.log
+*.pem
+*.key
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Drafts stay on this computer until explicitly published
+source/_drafts/
