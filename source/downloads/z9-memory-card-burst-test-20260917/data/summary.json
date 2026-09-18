@@ -1,0 +1,152 @@
+{
+  "measurement_date": "2026-09-17",
+  "article_date": "2026-09-18",
+  "window_seconds": 30,
+  "main_threshold": "first interval strictly greater than 60 ms",
+  "supplementary_threshold": "first interval greater than or equal to 100 ms",
+  "aggregation": "equal-weight arithmetic mean of each run's metrics; bracket endpoints averaged separately",
+  "mean_nef_bytes": 23367342.70163773,
+  "unique_exposures": 8121,
+  "nef_copies": 9168,
+  "headers_rechecked": 9184,
+  "source_sha256": {
+    "matrix.json": "d11a5ea1ec94e6551cf7af58910805e12bb2d78acc6d71aa46f9d6ecc50bda92",
+    "chip_slot1/run_01/analysis.json": "de013225f3ba3c5502978f9d2bb8414aec8a232405fc7eb34773c59993ecff4d",
+    "chip_slot1/run_02/analysis.json": "73be0bcd5956002791327e09ca78c7fdce7fe6edc134d50ca28d245d32c3fe3d",
+    "chip_slot1/run_03/analysis.json": "8fa198ed499de36e38078e940e5da6ffc92949a0742d934880c0db94a6539bca",
+    "chip_slot2/run_01/analysis.json": "f1fa94d6190d68d65668dbc0c9d71bca79c563099d1b43090aff6e2e9cd53289",
+    "chip_slot2/run_02/analysis.json": "922d3447a630976c1780cadd533abbb3d74d20071e9f423d35d8039988eac543",
+    "chip_slot2/run_03/analysis.json": "53ae08ad9806abf4ec03abb5043b7929936efd86e1a5c5860f9ec1848c71ca54",
+    "damo_slot1/run_01/analysis.json": "703113ae4003e36f39c972c935d1638096b8909b61d68727f96500da1ab9e160",
+    "damo_slot1/run_02/analysis.json": "f36eab48d6c1b6c39cd81e67474cb3891a7298e165b04a4c003f4057e6f0433a",
+    "damo_slot1/run_03/analysis.json": "0e1ba7605374944cfd587340f403525821035c736a386f579cc3f0a790b17fbc",
+    "damo_slot2/run_01/analysis.json": "eb3592043e7e297c2f2988daede687d65fbcaae8bf92da252ee8994e243c5343",
+    "damo_slot2/run_02/analysis.json": "8c1570cf889ff9d10cb058ec3fd3991947731b9a5d3be1f87bffc3a8961c2aea",
+    "damo_slot2/run_03/analysis.json": "86a1f867d2a36d0e5e215abf4ea858514ce9c0e920d878176330c7ef8dcb3e32",
+    "backup_original/run_01/analysis.json": "06c57ff39c83cf2e16845d959005c23536831c91ebbd542e9f2fe9512d4f2a25",
+    "backup_swapped/run_01/analysis.json": "f2727dd0be1ef45c3a39a894758642a0a89acc0083c5cce04763293cd72fe154"
+  },
+  "conditions": [
+    {
+      "id": "chip_slot1",
+      "label": "CHIPFANCIER 槽 1 单写",
+      "n": 3,
+      "note": "较早构图；距离 0.5–5 米",
+      "frames": 588.3333333333334,
+      "span_s": 29.993333333333332,
+      "pre_fps": 19.96229286663967,
+      "post_fps": 19.061406522625568,
+      "overall_fps": 19.582143651323104,
+      "pre_frames": 348.3333333333333,
+      "first_gt60_ms_s": [
+        17.4,
+        17.526666666666667
+      ],
+      "first_ge100_ms_s": [
+        18.046666666666667,
+        18.186666666666667
+      ]
+    },
+    {
+      "id": "chip_slot2",
+      "label": "CHIPFANCIER 槽 2 单写",
+      "n": 3,
+      "note": "槽 1 已取出；使用镜头完整有效距离范围 1–10 米",
+      "frames": 590.3333333333334,
+      "span_s": 29.986666666666665,
+      "pre_fps": 19.96189017752003,
+      "post_fps": 19.098038034001746,
+      "overall_fps": 19.653178440697342,
+      "pre_frames": 385.6666666666667,
+      "first_gt60_ms_s": [
+        19.27,
+        19.366666666666667
+      ],
+      "first_ge100_ms_s": [
+        23.146666666666665,
+        23.27
+      ]
+    },
+    {
+      "id": "damo_slot1",
+      "label": "玉轮槽 1 单写",
+      "n": 3,
+      "note": "第三轮改用 1–10 米；前两轮为 0.5–5 米",
+      "frames": 590.6666666666666,
+      "span_s": 29.976666666666667,
+      "pre_fps": 19.949719776602453,
+      "post_fps": 19.124082108501597,
+      "overall_fps": 19.670859753545578,
+      "pre_frames": 397.3333333333333,
+      "first_gt60_ms_s": [
+        19.866666666666667,
+        19.946666666666665
+      ],
+      "first_ge100_ms_s": [
+        20.93,
+        21.043333333333333
+      ]
+    },
+    {
+      "id": "damo_slot2",
+      "label": "玉轮槽 2 单写",
+      "n": 3,
+      "note": "槽 1 为空；取卡后构图改变",
+      "frames": 588.6666666666666,
+      "span_s": 29.993333333333332,
+      "pre_fps": 19.969923020353676,
+      "post_fps": 19.04394852288404,
+      "overall_fps": 19.593247350085242,
+      "pre_frames": 356.6666666666667,
+      "first_gt60_ms_s": [
+        17.81,
+        17.92
+      ],
+      "first_ge100_ms_s": [
+        17.99,
+        18.123333333333335
+      ]
+    },
+    {
+      "id": "backup_original",
+      "label": "CHIPFANCIER 槽 1＋玉轮槽 2 同写",
+      "n": 1,
+      "note": "用户指定第二轮，原实拍 36.73 秒；触发距离 0.5–5 米。",
+      "frames": 527,
+      "span_s": 29.98,
+      "pre_fps": 20.0,
+      "post_fps": 16.79023113824684,
+      "overall_fps": 17.545030020013343,
+      "pre_frames": 142,
+      "first_gt60_ms_s": [
+        7.05,
+        7.13
+      ],
+      "first_ge100_ms_s": [
+        7.71,
+        7.81
+      ]
+    },
+    {
+      "id": "backup_swapped",
+      "label": "玉轮槽 1＋CHIPFANCIER 槽 2 同写",
+      "n": 1,
+      "note": "用户指定重试，原实拍 38.80 秒；触发距离 1–10 米。",
+      "frames": 520,
+      "span_s": 29.97,
+      "pre_fps": 19.970414201183434,
+      "post_fps": 16.544592847910383,
+      "overall_fps": 17.31731731731732,
+      "pre_frames": 136,
+      "first_gt60_ms_s": [
+        6.76,
+        6.83
+      ],
+      "first_ge100_ms_s": [
+        6.89,
+        6.99
+      ]
+    }
+  ],
+  "model_caveat": "The r0=20 estimates assume an empty initial queue, first delay equals a full queue, and a constant drain rate equal to post-drop fps. These assumptions were not verified. Values are NEF-equivalent, not physical RAM."
+}

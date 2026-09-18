@@ -6,3 +6,7 @@
 *.webp binary
 *.ico binary
 *.pdf binary
+
+# Keep original downloads byte-for-byte, including their line endings.
+source/downloads/** -text whitespace=cr-at-eol,-blank-at-eof
+source/downloads/**/*.svg -diff
