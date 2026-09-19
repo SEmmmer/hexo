@@ -2,6 +2,7 @@
   "birdwatching-june-2026": {
     "version": "v3",
     "markdown": "blog-v2.md",
+    "html": "blog-v5.html",
     "month": "2026-06",
     "label": "6 月",
     "route": "2026/07/01/birdwatching-june-2026/",
@@ -67,6 +68,7 @@
   "birdwatching-july-2026": {
     "version": "v3",
     "markdown": "blog-v2.md",
+    "html": "blog-v5.html",
     "month": "2026-07",
     "label": "7 月",
     "route": "2026/08/01/birdwatching-july-2026/",
@@ -131,8 +133,8 @@
   },
   "birdwatching-august-2026": {
     "version": "v3",
-    "markdown": "blog.md",
-    "html": "blog.html",
+    "markdown": "blog-v2.md",
+    "html": "blog-v2.html",
     "month": "2026-08",
     "label": "8 月",
     "route": "2026/09/01/birdwatching-august-2026/",

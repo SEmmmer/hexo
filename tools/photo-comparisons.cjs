@@ -60,7 +60,16 @@ function addPhotoComparisons(html, articles, manifest, options) {
       }
       // Move the actual Markdown nodes, preserving the author's wording/styles.
       paragraph.before(figure);
-      figure.append(link);
+      if (photo.comparison) {
+        const frame = $('<div></div>').addClass('photo-frame').attr('style', `--photo-ratio: ${image.attr('width')} / ${image.attr('height')}`);
+        figure.append(frame.append(link));
+        const editedExposure = $('<span></span>').addClass('photo-exposure-copy').html(exposure.html());
+        const rawExposure = $('<span></span>').addClass('photo-exposure-copy is-inactive').attr('aria-hidden', 'true')
+          .text(exposure.text().replace(/\s*\((?:cropped to[^)]*|uncropped)\)/, ''));
+        exposure.empty().append(editedExposure, rawExposure);
+      } else {
+        figure.append(link);
+      }
       figcaption.append(exposure.addClass('photo-exposure'), caption.addClass('photo-caption'));
       figure.append(figcaption);
       paragraph.remove();
@@ -79,8 +88,9 @@ function addPhotoComparisons(html, articles, manifest, options) {
     }
   }
   if (!changed) return html;
-  $('head').append($('<link>').attr({ rel: 'stylesheet', href: options.urlFor('css/photo-comparison.css') }));
-  $('body').append($('<script></script>').attr({ src: options.urlFor('js/photo-comparison.js'), defer: '' }));
+  const version = options.comparisonVersion ? `?v=${options.comparisonVersion}` : '';
+  $('head').append($('<link>').attr({ rel: 'stylesheet', href: options.urlFor('css/photo-comparison.css') + version }));
+  $('body').append($('<script></script>').attr({ src: options.urlFor('js/photo-comparison.js') + version, defer: '' }));
   return $.html();
 }
 

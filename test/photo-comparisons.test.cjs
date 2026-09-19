@@ -34,7 +34,11 @@ test('v3 keeps Markdown text, optimized edited photo, and on-demand full-frame c
   assert.equal(figure.attr('data-comparison-original'), '/hexo/downloads/raw/embedded.jpg');
   assert.equal($('img').length, 1, 'No hidden original image should start downloading');
   assert.equal($('link[rel="preload"]').length, 0);
-  assert.equal($('.photo-exposure').text(), '500 mm (cropped to 2494 mm) · ISO 5000');
+  assert.equal($('.photo-exposure-copy:not(.is-inactive)').text(), '500 mm (cropped to 2494 mm) · ISO 5000');
+  assert.equal($('.photo-exposure-copy.is-inactive').text(), '500 mm · ISO 5000');
+  assert.equal($('.photo-exposure-copy.is-inactive').attr('aria-hidden'), 'true');
+  assert.equal($('.photo-frame').attr('style'), '--photo-ratio: 1333 / 2000');
+  assert.equal($('.photo-frame > a > img').length, 1);
   assert.equal($('.photo-caption em').text(), '原稿图注');
   assert.equal($('.photo-toggle').attr('hidden'), 'hidden');
   assert.equal($('.photo-toggle').attr('aria-controls'), figure.find('img').attr('id'));
@@ -63,8 +67,15 @@ test('missing originals stay explicit and disabled; localhost paths have no /hex
   assert.equal($('.photo-toggle').attr('hidden'), undefined);
   assert.equal($('.photo-state').text(), '尚未找到对应 NEF');
   assert.equal($('.photo-comparison').attr('data-comparison-src'), undefined);
+  assert.equal($('.photo-frame,.photo-exposure-copy').length, 0);
   assert.equal($('script[src="/js/photo-comparison.js"]').length, 1);
   assert.equal($('img').attr('src'), '/images/optimized/edited-1280.webp');
+});
+
+test('updated comparison assets receive a shared cache version', () => {
+  const $ = cheerio.load(render(page(block('july')), { july: article }, { ...options, comparisonVersion: 'abcd1234' }));
+  assert.equal($('script[src="/hexo/js/photo-comparison.js?v=abcd1234"]').length, 1);
+  assert.equal($('link[href="/hexo/css/photo-comparison.css?v=abcd1234"]').length, 1);
 });
 
 test('fail the build when comparison assets or the Markdown association are missing', () => {

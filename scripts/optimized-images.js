@@ -1,5 +1,6 @@
 const fs = require('node:fs');
 const path = require('node:path');
+const { createHash } = require('node:crypto');
 const cheerio = require('cheerio');
 const { url_for } = require('hexo-util');
 const { localRoute, optimizeImage, rewriteImages } = require('../tools/image-optimizer.cjs');
@@ -7,6 +8,7 @@ const { addPhotoComparisons } = require('../tools/photo-comparisons.cjs');
 
 let manifest = new Map();
 let comparisons = {};
+let comparisonVersion = '';
 
 hexo.extend.filter.register('before_generate', async () => {
   const settings = hexo.config.image_optimization || {};
@@ -28,6 +30,10 @@ hexo.extend.filter.register('before_generate', async () => {
     }
   }
   comparisons = hexo.locals.get('data').photo_comparisons || {};
+  comparisonVersion = createHash('sha256')
+    .update(fs.readFileSync(path.join(hexo.source_dir, 'js/photo-comparison.js')))
+    .update(fs.readFileSync(path.join(hexo.source_dir, 'css/photo-comparison.css')))
+    .digest('hex').slice(0, 12);
   for (const article of Object.values(comparisons)) {
     for (const photo of article.photos) {
       if (!photo.comparison) continue;
@@ -70,6 +76,7 @@ hexo.extend.filter.register('after_render:html', html => {
     siteUrl: hexo.config.url,
     root: hexo.config.root,
     sizes: hexo.config.image_optimization?.sizes,
+    comparisonVersion,
     urlFor: route => url_for.call(hexo, route),
   };
   return addPhotoComparisons(rewriteImages(html, manifest, options), comparisons, manifest, options);
