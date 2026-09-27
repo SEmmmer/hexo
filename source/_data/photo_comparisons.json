@@ -196,5 +196,71 @@
       }
     ],
     "note": "成片为供网页浏览的缩小预览。原片对照直接提取 NEF 内嵌 JPEG，保留相机拍摄时的画幅与机内呈色，未再裁切或调色；它不是线性 RAW 解码。机内 DX 画幅仅包含拍摄时记录的范围。 网页展示图经过等比例缩小和压缩，点击图片可查看完整 JPEG。"
+  },
+  "birdwatching-september-2026": {
+    "version": "v3",
+    "markdown": "blog.md",
+    "html": "blog.html",
+    "month": "2026-09",
+    "label": "9 月",
+    "route": "2026/09/28/birdwatching-september-2026/",
+    "photos": [
+      {
+        "id": "B01",
+        "image": "downloads/birdwatching-september-2026/previews/B01_EMB_7885.jpg",
+        "comparison": "downloads/birdwatching-september-2026/previews/raw/B01_EMB_7885_embedded.jpg",
+        "status": "available",
+        "sha256": "68be19d3b4ed276070704536f9c47f29bb67f34df6b823c0568fa2ed9c67ca6d",
+        "alt": "棕背伯劳原片：相机记录的完整FX画幅，NEF 内嵌 JPEG，未额外裁切或调色。",
+        "label": "原片 · NEF 内嵌 JPEG · 8256 × 5504",
+        "button": "查看原片",
+        "state": "成片"
+      },
+      {
+        "id": "B02",
+        "image": "downloads/birdwatching-september-2026/previews/B02_EMB_7134.jpg",
+        "comparison": "downloads/birdwatching-september-2026/previews/raw/B02_EMB_7134_embedded.jpg",
+        "status": "available",
+        "sha256": "9ed3f96971560efb0f3160db53cd677087a2bd25fc8df005e36f59e95f75cc58",
+        "alt": "蚁鴷原片：相机记录的完整FX画幅，NEF 内嵌 JPEG，未额外裁切或调色。",
+        "label": "原片 · NEF 内嵌 JPEG · 8256 × 5504",
+        "button": "查看原片",
+        "state": "成片"
+      },
+      {
+        "id": "B03",
+        "image": "downloads/birdwatching-september-2026/previews/B03_EMB_9897.jpg",
+        "comparison": "downloads/birdwatching-september-2026/previews/raw/B03_EMB_9897_embedded.jpg",
+        "status": "available",
+        "sha256": "1c2e1726d5cb41202663abcf854bea2d8ce50e883097e6e1dd2877d5aa9b9774",
+        "alt": "鹊鸲原片：相机记录的完整FX画幅，NEF 内嵌 JPEG，未额外裁切或调色。",
+        "label": "原片 · NEF 内嵌 JPEG · 8256 × 5504",
+        "button": "查看原片",
+        "state": "成片"
+      },
+      {
+        "id": "B04",
+        "image": "downloads/birdwatching-september-2026/previews/B04_EMB_0864.jpg",
+        "comparison": "downloads/birdwatching-september-2026/previews/raw/B04_EMB_0864_embedded.jpg",
+        "status": "available",
+        "sha256": "dc0221300342da8191f22a5e3528dae1c17d5f76ca4cdbaab07f568da6e8d41f",
+        "alt": "夜鹭原片：相机记录的完整FX画幅，NEF 内嵌 JPEG，未额外裁切或调色。",
+        "label": "原片 · NEF 内嵌 JPEG · 8256 × 5504",
+        "button": "查看原片",
+        "state": "成片"
+      },
+      {
+        "id": "B05",
+        "image": "downloads/birdwatching-september-2026/previews/B05_EMB_9266.jpg",
+        "comparison": "downloads/birdwatching-september-2026/previews/raw/B05_EMB_9266_embedded.jpg",
+        "status": "available",
+        "sha256": "33c6044362d1bb2454297dca2a1dd4e8d22470fe1e2a8f07c831a67fdf88b9db",
+        "alt": "椋鸟群（疑似丝光椋鸟）原片：相机记录的完整FX画幅，NEF 内嵌 JPEG，未额外裁切或调色。",
+        "label": "原片 · NEF 内嵌 JPEG · 8256 × 5504",
+        "button": "查看原片",
+        "state": "成片"
+      }
+    ],
+    "note": "成片为供网页浏览的缩小预览。原片对照直接提取 NEF 内嵌 JPEG，保留相机拍摄时的画幅与机内呈色，未再裁切或调色；它不是线性 RAW 解码。机内 DX 画幅仅包含拍摄时记录的范围。 网页展示图经过等比例缩小和压缩，点击图片可查看完整 JPEG。"
   }
 }
