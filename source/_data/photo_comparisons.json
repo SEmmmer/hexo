@@ -262,5 +262,126 @@
       }
     ],
     "note": "成片为供网页浏览的缩小预览。原片对照直接提取 NEF 内嵌 JPEG，保留相机拍摄时的画幅与机内呈色，未再裁切或调色；它不是线性 RAW 解码。机内 DX 画幅仅包含拍摄时记录的范围。 网页展示图经过等比例缩小和压缩，点击图片可查看完整 JPEG。"
+  },
+  "birdwatching-october-2026": {
+    "version": "v3",
+    "markdown": "blog-v4.md",
+    "html": "blog-v4.html",
+    "month": "2026-10",
+    "label": "10 月",
+    "route": "2026/10/09/birdwatching-october-2026/",
+    "photos": [
+      {
+        "id": "B01",
+        "image": "downloads/birdwatching-october-2026/previews/B01_EMB_3711.jpg",
+        "comparison": "downloads/birdwatching-october-2026/previews/raw/B01_EMB_3711_embedded.jpg",
+        "status": "available",
+        "sha256": "5f2438f8b9b97856d6146b365bf178adeb86364bcca4c54d22754c0e07072d8a",
+        "alt": "红嘴鸥原片：相机记录的完整FX画幅，NEF 内嵌 JPEG，未额外裁切或调色。",
+        "label": "原片 · NEF 内嵌 JPEG · 8256 × 5504",
+        "button": "查看原片",
+        "state": "成片"
+      },
+      {
+        "id": "B06",
+        "image": "downloads/birdwatching-october-2026/previews/B06_EMB_8896.jpg",
+        "comparison": "downloads/birdwatching-october-2026/previews/raw/B06_EMB_8896_embedded.jpg",
+        "status": "available",
+        "sha256": "d9187c1d56ca27eb36d0a1cc585332186982fb62115d1dede0b5fd940348a273",
+        "alt": "红嘴鸥原片：相机记录的完整FX画幅，NEF 内嵌 JPEG，未额外裁切或调色。",
+        "label": "原片 · NEF 内嵌 JPEG · 8256 × 5504",
+        "button": "查看原片",
+        "state": "成片"
+      },
+      {
+        "id": "B09",
+        "image": "downloads/birdwatching-october-2026/previews/B09_EMB_6178.jpg",
+        "comparison": "downloads/birdwatching-october-2026/previews/raw/B09_EMB_6178_embedded.jpg",
+        "status": "available",
+        "sha256": "8e61b931abc42c34a846e102e57b523043e72758840c706b7125467505dbba0d",
+        "alt": "喜鹊原片：相机记录的完整FX画幅，NEF 内嵌 JPEG，未额外裁切或调色。",
+        "label": "原片 · NEF 内嵌 JPEG · 8256 × 5504",
+        "button": "查看原片",
+        "state": "成片"
+      },
+      {
+        "id": "B02",
+        "image": "downloads/birdwatching-october-2026/previews/B02_EMB_6483.jpg",
+        "comparison": "downloads/birdwatching-october-2026/previews/raw/B02_EMB_6483_embedded.jpg",
+        "status": "available",
+        "sha256": "4082150185c4447540968c069ce2a6faaf08995013f6a8db1154fa2eeb3a4b21",
+        "alt": "白鹡鸰原片：相机记录的完整DX画幅，NEF 内嵌 JPEG，未额外裁切或调色。",
+        "label": "原片 · NEF 内嵌 JPEG · 5392 × 3592 · 机内 DX",
+        "button": "查看原片",
+        "state": "成片"
+      },
+      {
+        "id": "B03",
+        "image": "downloads/birdwatching-october-2026/previews/B03_KVA_1772.jpg",
+        "comparison": "downloads/birdwatching-october-2026/previews/raw/B03_KVA_1772_embedded.jpg",
+        "status": "available",
+        "sha256": "6661c637af53332a4b9b07b577fe824cf6b0dc9ce99fcffeb2a299e97318a902",
+        "alt": "杓鹬原片：相机记录的完整DX画幅，NEF 内嵌 JPEG，未额外裁切或调色。",
+        "label": "原片 · NEF 内嵌 JPEG · 3984 × 2656 · 机内 DX",
+        "button": "查看原片",
+        "state": "成片"
+      },
+      {
+        "id": "B10",
+        "image": "downloads/birdwatching-october-2026/previews/B10_EMB_0497.jpg",
+        "comparison": "downloads/birdwatching-october-2026/previews/raw/B10_EMB_0497_embedded.jpg",
+        "status": "available",
+        "sha256": "e888febfaadd0ac9e5c627e9920f68de775d58ed23b2a418fed3aff215663011",
+        "alt": "燕隼类原片：相机记录的完整DX画幅，NEF 内嵌 JPEG，未额外裁切或调色。",
+        "label": "原片 · NEF 内嵌 JPEG · 5392 × 3592 · 机内 DX",
+        "button": "查看原片",
+        "state": "成片"
+      },
+      {
+        "id": "B04",
+        "image": "downloads/birdwatching-october-2026/previews/B04_EMB_1282.jpg",
+        "comparison": "downloads/birdwatching-october-2026/previews/raw/B04_EMB_1282_embedded.jpg",
+        "status": "available",
+        "sha256": "23a422d00ef46f3f9e4a1e37b6ac34591c39c1da6636848df131b114a8bb28da",
+        "alt": "鸬鹚原片：相机记录的完整DX画幅，NEF 内嵌 JPEG，未额外裁切或调色。",
+        "label": "原片 · NEF 内嵌 JPEG · 5392 × 3592 · 机内 DX",
+        "button": "查看原片",
+        "state": "成片"
+      },
+      {
+        "id": "B11",
+        "image": "downloads/birdwatching-october-2026/previews/B11_EMB_1470.jpg",
+        "comparison": "downloads/birdwatching-october-2026/previews/raw/B11_EMB_1470_embedded.jpg",
+        "status": "available",
+        "sha256": "5122fd4e510c0c02fefd00992902d4f24d973b44ce4ca6c2d7f575fc5af741c0",
+        "alt": "杓鹬原片：相机记录的完整FX画幅，NEF 内嵌 JPEG，未额外裁切或调色。",
+        "label": "原片 · NEF 内嵌 JPEG · 8256 × 5504",
+        "button": "查看原片",
+        "state": "成片"
+      },
+      {
+        "id": "B12",
+        "image": "downloads/birdwatching-october-2026/previews/B12_EMB_2048-20261004.jpg",
+        "comparison": "downloads/birdwatching-october-2026/previews/raw/B12_EMB_2048_embedded.jpg",
+        "status": "available",
+        "sha256": "c26399e177259e01e116936365b52d502f6eea406f48f153fd00dfe6b85a2ae5",
+        "alt": "红嘴鸥原片：相机记录的完整FX画幅，NEF 内嵌 JPEG，未额外裁切或调色。",
+        "label": "原片 · NEF 内嵌 JPEG · 8256 × 5504",
+        "button": "查看原片",
+        "state": "成片"
+      },
+      {
+        "id": "B05",
+        "image": "downloads/birdwatching-october-2026/previews/B05_KVA_1204.jpg",
+        "comparison": "downloads/birdwatching-october-2026/previews/raw/B05_KVA_1204_embedded.jpg",
+        "status": "available",
+        "sha256": "471c5d57f61267431dbc16e5f2c49d4d0d278c5a19b1acfac665e86f88317e13",
+        "alt": "鸥群原片：相机记录的完整FX画幅，NEF 内嵌 JPEG，未额外裁切或调色。",
+        "label": "原片 · NEF 内嵌 JPEG · 6048 × 4032",
+        "button": "查看原片",
+        "state": "成片"
+      }
+    ],
+    "note": "成片为供网页浏览的缩小预览。原片对照直接提取 NEF 内嵌 JPEG，保留相机拍摄时的画幅与机内呈色，未再裁切或调色；它不是线性 RAW 解码。机内 DX 画幅仅包含拍摄时记录的范围。 网页展示图经过等比例缩小和压缩，点击图片可查看完整 JPEG。"
   }
 }
