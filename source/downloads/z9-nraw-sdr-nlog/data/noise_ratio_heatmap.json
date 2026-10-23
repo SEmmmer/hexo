@@ -1,0 +1,139 @@
+{
+  "source_files": {
+    "NLOG": "R1_NLOG_800.mov",
+    "SDR": "R1_SDR_800.mov"
+  },
+  "frame_range_zero_based": [
+    0,
+    49
+  ],
+  "frame_count": 50,
+  "native_dimensions": [
+    8256,
+    4644
+  ],
+  "map_dimensions_rows_columns": [
+    72,
+    129
+  ],
+  "cell_native_dimensions": [
+    64,
+    64
+  ],
+  "native_sampling_stride": 4,
+  "samples_per_cell": 256,
+  "sampled_native_domain_xywh": [
+    0,
+    0,
+    8256,
+    4608
+  ],
+  "method": "Decode limited-range 12-bit YCbCr using BT.709 coding matrix; invert Log3G10; RWG luminance Y. At each native sample location, estimate 50-frame temporal variance after subtracting each cell per-frame mean. A cell sigma is sqrt(mean(pixel temporal variance)). No spatial averaging, registration, or display transform before noise measurement.",
+  "ratio_definition": "sigma_NLOG / (sigma_SDR * SDR_linear_brightness_gain)",
+  "SDR_linear_brightness_gain": 1.006828313957411,
+  "registration": {
+    "method": "nearest measured cell after noise estimation",
+    "affine_quarter_NLOG_to_SDR": [
+      [
+        1.0001627206802368,
+        0.00010269214544678107,
+        -0.5418309569358826
+      ],
+      [
+        0.00019317954138386995,
+        0.9998226761817932,
+        0.42286044359207153
+      ]
+    ],
+    "different_cell_count": 0
+  },
+  "mask_thresholds": {
+    "min_mean_linear_Y": 0.0001,
+    "max_pixel_mean_fraction_of_plateau": 0.9,
+    "matched_mean_ratio_interval": [
+      0.85,
+      1.15
+    ],
+    "adjacent_sigma_over_temporal_interval": [
+      0.85,
+      1.15
+    ],
+    "moving_phone_quarter_bbox_xyxy": [
+      1270,
+      885,
+      1640,
+      1161
+    ]
+  },
+  "mask_failure_counts_independent": {
+    "inside_registered_frame": 0,
+    "positive_mean": 0,
+    "away_from_clipping": 27,
+    "brightness_agreement": 68,
+    "temporal_consistency": 1159,
+    "outside_moving_phone": 408
+  },
+  "valid_cells": 7844,
+  "total_cells": 9288,
+  "valid_ratio_percentiles_1_5_25_50_75_95_99": [
+    0.9131332670026298,
+    0.9815409167274903,
+    1.0481384783929255,
+    1.1748555600792727,
+    1.3195737099661218,
+    1.5051481560629576,
+    1.7102513189485005
+  ],
+  "display_limits": [
+    0.75,
+    2.25
+  ],
+  "original_full_ROI_ratios": {
+    "wall_left": 0.9730327783484194,
+    "wall_right": 1.0173627515530157,
+    "door_mid": 1.1854340993774934,
+    "door_lower": 1.3294297008779201,
+    "shoe_black": 1.7352140728441652
+  },
+  "limitations": "Cell map samples native pixels every four rows/columns, not all native pixels. It visualizes regional trends; five labeled ROI values are the original larger native-ROI measurements. Gray masked cells are excluded rather than assigned ratio 1. The bottom 36 native rows are omitted to retain full cells.",
+  "legacy_label": {
+    "shoe_black": "headset shadow / 头显暗部"
+  },
+  "map_crosscheck_against_original_ROIs": {
+    "wall_left": {
+      "label": "左墙面",
+      "original_full_ROI_ratio": 0.9730327783484194,
+      "valid_map_cells_with_centers_in_ROI": 16,
+      "map_pooled_sigma_ratio": 1.0043997089746282,
+      "relative_difference_percent": 3.2236252800701637
+    },
+    "wall_right": {
+      "label": "右墙面",
+      "original_full_ROI_ratio": 1.0173627515530157,
+      "valid_map_cells_with_centers_in_ROI": 16,
+      "map_pooled_sigma_ratio": 1.0428688659057141,
+      "relative_difference_percent": 2.5070816003203378
+    },
+    "door_mid": {
+      "label": "门板中部",
+      "original_full_ROI_ratio": 1.1854340993774934,
+      "valid_map_cells_with_centers_in_ROI": 16,
+      "map_pooled_sigma_ratio": 1.2076536644256926,
+      "relative_difference_percent": 1.8743821406746575
+    },
+    "door_lower": {
+      "label": "门板下部",
+      "original_full_ROI_ratio": 1.3294297008779201,
+      "valid_map_cells_with_centers_in_ROI": 16,
+      "map_pooled_sigma_ratio": 1.3060128279312484,
+      "relative_difference_percent": -1.76142243032541
+    },
+    "shoe_black": {
+      "label": "头显暗部",
+      "original_full_ROI_ratio": 1.7352140728441652,
+      "valid_map_cells_with_centers_in_ROI": 4,
+      "map_pooled_sigma_ratio": 1.7307106076148464,
+      "relative_difference_percent": -0.2595336967234907
+    }
+  }
+}

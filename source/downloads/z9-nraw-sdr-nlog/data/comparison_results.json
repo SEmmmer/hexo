@@ -1,0 +1,550 @@
+{
+  "registration_ecc": 0.9994662305409021,
+  "affine_quarter_NLOG_to_SDR": [
+    [
+      1.0001627206802368,
+      0.00010269214544678107,
+      -0.5418309569358826
+    ],
+    [
+      0.00019317954138386995,
+      0.9998226761817932,
+      0.42286044359207153
+    ]
+  ],
+  "brightness_ratio_median_NLOG_over_SDR": 1.006828313957411,
+  "brightness_ratio_patch_minmax": [
+    0.9983569944300035,
+    1.0403054220232288
+  ],
+  "brightness_offset_stops": 0.009817693553893342,
+  "highlight": {
+    "NLOG": {
+      "plateau_linear": 26.251529693603516,
+      "plateau_stops_above_0_18": 7.188260775220494,
+      "plateau_pixels_in_600x600": 37120,
+      "plateau_area_fraction": 0.10311111111111111,
+      "max_50frame_mean_Y": 26.406761169433594,
+      "central_frame_mean_min": 26.251686096191406,
+      "central_frame_mean_max": 26.25376319885254
+    },
+    "SDR": {
+      "plateau_linear": 3.2835922241210938,
+      "plateau_stops_above_0_18": 4.189206164179606,
+      "plateau_pixels_in_600x600": 70473,
+      "plateau_area_fraction": 0.19575833333333334,
+      "max_50frame_mean_Y": 3.28863787651062,
+      "central_frame_mean_min": 3.283785820007324,
+      "central_frame_mean_max": 3.283785820007324
+    }
+  },
+  "highlight_plateau_ratio": 7.994759367731832,
+  "highlight_plateau_difference_stops": 2.9990546110408873,
+  "highlight_difference_stops_exposure_normalized": 2.989236917486994,
+  "patches": {
+    "wall_left": {
+      "aligned_mean_rgb_NLOG": [
+        0.17436994642775971,
+        0.14574327224545414,
+        0.1279645324248122
+      ],
+      "aligned_mean_rgb_SDR": [
+        0.17419039711967343,
+        0.14467099008106743,
+        0.127600358271593
+      ],
+      "aligned_mean_Y_NLOG": 0.1562557902963603,
+      "aligned_mean_Y_SDR": 0.15534762678368524,
+      "brightness_NLOG_over_SDR": 1.0058460082814116,
+      "xy_NLOG": [
+        0.3545561640302414,
+        0.3529540809507323
+      ],
+      "xy_SDR": [
+        0.35503982928362715,
+        0.3519620554362974
+      ],
+      "delta_uv": 0.0008336185428650341,
+      "R_over_G_NLOG": 1.1964184949415286,
+      "R_over_G_SDR": 1.204045102767767,
+      "B_over_G_NLOG": 0.8780133069147796,
+      "B_over_G_SDR": 0.8820037673074002,
+      "std_Y_NLOG": 0.006147050559069627,
+      "std_Y_SDR": 0.006274568926744298,
+      "SNR_dB_NLOG": 28.10212358125762,
+      "SNR_dB_SDR": 27.877653242761795,
+      "illumination_mean_CV_percent_NLOG": 0.0628218805324215,
+      "illumination_mean_CV_percent_SDR": 0.09706123408171691,
+      "noise_amplitude_ratio_NLOG_over_SDR_matched": 0.9730327783484194,
+      "SNR_advantage_SDR_dB": -0.22447033849582354
+    },
+    "wall_right": {
+      "aligned_mean_rgb_NLOG": [
+        0.14645807443957892,
+        0.12063691651565023,
+        0.10452608242667338
+      ],
+      "aligned_mean_rgb_SDR": [
+        0.14539854387840023,
+        0.11891309450584231,
+        0.10372419978557446
+      ],
+      "aligned_mean_Y_NLOG": 0.13012882756892094,
+      "aligned_mean_Y_SDR": 0.12847590327761158,
+      "brightness_NLOG_over_SDR": 1.0128656366613569,
+      "xy_NLOG": [
+        0.35839578370126723,
+        0.35524163416522037
+      ],
+      "xy_SDR": [
+        0.358759664460007,
+        0.3538204662335518
+      ],
+      "delta_uv": 0.00103297735564122,
+      "R_over_G_NLOG": 1.2140402678526594,
+      "R_over_G_SDR": 1.222729460389719,
+      "B_over_G_NLOG": 0.8664518743158792,
+      "B_over_G_SDR": 0.8722689474747324,
+      "std_Y_NLOG": 0.005947666736353957,
+      "std_Y_SDR": 0.00580651259930536,
+      "SNR_dB_NLOG": 26.805737513118068,
+      "SNR_dB_SDR": 26.906205697906938,
+      "illumination_mean_CV_percent_NLOG": 0.07653568624774655,
+      "illumination_mean_CV_percent_SDR": 0.12425040894956003,
+      "noise_amplitude_ratio_NLOG_over_SDR_matched": 1.0173627515530157,
+      "SNR_advantage_SDR_dB": 0.10046818478886976
+    },
+    "door_mid": {
+      "aligned_mean_rgb_NLOG": [
+        0.0438032425563506,
+        0.03430897872567584,
+        0.03411407543444511
+      ],
+      "aligned_mean_rgb_SDR": [
+        0.044038254724910075,
+        0.03404344389855396,
+        0.03434017333393058
+      ],
+      "aligned_mean_Y_NLOG": 0.03705620080288636,
+      "aligned_mean_Y_SDR": 0.03687041829865646,
+      "brightness_NLOG_over_SDR": 1.0050387956742184,
+      "xy_NLOG": [
+        0.3503181803597327,
+        0.3281339637162348
+      ],
+      "xy_SDR": [
+        0.35068173045537726,
+        0.3252841943655213
+      ],
+      "delta_uv": 0.0020992941242126088,
+      "R_over_G_NLOG": 1.2767282554980142,
+      "R_over_G_SDR": 1.2935898863857502,
+      "B_over_G_NLOG": 0.994319175374204,
+      "B_over_G_SDR": 1.008716199109022,
+      "std_Y_NLOG": 0.003916688901769454,
+      "std_Y_SDR": 0.003281604521776333,
+      "SNR_dB_NLOG": 19.457483796812504,
+      "SNR_dB_SDR": 20.95915651252082,
+      "illumination_mean_CV_percent_NLOG": 0.13331604925833251,
+      "illumination_mean_CV_percent_SDR": 0.3787359227099836,
+      "noise_amplitude_ratio_NLOG_over_SDR_matched": 1.1854340993774934,
+      "SNR_advantage_SDR_dB": 1.5016727157083167
+    },
+    "door_lower": {
+      "aligned_mean_rgb_NLOG": [
+        0.029143931583348603,
+        0.02035055494206972,
+        0.018121479305591492
+      ],
+      "aligned_mean_rgb_SDR": [
+        0.0293519587658011,
+        0.019748694495319796,
+        0.018029154228770494
+      ],
+      "aligned_mean_Y_NLOG": 0.023160614113218743,
+      "aligned_mean_Y_SDR": 0.02272487060038366,
+      "brightness_NLOG_over_SDR": 1.0191747412118477,
+      "xy_NLOG": [
+        0.3818853591736081,
+        0.3471079829392066
+      ],
+      "xy_SDR": [
+        0.38500113614301207,
+        0.34203899825339795
+      ],
+      "delta_uv": 0.004933291507804531,
+      "R_over_G_NLOG": 1.4320951770755284,
+      "R_over_G_SDR": 1.4862733722858066,
+      "B_over_G_NLOG": 0.8904661006629275,
+      "B_over_G_SDR": 0.9129289145185363,
+      "std_Y_NLOG": 0.0035073185640274434,
+      "std_Y_SDR": 0.0026203205119718536,
+      "SNR_dB_NLOG": 16.35065283871994,
+      "SNR_dB_SDR": 18.751283823714832,
+      "illumination_mean_CV_percent_NLOG": 0.26607865132860326,
+      "illumination_mean_CV_percent_SDR": 0.25721144706493104,
+      "noise_amplitude_ratio_NLOG_over_SDR_matched": 1.3294297008779201,
+      "SNR_advantage_SDR_dB": 2.4006309849948906
+    },
+    "door_upper": {
+      "aligned_mean_rgb_NLOG": [
+        0.043264006161027484,
+        0.03158036805285115,
+        0.029012509645124536
+      ],
+      "aligned_mean_rgb_SDR": [
+        0.043988106036623426,
+        0.03139285806133153,
+        0.028946925265093643
+      ],
+      "aligned_mean_Y_NLOG": 0.03526297879645681,
+      "aligned_mean_Y_SDR": 0.035321011414949484,
+      "brightness_NLOG_over_SDR": 0.9983569944300035,
+      "xy_NLOG": [
+        0.3709428373377033,
+        0.3421537770321431
+      ],
+      "xy_SDR": [
+        0.3741627003282155,
+        0.3411413718594422
+      ],
+      "delta_uv": 0.0027128154131064266,
+      "R_over_G_NLOG": 1.3699652293039537,
+      "R_over_G_SDR": 1.4012138031741117,
+      "B_over_G_NLOG": 0.918688141840868,
+      "B_over_G_SDR": 0.9220863295893823,
+      "std_Y_NLOG": 0.0037684383405824965,
+      "std_Y_SDR": 0.0032438775740490098,
+      "SNR_dB_NLOG": 19.399435618746317,
+      "SNR_dB_SDR": 20.722264349865014,
+      "illumination_mean_CV_percent_NLOG": 0.22772745142461415,
+      "illumination_mean_CV_percent_SDR": 0.12134611584019102,
+      "noise_amplitude_ratio_NLOG_over_SDR_matched": 1.1538292337186056,
+      "SNR_advantage_SDR_dB": 1.3228287311186975
+    },
+    "bag_gray": {
+      "aligned_mean_rgb_NLOG": [
+        0.036504617739410605,
+        0.033389943950169254,
+        0.030501315991892222
+      ],
+      "aligned_mean_rgb_SDR": [
+        0.03664443989772634,
+        0.03310674988946024,
+        0.030999061858488455
+      ],
+      "aligned_mean_Y_NLOG": 0.03465747927229599,
+      "aligned_mean_Y_SDR": 0.03439429459291676,
+      "brightness_NLOG_over_SDR": 1.0076519865429492,
+      "xy_NLOG": [
+        0.336037861634567,
+        0.3465891863514638
+      ],
+      "xy_SDR": [
+        0.33513790637239854,
+        0.34144750108643157
+      ],
+      "delta_uv": 0.0030446428238340125,
+      "R_over_G_NLOG": 1.0932817914845754,
+      "R_over_G_SDR": 1.1068570614777364,
+      "B_over_G_NLOG": 0.9134880860360837,
+      "B_over_G_SDR": 0.936336606945438,
+      "std_Y_NLOG": 0.003677816726428383,
+      "std_Y_SDR": 0.0033369114647328634,
+      "SNR_dB_NLOG": 19.445315449854323,
+      "SNR_dB_SDR": 20.266484537971472,
+      "illumination_mean_CV_percent_NLOG": 0.26992773905627,
+      "illumination_mean_CV_percent_SDR": 0.3841460239721992,
+      "noise_amplitude_ratio_NLOG_over_SDR_matched": 1.09468704704078,
+      "SNR_advantage_SDR_dB": 0.8211690881171485
+    },
+    "cabinet_dark": {
+      "aligned_mean_rgb_NLOG": [
+        0.03442021535819448,
+        0.028676017323353637,
+        0.024532907586641766
+      ],
+      "aligned_mean_rgb_SDR": [
+        0.034639797369082875,
+        0.028402752365865227,
+        0.024662417761040462
+      ],
+      "aligned_mean_Y_NLOG": 0.030860093864720863,
+      "aligned_mean_Y_SDR": 0.030675896109820563,
+      "brightness_NLOG_over_SDR": 1.0060046413718728,
+      "xy_NLOG": [
+        0.3580454464936131,
+        0.357912366291491
+      ],
+      "xy_SDR": [
+        0.3588748955444717,
+        0.35474231836721387
+      ],
+      "delta_uv": 0.0022975208418691663,
+      "R_over_G_NLOG": 1.2003136617637202,
+      "R_over_G_SDR": 1.2195929789788051,
+      "B_over_G_NLOG": 0.8555200434567412,
+      "B_over_G_SDR": 0.8683108398564942,
+      "std_Y_NLOG": 0.003552164093143625,
+      "std_Y_SDR": 0.0029454037063315294,
+      "SNR_dB_NLOG": 18.82606250207312,
+      "SNR_dB_SDR": 20.46301659566045,
+      "illumination_mean_CV_percent_NLOG": 0.2931691109269865,
+      "illumination_mean_CV_percent_SDR": 0.22023976803138579,
+      "noise_amplitude_ratio_NLOG_over_SDR_matched": 1.1978233385785868,
+      "SNR_advantage_SDR_dB": 1.6369540935873275
+    },
+    "door_lock": {
+      "aligned_mean_rgb_NLOG": [
+        0.022977456413274113,
+        0.024502246304311685,
+        0.02329415210503309
+      ],
+      "aligned_mean_rgb_SDR": [
+        0.023345677292026166,
+        0.023905735532429792,
+        0.023266439410185233
+      ],
+      "aligned_mean_Y_NLOG": 0.024221755410304018,
+      "aligned_mean_Y_SDR": 0.023828069649440117,
+      "brightness_NLOG_over_SDR": 1.0165219326053612,
+      "xy_NLOG": [
+        0.3089096250325414,
+        0.34025963978898394
+      ],
+      "xy_SDR": [
+        0.31222172199055404,
+        0.33488023138754286
+      ],
+      "delta_uv": 0.004787624493506092,
+      "R_over_G_NLOG": 0.9377693835863019,
+      "R_over_G_SDR": 0.9765722230280734,
+      "B_over_G_NLOG": 0.9506945532962826,
+      "B_over_G_SDR": 0.9732576259208879,
+      "std_Y_NLOG": 0.003564911038849333,
+      "std_Y_SDR": 0.0032385870465988435,
+      "SNR_dB_NLOG": 16.985738672278863,
+      "SNR_dB_SDR": 17.498372464517985,
+      "illumination_mean_CV_percent_NLOG": 0.4464654613162823,
+      "illumination_mean_CV_percent_SDR": 2.5794201887820765,
+      "noise_amplitude_ratio_NLOG_over_SDR_matched": 1.0932958558465584,
+      "SNR_advantage_SDR_dB": 0.5126337922391215
+    },
+    "shelf_dark": {
+      "aligned_mean_rgb_NLOG": [
+        0.032787502688329875,
+        0.029793214436924446,
+        0.026653446333916184
+      ],
+      "aligned_mean_rgb_SDR": [
+        0.03197254551681302,
+        0.028518503130827513,
+        0.02584478850945339
+      ],
+      "aligned_mean_Y_NLOG": 0.03105880204587301,
+      "aligned_mean_Y_SDR": 0.02985546493208559,
+      "brightness_NLOG_over_SDR": 1.0403054220232288,
+      "xy_NLOG": [
+        0.33939475017845394,
+        0.3506888945130867
+      ],
+      "xy_SDR": [
+        0.3407958904506412,
+        0.3478105940850854
+      ],
+      "delta_uv": 0.002388300014479863,
+      "R_over_G_NLOG": 1.1005023562578207,
+      "R_over_G_SDR": 1.121115837326392,
+      "B_over_G_NLOG": 0.8946146576544971,
+      "B_over_G_SDR": 0.9062463198328271,
+      "std_Y_NLOG": 0.003415108113620405,
+      "std_Y_SDR": 0.0028453506155550756,
+      "SNR_dB_NLOG": 19.092330688874416,
+      "SNR_dB_SDR": 20.41330234185053,
+      "illumination_mean_CV_percent_NLOG": 0.48945752201947323,
+      "illumination_mean_CV_percent_SDR": 0.8928639913971593,
+      "noise_amplitude_ratio_NLOG_over_SDR_matched": 1.1921015347480106,
+      "SNR_advantage_SDR_dB": 1.320971652976116
+    },
+    "shoe_black": {
+      "aligned_mean_rgb_NLOG": [
+        0.006568731445668163,
+        0.0064377634450920596,
+        0.0054520575151855155
+      ],
+      "aligned_mean_rgb_SDR": [
+        0.007064500185606448,
+        0.006344356261706707,
+        0.005799182672717507
+      ],
+      "aligned_mean_Y_NLOG": 0.006603130632909577,
+      "aligned_mean_Y_SDR": 0.006621511493857497,
+      "brightness_NLOG_over_SDR": 0.997224068709241,
+      "xy_NLOG": [
+        0.33391777579468407,
+        0.36320846612234275
+      ],
+      "xy_SDR": [
+        0.3387756052556352,
+        0.3461940430168921
+      ],
+      "delta_uv": 0.012181800391444344,
+      "R_over_G_NLOG": 1.0203437112427531,
+      "R_over_G_SDR": 1.1135093765535187,
+      "B_over_G_NLOG": 0.8468868981729961,
+      "B_over_G_SDR": 0.9140695184033466,
+      "std_Y_NLOG": 0.0024784188999851828,
+      "std_Y_SDR": 0.0014186204981075463,
+      "SNR_dB_NLOG": 8.415694536241997,
+      "SNR_dB_SDR": 13.405903722334786,
+      "illumination_mean_CV_percent_NLOG": 2.2464758599027483,
+      "illumination_mean_CV_percent_SDR": 0.8984151526882679,
+      "noise_amplitude_ratio_NLOG_over_SDR_matched": 1.7352140728441652,
+      "SNR_advantage_SDR_dB": 4.990209186092789
+    },
+    "red_left": {
+      "aligned_mean_rgb_NLOG": [
+        0.0915304839792144,
+        0.026367869215189584,
+        0.027770745060277276
+      ],
+      "aligned_mean_rgb_SDR": [
+        0.09111906247886105,
+        0.02580960422185146,
+        0.027483777919163305
+      ],
+      "aligned_mean_Y_NLOG": 0.044867684130462146,
+      "aligned_mean_Y_SDR": 0.04431633827654976,
+      "brightness_NLOG_over_SDR": 1.0124411419208823,
+      "xy_NLOG": [
+        0.5092593012375501,
+        0.31223601191659794
+      ],
+      "xy_SDR": [
+        0.5106552763325122,
+        0.31087101268151995
+      ],
+      "delta_uv": 0.002230036229312291,
+      "R_over_G_NLOG": 3.4712886063044857,
+      "R_over_G_SDR": 3.530432380738173,
+      "B_over_G_NLOG": 1.0532039898119467,
+      "B_over_G_SDR": 1.064866306469528,
+      "std_Y_NLOG": 0.004502217434733514,
+      "std_Y_SDR": 0.0044375045367479075,
+      "SNR_dB_NLOG": 19.95002337426182,
+      "SNR_dB_SDR": 19.989639035330875,
+      "illumination_mean_CV_percent_NLOG": 0.3258374436148972,
+      "illumination_mean_CV_percent_SDR": 0.3823301246342606,
+      "noise_amplitude_ratio_NLOG_over_SDR_matched": 1.0077022659218013,
+      "SNR_advantage_SDR_dB": 0.03961566106905323
+    },
+    "red_right": {
+      "aligned_mean_rgb_NLOG": [
+        0.07598549106882678,
+        0.01703645695427743,
+        0.015443633659742773
+      ],
+      "aligned_mean_rgb_SDR": [
+        0.07689651281624618,
+        0.016638318286924105,
+        0.015977705948494583
+      ],
+      "aligned_mean_Y_NLOG": 0.034143336946498036,
+      "aligned_mean_Y_SDR": 0.03399964410712774,
+      "brightness_NLOG_over_SDR": 1.0042263042200543,
+      "xy_NLOG": [
+        0.565391979840653,
+        0.3255227460517088
+      ],
+      "xy_SDR": [
+        0.5644475838006748,
+        0.31972512196279174
+      ],
+      "delta_uv": 0.005062354388092699,
+      "R_over_G_NLOG": 4.4601698153998335,
+      "R_over_G_SDR": 4.6216517493044,
+      "B_over_G_NLOG": 0.9065050145808199,
+      "B_over_G_SDR": 0.9602957265850185,
+      "std_Y_NLOG": 0.004236477936379908,
+      "std_Y_SDR": 0.003615832040298603,
+      "SNR_dB_NLOG": 18.07537355790182,
+      "SNR_dB_SDR": 19.4482730832117,
+      "illumination_mean_CV_percent_NLOG": 0.22661853450715036,
+      "illumination_mean_CV_percent_SDR": 0.21076388191446482,
+      "noise_amplitude_ratio_NLOG_over_SDR_matched": 1.1637006580757276,
+      "SNR_advantage_SDR_dB": 1.3728995253098795
+    },
+    "yellow_sticker": {
+      "aligned_mean_rgb_NLOG": [
+        0.10967175670120181,
+        0.04862516541604181,
+        0.03781903421088141
+      ],
+      "aligned_mean_rgb_SDR": [
+        0.1107739797052072,
+        0.048491412070484796,
+        0.038145259450360826
+      ],
+      "aligned_mean_Y_NLOG": 0.06752811975817491,
+      "aligned_mean_Y_SDR": 0.06768906659913802,
+      "brightness_NLOG_over_SDR": 0.9976222623674772,
+      "xy_NLOG": [
+        0.47425685695057673,
+        0.357756027079635
+      ],
+      "xy_SDR": [
+        0.4750723674265139,
+        0.3558501315387324
+      ],
+      "delta_uv": 0.0018341519130656203,
+      "R_over_G_NLOG": 2.255452619293718,
+      "R_over_G_SDR": 2.284404082607276,
+      "B_over_G_NLOG": 0.7777666952348223,
+      "B_over_G_SDR": 0.7866394856663423,
+      "std_Y_NLOG": 0.005291841493431176,
+      "std_Y_SDR": 0.006964819610283782,
+      "SNR_dB_NLOG": 22.114628629749603,
+      "SNR_dB_SDR": 19.897060769908748,
+      "illumination_mean_CV_percent_NLOG": 0.30965627188974165,
+      "illumination_mean_CV_percent_SDR": 1.4364664848053985,
+      "noise_amplitude_ratio_NLOG_over_SDR_matched": 0.7546429765234062,
+      "SNR_advantage_SDR_dB": -2.2175678598408552
+    },
+    "green_sticker": {
+      "aligned_mean_rgb_NLOG": [
+        0.05420535174198449,
+        0.05330750407301821,
+        0.03484695596853271
+      ],
+      "aligned_mean_rgb_SDR": [
+        0.05533699376974255,
+        0.05423529114341363,
+        0.03586811607237905
+      ],
+      "aligned_mean_Y_NLOG": 0.05595874633482479,
+      "aligned_mean_Y_SDR": 0.05693286943462058,
+      "brightness_NLOG_over_SDR": 0.9828899700740635,
+      "xy_NLOG": [
+        0.3612906984525674,
+        0.41581768938458996
+      ],
+      "xy_SDR": [
+        0.36060408913200837,
+        0.41336445408111316
+      ],
+      "delta_uv": 0.0011239056614980422,
+      "R_over_G_NLOG": 1.016842800738456,
+      "R_over_G_SDR": 1.020313390102686,
+      "B_over_G_NLOG": 0.6536970089764647,
+      "B_over_G_SDR": 0.6613427404221632,
+      "std_Y_NLOG": 0.004865583355845085,
+      "std_Y_SDR": 0.005998839161722333,
+      "SNR_dB_NLOG": 21.416311459413343,
+      "SNR_dB_SDR": 19.62990951064303,
+      "illumination_mean_CV_percent_NLOG": 0.7066827267464719,
+      "illumination_mean_CV_percent_SDR": 0.5310914590318784,
+      "noise_amplitude_ratio_NLOG_over_SDR_matched": 0.8055866840748508,
+      "SNR_advantage_SDR_dB": -1.7864019487703118
+    }
+  }
+}

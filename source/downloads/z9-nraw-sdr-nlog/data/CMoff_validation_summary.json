@@ -1,0 +1,20 @@
+{
+  "passed_for_this_comparison": true,
+  "highest_bit_depth_rendering": "true",
+  "video_depth_menu_enum": "4",
+  "batch_items": [
+    {
+      "OutputFileName": "R1_NLOG_800.mov",
+      "BatchItemUseMaximumRenderQuality": "false",
+      "BatchItemUseUsePreviewFiles": "false"
+    },
+    {
+      "OutputFileName": "R1_SDR_800.mov",
+      "BatchItemUseMaximumRenderQuality": "false",
+      "BatchItemUseUsePreviewFiles": "false"
+    }
+  ],
+  "frames_successfully_decoded_each": 50,
+  "YUV_to_RGB_crosscheck_max_absolute_error": 5.960464477539063e-08,
+  "measurement_scope": "Z9 05.32, ISO800/f8/1-100s, recorded N-RAW then PR RED SDK decode and ProRes 4444 XQ; not a direct mosaic ADC measurement"
+}

@@ -1,0 +1,98 @@
+[
+  {
+    "name": "R2_SDR_100",
+    "source_frame": 725,
+    "aperture": 4,
+    "crop_native_xywh": [
+      2600,
+      1800,
+      1960,
+      1360
+    ],
+    "geometry": "native crop pasted at 1:1; no resize",
+    "low_ISO_linear_gain": 8,
+    "group_display_scale": 1,
+    "shared_display_scale": 0.18,
+    "display_LUT": "RWG_Log3G10 to REC709_BT1886 with MEDIUM_CONTRAST and R_2_Medium size_33 v1.13.cube"
+  },
+  {
+    "name": "R2_NLOG_800",
+    "source_frame": 725,
+    "aperture": 4,
+    "crop_native_xywh": [
+      2600,
+      1800,
+      1960,
+      1360
+    ],
+    "geometry": "native crop pasted at 1:1; no resize",
+    "low_ISO_linear_gain": 1,
+    "group_display_scale": 1,
+    "shared_display_scale": 0.18,
+    "display_LUT": "RWG_Log3G10 to REC709_BT1886 with MEDIUM_CONTRAST and R_2_Medium size_33 v1.13.cube"
+  },
+  {
+    "name": "R2_SDR_800",
+    "source_frame": 725,
+    "aperture": 4,
+    "crop_native_xywh": [
+      2600,
+      1800,
+      1960,
+      1360
+    ],
+    "geometry": "native crop pasted at 1:1; no resize",
+    "low_ISO_linear_gain": 1,
+    "group_display_scale": 1,
+    "shared_display_scale": 0.18,
+    "display_LUT": "RWG_Log3G10 to REC709_BT1886 with MEDIUM_CONTRAST and R_2_Medium size_33 v1.13.cube"
+  },
+  {
+    "name": "R2_SDR_500",
+    "source_frame": 725,
+    "aperture": 4,
+    "crop_native_xywh": [
+      2600,
+      1800,
+      1960,
+      1360
+    ],
+    "geometry": "native crop pasted at 1:1; no resize",
+    "low_ISO_linear_gain": 8,
+    "group_display_scale": 0.2,
+    "shared_display_scale": 0.18,
+    "display_LUT": "RWG_Log3G10 to REC709_BT1886 with MEDIUM_CONTRAST and R_2_Medium size_33 v1.13.cube"
+  },
+  {
+    "name": "R2_NLOG_4000",
+    "source_frame": 725,
+    "aperture": 4,
+    "crop_native_xywh": [
+      2600,
+      1800,
+      1960,
+      1360
+    ],
+    "geometry": "native crop pasted at 1:1; no resize",
+    "low_ISO_linear_gain": 1,
+    "group_display_scale": 0.2,
+    "shared_display_scale": 0.18,
+    "display_LUT": "RWG_Log3G10 to REC709_BT1886 with MEDIUM_CONTRAST and R_2_Medium size_33 v1.13.cube"
+  },
+  {
+    "name": "R2_SDR_4000",
+    "source_frame": 725,
+    "aperture": 4,
+    "crop_native_xywh": [
+      2600,
+      1800,
+      1960,
+      1360
+    ],
+    "geometry": "native crop pasted at 1:1; no resize",
+    "low_ISO_linear_gain": 1,
+    "group_display_scale": 0.2,
+    "shared_display_scale": 0.18,
+    "display_LUT": "RWG_Log3G10 to REC709_BT1886 with MEDIUM_CONTRAST and R_2_Medium size_33 v1.13.cube"
+  }
+]

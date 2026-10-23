@@ -1,0 +1,777 @@
+{
+  "method": {
+    "interpolation": "tetrahedral, independently validated against FFmpeg scalar",
+    "float_plateau_tolerance": 1e-12,
+    "exposure_perturbation_EV_each_side": 0.0078125,
+    "input_range": "0 to 1 full-range NLog code; tests avoid automatic extra transforms",
+    "quantization_example": "Round full-range RGB to integer 8/10/12-bit; these are examples, not measurements of a particular output codec."
+  },
+  "LUTs": {
+    "RED_Technical": {
+      "file": "N-Log_BT2020_to_REC709_BT1886_size_33.cube",
+      "sha256": "e898acc5c7d00b145ff64d28ada99fec3aa9c3e321fc9cbfcc1dfdc83de356d5",
+      "comments": [
+        "# Development Color Space = REC709",
+        "# Output Gamma Curve = BT1886",
+        "# Output Tonemap = MEDIUM_CONTRAST",
+        "# Highlight Rolloff = Rolloff 2 - medium",
+        "# Resolution = 33 x 33 x 33"
+      ],
+      "grid_size": 33,
+      "grid_min_RGB": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "grid_max_RGB": [
+        1.0,
+        0.986374,
+        0.984649
+      ],
+      "exact_white_grid_knots": 0,
+      "exact_one_channel_grid_knots": [
+        1120,
+        0,
+        0
+      ],
+      "positive_highlight_tetrahedra": {
+        "count": 121344,
+        "constant_full_RGB_output_count": 0,
+        "domain": "All input codes >=0.125, at least one cell lower corner >=0.5; every tetrahedron within these 33-grid cells is tested."
+      }
+    },
+    "Z9_V01": {
+      "file": "Z_9_N-Log-Full_to_REC709-Full_33_V01-00.cube",
+      "sha256": "4637d55eba7325814c580de94fd579ba19f42a603c69b5c3d93b7de3881a570f",
+      "comments": [
+        "# Z 9 N-Log(full range) to REC709(full range)",
+        "# Version : 1.00 2021/8/6",
+        "# (c) 2021 Nikon Corporation"
+      ],
+      "grid_size": 33,
+      "grid_min_RGB": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "grid_max_RGB": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "exact_white_grid_knots": 1,
+      "exact_one_channel_grid_knots": [
+        745,
+        2797,
+        1143
+      ],
+      "positive_highlight_tetrahedra": {
+        "count": 121344,
+        "constant_full_RGB_output_count": 0,
+        "domain": "All input codes >=0.125, at least one cell lower corner >=0.5; every tetrahedron within these 33-grid cells is tested."
+      }
+    },
+    "Z9_V02": {
+      "file": "Z_9_N-Log-Full_to_REC709-Full_33_V02-00.cube",
+      "sha256": "968d4099e3cfaa83dd6a7b0d1c539a7d256abf4bf9646393f0046e77ebdb64fd",
+      "comments": [
+        "# Z 9 N-Log(full range) to REC709(full range)",
+        "# Version : 2.00 2022/9/27",
+        "# (c) 2022 Nikon Corporation"
+      ],
+      "grid_size": 33,
+      "grid_min_RGB": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "grid_max_RGB": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "exact_white_grid_knots": 3731,
+      "exact_one_channel_grid_knots": [
+        13339,
+        17039,
+        15720
+      ],
+      "positive_highlight_tetrahedra": {
+        "count": 121344,
+        "constant_full_RGB_output_count": 20326,
+        "domain": "All input codes >=0.125, at least one cell lower corner >=0.5; every tetrahedron within these 33-grid cells is tested."
+      }
+    }
+  },
+  "neutral": {
+    "RED_Technical": {
+      "sample_input_code": [
+        0.6,
+        0.6875,
+        0.71875,
+        0.75,
+        0.8,
+        0.9,
+        0.95,
+        0.99,
+        1.0
+      ],
+      "sample_output_RGB": [
+        [
+          0.8056795999999999,
+          0.8056795999999999,
+          0.8057256
+        ],
+        [
+          0.874357,
+          0.874372,
+          0.874403
+        ],
+        [
+          0.893355,
+          0.89337,
+          0.8934
+        ],
+        [
+          0.9093,
+          0.9093,
+          0.909331
+        ],
+        [
+          0.9302938,
+          0.9303087999999999,
+          0.9303237999999999
+        ],
+        [
+          0.9599203999999999,
+          0.9599203999999999,
+          0.9599356
+        ],
+        [
+          0.9697901999999999,
+          0.9697901999999999,
+          0.9698056
+        ],
+        [
+          0.9760743199999999,
+          0.97608452,
+          0.97608964
+        ],
+        [
+          0.977554,
+          0.977569,
+          0.977569
+        ]
+      ],
+      "neutral_grid_segment_min_delta_RGB_input_0_5_to_1": [
+        0.0046240000000000725,
+        0.00463900000000006,
+        0.004623000000000044
+      ],
+      "dense_ramp_count": 100001,
+      "flat_RGB_steps_in_dense_ramp": 0,
+      "min_dense_delta_RGB": [
+        7.398399998193028e-07,
+        7.422399997958351e-07,
+        7.396799998060644e-07
+      ],
+      "exact_white_neutral_begin_code": null,
+      "gray_10bit_input_codes_768_to_1023_count": 256,
+      "distinct_float_G_outputs_for_256_inputs": 256,
+      "distinct_quantized_G_outputs": {
+        "8": 18,
+        "10": 70,
+        "12": 225
+      },
+      "mean_code_at_18pct": 0.45214854146249045
+    },
+    "Z9_V01": {
+      "sample_input_code": [
+        0.6,
+        0.6875,
+        0.71875,
+        0.75,
+        0.8,
+        0.9,
+        0.95,
+        0.99,
+        1.0
+      ],
+      "sample_output_RGB": [
+        [
+          0.876524,
+          0.876524,
+          0.876524
+        ],
+        [
+          0.922286,
+          0.922286,
+          0.922286
+        ],
+        [
+          0.933806,
+          0.933806,
+          0.933806
+        ],
+        [
+          0.943572,
+          0.943572,
+          0.943572
+        ],
+        [
+          0.9577939999999999,
+          0.9577939999999999,
+          0.9577939999999999
+        ],
+        [
+          0.9822266,
+          0.9822266,
+          0.9822266
+        ],
+        [
+          0.9931124,
+          0.9931124,
+          0.9931123999999999
+        ],
+        [
+          0.9990528,
+          0.9990528,
+          0.9990528
+        ],
+        [
+          1.0,
+          1.0,
+          1.0
+        ]
+      ],
+      "neutral_grid_segment_min_delta_RGB_input_0_5_to_1": [
+        0.0029599999999999627,
+        0.0029599999999999627,
+        0.0029599999999999627
+      ],
+      "dense_ramp_count": 100001,
+      "flat_RGB_steps_in_dense_ramp": 0,
+      "min_dense_delta_RGB": [
+        4.7359999988394463e-07,
+        4.7359999977292233e-07,
+        4.7359999977292233e-07
+      ],
+      "exact_white_neutral_begin_code": 1.0,
+      "gray_10bit_input_codes_768_to_1023_count": 256,
+      "distinct_float_G_outputs_for_256_inputs": 256,
+      "distinct_quantized_G_outputs": {
+        "8": 15,
+        "10": 59,
+        "12": 223
+      },
+      "mean_code_at_18pct": 0.40918394994232327
+    },
+    "Z9_V02": {
+      "sample_input_code": [
+        0.6,
+        0.6875,
+        0.71875,
+        0.75,
+        0.8,
+        0.9,
+        0.95,
+        0.99,
+        1.0
+      ],
+      "sample_output_RGB": [
+        [
+          0.9384965999999999,
+          0.9384576,
+          0.9385275999999999
+        ],
+        [
+          0.999969,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0
+        ]
+      ],
+      "neutral_grid_segment_min_delta_RGB_input_0_5_to_1": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dense_ramp_count": 100001,
+      "flat_RGB_steps_in_dense_ramp": 56250,
+      "min_dense_delta_RGB": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "exact_white_neutral_begin_code": 0.71875,
+      "gray_10bit_input_codes_768_to_1023_count": 256,
+      "distinct_float_G_outputs_for_256_inputs": 1,
+      "distinct_quantized_G_outputs": {
+        "8": 1,
+        "10": 1,
+        "12": 1
+      },
+      "mean_code_at_18pct": 0.5312201608115393
+    }
+  },
+  "color_rays": {
+    "RED_Technical": {
+      "fixed_chromaticity_rays": 181,
+      "intensity_samples_each": 2048,
+      "intensity_range_of_max_linear_channel": [
+        0.2,
+        14.7
+      ],
+      "rays_with_any_exact_flat_RGB_step": 0,
+      "flat_RGB_steps_total": 0,
+      "rays_with_a_negative_output_luma_step": 0,
+      "min_output_luma_step": 4.565196184584021e-05,
+      "sampled_RGB_with_any_channel_exactly_one": 495,
+      "sampled_RGB_all_exactly_white": 0,
+      "tested_RGB_sample_count": 370688
+    },
+    "Z9_V01": {
+      "fixed_chromaticity_rays": 181,
+      "intensity_samples_each": 2048,
+      "intensity_range_of_max_linear_channel": [
+        0.2,
+        14.7
+      ],
+      "rays_with_any_exact_flat_RGB_step": 0,
+      "flat_RGB_steps_total": 0,
+      "rays_with_a_negative_output_luma_step": 16,
+      "min_output_luma_step": -0.0002150673804207116,
+      "sampled_RGB_with_any_channel_exactly_one": 19774,
+      "sampled_RGB_all_exactly_white": 0,
+      "tested_RGB_sample_count": 370688
+    },
+    "Z9_V02": {
+      "fixed_chromaticity_rays": 181,
+      "intensity_samples_each": 2048,
+      "intensity_range_of_max_linear_channel": [
+        0.2,
+        14.7
+      ],
+      "rays_with_any_exact_flat_RGB_step": 129,
+      "flat_RGB_steps_total": 46591,
+      "rays_with_a_negative_output_luma_step": 19,
+      "min_output_luma_step": -2.6467965933749564e-05,
+      "sampled_RGB_with_any_channel_exactly_one": 248347,
+      "sampled_RGB_all_exactly_white": 35188,
+      "tested_RGB_sample_count": 370688
+    }
+  },
+  "real_proxy": [
+    {
+      "name": "R2_NLOG_800",
+      "source_frame": 100,
+      "paper_pixels": 86743,
+      "input_interior_paper_pixels": 86743,
+      "input_interior_pct": 100.0,
+      "LUTs": {
+        "RED_Technical": {
+          "paper_all_white_exact_pct": 0.0,
+          "interior_paper_all_white_exact_pct": 0.0,
+          "interior_paper_flat_under_small_exposure_change_pct": 0.0,
+          "interior_paper_any_channel_at_one_pct": 0.0,
+          "interior_paper_nonpositive_output_luma_response_pct": 0.0,
+          "interior_paper_min_output_luma_response_per_EV": 0.02683792250977421,
+          "interior_paper_brightness_response_inf_norm_p01_p50_p99_per_EV": [
+            0.039850474620074294,
+            0.13414125730063375,
+            0.18297447015466842
+          ]
+        },
+        "Z9_V01": {
+          "paper_all_white_exact_pct": 0.0,
+          "interior_paper_all_white_exact_pct": 0.0,
+          "interior_paper_flat_under_small_exposure_change_pct": 0.0,
+          "interior_paper_any_channel_at_one_pct": 0.0,
+          "interior_paper_nonpositive_output_luma_response_pct": 0.0,
+          "interior_paper_min_output_luma_response_per_EV": 0.021973480154830423,
+          "interior_paper_brightness_response_inf_norm_p01_p50_p99_per_EV": [
+            0.024317473168551373,
+            0.16618888550171107,
+            0.2530374318452502
+          ]
+        },
+        "Z9_V02": {
+          "paper_all_white_exact_pct": 14.780443378716438,
+          "interior_paper_all_white_exact_pct": 14.780443378716438,
+          "interior_paper_flat_under_small_exposure_change_pct": 14.735482978453593,
+          "interior_paper_any_channel_at_one_pct": 18.90527189513851,
+          "interior_paper_nonpositive_output_luma_response_pct": 14.735482978453593,
+          "interior_paper_min_output_luma_response_per_EV": 0.0,
+          "interior_paper_brightness_response_inf_norm_p01_p50_p99_per_EV": [
+            0.0,
+            0.18025240622079508,
+            0.19741807393395305
+          ]
+        }
+      }
+    },
+    {
+      "name": "R2_NLOG_800",
+      "source_frame": 725,
+      "paper_pixels": 86743,
+      "input_interior_paper_pixels": 86742,
+      "input_interior_pct": 99.99884716922404,
+      "LUTs": {
+        "RED_Technical": {
+          "paper_all_white_exact_pct": 0.0,
+          "interior_paper_all_white_exact_pct": 0.0,
+          "interior_paper_flat_under_small_exposure_change_pct": 0.0,
+          "interior_paper_any_channel_at_one_pct": 0.0,
+          "interior_paper_nonpositive_output_luma_response_pct": 0.0,
+          "interior_paper_min_output_luma_response_per_EV": 0.015986478582627965,
+          "interior_paper_brightness_response_inf_norm_p01_p50_p99_per_EV": [
+            0.021540005991084854,
+            0.09503556017896386,
+            0.1773762744832144
+          ]
+        },
+        "Z9_V01": {
+          "paper_all_white_exact_pct": 0.0,
+          "interior_paper_all_white_exact_pct": 0.0,
+          "interior_paper_flat_under_small_exposure_change_pct": 0.0,
+          "interior_paper_any_channel_at_one_pct": 0.0,
+          "interior_paper_nonpositive_output_luma_response_pct": 0.0,
+          "interior_paper_min_output_luma_response_per_EV": 0.01583049940834682,
+          "interior_paper_brightness_response_inf_norm_p01_p50_p99_per_EV": [
+            0.02113997266223322,
+            0.0515620194749431,
+            0.2305002172492039
+          ]
+        },
+        "Z9_V02": {
+          "paper_all_white_exact_pct": 31.10683282800918,
+          "interior_paper_all_white_exact_pct": 31.10603859721934,
+          "interior_paper_flat_under_small_exposure_change_pct": 31.06568905489843,
+          "interior_paper_any_channel_at_one_pct": 33.574277743192454,
+          "interior_paper_nonpositive_output_luma_response_pct": 31.06568905489843,
+          "interior_paper_min_output_luma_response_per_EV": 0.0,
+          "interior_paper_brightness_response_inf_norm_p01_p50_p99_per_EV": [
+            0.0,
+            0.1146371932920971,
+            0.19587796290604423
+          ]
+        }
+      }
+    },
+    {
+      "name": "R2_NLOG_800",
+      "source_frame": 1325,
+      "paper_pixels": 86743,
+      "input_interior_paper_pixels": 80267,
+      "input_interior_pct": 92.53426789481571,
+      "LUTs": {
+        "RED_Technical": {
+          "paper_all_white_exact_pct": 0.0,
+          "interior_paper_all_white_exact_pct": 0.0,
+          "interior_paper_flat_under_small_exposure_change_pct": 0.0,
+          "interior_paper_any_channel_at_one_pct": 0.0,
+          "interior_paper_nonpositive_output_luma_response_pct": 0.0,
+          "interior_paper_min_output_luma_response_per_EV": 0.015073307217049262,
+          "interior_paper_brightness_response_inf_norm_p01_p50_p99_per_EV": [
+            0.01637860035800287,
+            0.06391752042015497,
+            0.14158577998122013
+          ]
+        },
+        "Z9_V01": {
+          "paper_all_white_exact_pct": 2.173086012704195,
+          "interior_paper_all_white_exact_pct": 0.0,
+          "interior_paper_flat_under_small_exposure_change_pct": 0.0,
+          "interior_paper_any_channel_at_one_pct": 0.0,
+          "interior_paper_nonpositive_output_luma_response_pct": 0.0,
+          "interior_paper_min_output_luma_response_per_EV": 0.009626818320016207,
+          "interior_paper_brightness_response_inf_norm_p01_p50_p99_per_EV": [
+            0.02059358567650804,
+            0.030373262260411593,
+            0.19513170458293658
+          ]
+        },
+        "Z9_V02": {
+          "paper_all_white_exact_pct": 55.94803038861925,
+          "interior_paper_all_white_exact_pct": 52.39388540745262,
+          "interior_paper_flat_under_small_exposure_change_pct": 51.65634694208081,
+          "interior_paper_any_channel_at_one_pct": 82.30904356709482,
+          "interior_paper_nonpositive_output_luma_response_pct": 51.65634694208081,
+          "interior_paper_min_output_luma_response_per_EV": 0.0,
+          "interior_paper_brightness_response_inf_norm_p01_p50_p99_per_EV": [
+            0.0,
+            0.0,
+            0.18540406485482208
+          ]
+        }
+      }
+    },
+    {
+      "name": "R2_NLOG_4000",
+      "source_frame": 100,
+      "paper_pixels": 86743,
+      "input_interior_paper_pixels": 76236,
+      "input_interior_pct": 87.88720703687906,
+      "LUTs": {
+        "RED_Technical": {
+          "paper_all_white_exact_pct": 0.0,
+          "interior_paper_all_white_exact_pct": 0.0,
+          "interior_paper_flat_under_small_exposure_change_pct": 0.0,
+          "interior_paper_any_channel_at_one_pct": 0.0,
+          "interior_paper_nonpositive_output_luma_response_pct": 0.0,
+          "interior_paper_min_output_luma_response_per_EV": 0.015073307217049773,
+          "interior_paper_brightness_response_inf_norm_p01_p50_p99_per_EV": [
+            0.016378600357995765,
+            0.05394247773341476,
+            0.12550639154397913
+          ]
+        },
+        "Z9_V01": {
+          "paper_all_white_exact_pct": 5.6972896948456935,
+          "interior_paper_all_white_exact_pct": 0.0,
+          "interior_paper_flat_under_small_exposure_change_pct": 0.0,
+          "interior_paper_any_channel_at_one_pct": 0.0,
+          "interior_paper_nonpositive_output_luma_response_pct": 0.0,
+          "interior_paper_min_output_luma_response_per_EV": 0.009626818320016207,
+          "interior_paper_brightness_response_inf_norm_p01_p50_p99_per_EV": [
+            0.02059358567650804,
+            0.028337320277856293,
+            0.12287527802340037
+          ]
+        },
+        "Z9_V02": {
+          "paper_all_white_exact_pct": 89.80321178654187,
+          "interior_paper_all_white_exact_pct": 88.39786977281075,
+          "interior_paper_flat_under_small_exposure_change_pct": 88.17094286164017,
+          "interior_paper_any_channel_at_one_pct": 96.55412141245606,
+          "interior_paper_nonpositive_output_luma_response_pct": 88.17094286164017,
+          "interior_paper_min_output_luma_response_per_EV": 0.0,
+          "interior_paper_brightness_response_inf_norm_p01_p50_p99_per_EV": [
+            0.0,
+            0.0,
+            0.1816866819697296
+          ]
+        }
+      }
+    },
+    {
+      "name": "R2_NLOG_4000",
+      "source_frame": 725,
+      "paper_pixels": 86743,
+      "input_interior_paper_pixels": 62865,
+      "input_interior_pct": 72.4727067313789,
+      "LUTs": {
+        "RED_Technical": {
+          "paper_all_white_exact_pct": 0.0,
+          "interior_paper_all_white_exact_pct": 0.0,
+          "interior_paper_flat_under_small_exposure_change_pct": 0.0,
+          "interior_paper_any_channel_at_one_pct": 0.0,
+          "interior_paper_nonpositive_output_luma_response_pct": 0.0,
+          "interior_paper_min_output_luma_response_per_EV": 0.015073307217052832,
+          "interior_paper_brightness_response_inf_norm_p01_p50_p99_per_EV": [
+            0.01622665117257327,
+            0.035632236998068834,
+            0.08531117275434752
+          ]
+        },
+        "Z9_V01": {
+          "paper_all_white_exact_pct": 16.947765237540782,
+          "interior_paper_all_white_exact_pct": 0.0,
+          "interior_paper_flat_under_small_exposure_change_pct": 0.0,
+          "interior_paper_any_channel_at_one_pct": 0.0,
+          "interior_paper_nonpositive_output_luma_response_pct": 0.0,
+          "interior_paper_min_output_luma_response_per_EV": 0.009626818320014696,
+          "interior_paper_brightness_response_inf_norm_p01_p50_p99_per_EV": [
+            0.01920485208776057,
+            0.022483174002168482,
+            0.044563062371992146
+          ]
+        },
+        "Z9_V02": {
+          "paper_all_white_exact_pct": 98.44367845243997,
+          "interior_paper_all_white_exact_pct": 97.85254115962778,
+          "interior_paper_flat_under_small_exposure_change_pct": 97.8366340571065,
+          "interior_paper_any_channel_at_one_pct": 98.3965640658554,
+          "interior_paper_nonpositive_output_luma_response_pct": 97.8366340571065,
+          "interior_paper_min_output_luma_response_per_EV": 0.0,
+          "interior_paper_brightness_response_inf_norm_p01_p50_p99_per_EV": [
+            0.0,
+            0.0,
+            0.09940340376134571
+          ]
+        }
+      }
+    },
+    {
+      "name": "R2_NLOG_4000",
+      "source_frame": 1325,
+      "paper_pixels": 86743,
+      "input_interior_paper_pixels": 37580,
+      "input_interior_pct": 43.32338056096746,
+      "LUTs": {
+        "RED_Technical": {
+          "paper_all_white_exact_pct": 0.0,
+          "interior_paper_all_white_exact_pct": 0.0,
+          "interior_paper_flat_under_small_exposure_change_pct": 0.0,
+          "interior_paper_any_channel_at_one_pct": 0.0,
+          "interior_paper_nonpositive_output_luma_response_pct": 0.0,
+          "interior_paper_min_output_luma_response_per_EV": 0.015073307217053343,
+          "interior_paper_brightness_response_inf_norm_p01_p50_p99_per_EV": [
+            0.01588099792456177,
+            0.0219367870164362,
+            0.061240874650771104
+          ]
+        },
+        "Z9_V01": {
+          "paper_all_white_exact_pct": 27.779763208558617,
+          "interior_paper_all_white_exact_pct": 0.0,
+          "interior_paper_flat_under_small_exposure_change_pct": 0.0,
+          "interior_paper_any_channel_at_one_pct": 0.10377860564129855,
+          "interior_paper_nonpositive_output_luma_response_pct": 0.0,
+          "interior_paper_min_output_luma_response_per_EV": 0.009626818320026369,
+          "interior_paper_brightness_response_inf_norm_p01_p50_p99_per_EV": [
+            0.016357762680314636,
+            0.019749707891811852,
+            0.02853571079053701
+          ]
+        },
+        "Z9_V02": {
+          "paper_all_white_exact_pct": 99.73600175230278,
+          "interior_paper_all_white_exact_pct": 99.3906333155934,
+          "interior_paper_flat_under_small_exposure_change_pct": 99.38265034592868,
+          "interior_paper_any_channel_at_one_pct": 99.81373070782331,
+          "interior_paper_nonpositive_output_luma_response_pct": 99.38265034592868,
+          "interior_paper_min_output_luma_response_per_EV": 0.0,
+          "interior_paper_brightness_response_inf_norm_p01_p50_p99_per_EV": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    }
+  ],
+  "RED_exact_RGB_collision": {
+    "input_A_NLog_RGB": [
+      0.9606077021100763,
+      0.2685748836925174,
+      0.2625
+    ],
+    "input_B_NLog_RGB": [
+      0.9612672978899238,
+      0.2626751163074826,
+      0.253125
+    ],
+    "output_A_RGB": [
+      1.0,
+      0.6553790000000002,
+      0.7816815
+    ],
+    "output_B_RGB": [
+      1.0,
+      0.6553790000000002,
+      0.7816814999999999
+    ],
+    "max_abs_output_difference": 1.1102230246251565e-16,
+    "input_linear_RGB": [
+      [
+        11.298589124950652,
+        0.06802365857041931,
+        0.0630139030893477
+      ],
+      [
+        11.34952967726746,
+        0.06315511878909277,
+        0.05572545346700209
+      ]
+    ],
+    "input_Rec2020_linear_Y": [
+      3.0179961280884786,
+      3.02764513614776
+    ],
+    "cell_vertices_RGB": [
+      [
+        0.9375,
+        0.25,
+        0.25
+      ],
+      [
+        0.96875,
+        0.25,
+        0.25
+      ],
+      [
+        0.96875,
+        0.28125,
+        0.25
+      ],
+      [
+        0.96875,
+        0.28125,
+        0.28125
+      ]
+    ],
+    "cell_output_vertices_RGB": [
+      [
+        1.0,
+        0.614771,
+        0.756756
+      ],
+      [
+        1.0,
+        0.664881,
+        0.789303
+      ],
+      [
+        1.0,
+        0.671138,
+        0.789136
+      ],
+      [
+        1.0,
+        0.670726,
+        0.791531
+      ]
+    ],
+    "output_edge_matrix_singular_values": [
+      0.11013744223922468,
+      0.0024553747171197618,
+      3.725168724203034e-18
+    ],
+    "meaning": "Different input colors in an interior highlight tetrahedron map to identical full RGB output. This proves the LUT is not globally lossless/invertible even though neutral brightness is strictly retained in float."
+  }
+}
