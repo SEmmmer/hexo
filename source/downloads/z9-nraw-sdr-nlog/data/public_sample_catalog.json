@@ -1,12 +1,13 @@
 {
   "status": "公开脱敏版",
-  "sample_id_rule": "R1 / R2 表示测试轮次，其后为记录模式与ISO；所有附件使用相同代号。",
+  "sample_id_rule": "R1 / R2 / R3 表示测试轮次，其后为记录模式与ISO或机身Low档位；所有附件使用相同代号。",
   "removed": "本机路径、用户目录、原始素材编号、工程文件名、精确拍摄日期与时刻、内部处理目录及来源脚本路径。",
   "retained": "ISO、光圈、快门、帧号、片段相对时间、采样坐标、测量数值、处理方法，以及公开LUT的名称、版本与SHA-256。",
   "notes": [
     "样本代号用于跨文件对应，不是原始文件名。",
     "第一轮附件的帧号以所测导出片段为准；报告保留其对应原素材的相对片段位置。",
-    "数值没有加噪、取整或打乱；原始素材与本地身份对应表不包含在发布包中。"
+    "数值没有加噪、取整或打乱；原始素材与本地身份对应表不包含在发布包中。",
+    "R3 是 One more thing 的低ISO补拍。Lo1没有本轮实拍样本；R2直接RAW暗部补充沿用已有公开样本代号。"
   ],
   "samples": [
     {
@@ -62,6 +63,33 @@
       "round": 2,
       "mode": "N-Log",
       "iso": 800
+    },
+    {
+      "sample_id": "R3_SDR_100",
+      "round": 3,
+      "mode": "SDR",
+      "iso": 100
+    },
+    {
+      "sample_id": "R3_SDR_64",
+      "round": 3,
+      "mode": "SDR",
+      "iso": 64
+    },
+    {
+      "sample_id": "R3_NLOG_800",
+      "round": 3,
+      "mode": "N-Log",
+      "iso": 800
+    },
+    {
+      "sample_id": "R3_NLOG_LO0P7",
+      "round": 3,
+      "mode": "N-Log",
+      "iso_setting": "Lo0.7",
+      "recommended_exposure_index_metadata": 500,
+      "nominal_iso_equivalent_approximate": 500,
+      "note": "500是机内元数据和名义ISO标度，不是独立测得的传感器模拟增益。"
     }
   ]
 }

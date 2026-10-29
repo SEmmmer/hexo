@@ -1,0 +1,2601 @@
+{
+  "scope": "Capture acceptance and preliminary relative response, not a full dynamic-range or Adobe rendering study.",
+  "decode_counts": {
+    "scout": 28,
+    "refined": 104,
+    "total_frame_decode_operations": 132
+  },
+  "method": "Blue Compressor native continuous RAW inverse transfer; no integer clipping, white balance, display curve, denoise or demosaic. G1/G2 averaged. Each clip has 8 black frames and 3 scene frames per aperture. Reference means subtract each clip and ROI observed 8-frame black mean. Highlight P50/P99 subtract the frame header black only; quantiles are per-channel spatial quantiles, then averaged. Integer ROI translations from median proxy registration; no pixel resampling. Aggregate differences are descriptive, not confidence intervals.",
+  "summary": {
+    "R3_SDR_100": {
+      "deep_right": {
+        "observed_black_mean_after_header_subtraction": 1.0859196332059682,
+        "groups": {
+          "f7p1": {
+            "frames": [
+              650,
+              700,
+              750
+            ],
+            "green_mean_observed_black_subtracted": 11.624901738045269,
+            "green_mean_min_across_3_frames": 11.424011920542092,
+            "green_mean_max_across_3_frames": 11.749501469735925,
+            "mean_green_channel_p50_header_black_subtracted": 7.129353841145833,
+            "mean_green_channel_p99_header_black_subtracted": 45.408125000000005
+          },
+          "f5p6": {
+            "frames": [
+              1050,
+              1100,
+              1150
+            ],
+            "green_mean_observed_black_subtracted": 15.07507435649817,
+            "green_mean_min_across_3_frames": 14.848289591602828,
+            "green_mean_max_across_3_frames": 15.29111401496963,
+            "mean_green_channel_p50_header_black_subtracted": 8.343922932942709,
+            "mean_green_channel_p99_header_black_subtracted": 61.01788330078125
+          },
+          "f4p5": {
+            "frames": [
+              1450,
+              1500,
+              1550
+            ],
+            "green_mean_observed_black_subtracted": 25.063598402889927,
+            "green_mean_min_across_3_frames": 24.77734494683515,
+            "green_mean_max_across_3_frames": 25.370749077282007,
+            "mean_green_channel_p50_header_black_subtracted": 11.343922932942709,
+            "mean_green_channel_p99_header_black_subtracted": 96.81589762369792
+          },
+          "f4": {
+            "frames": [
+              1850,
+              1900,
+              1950
+            ],
+            "green_mean_observed_black_subtracted": 30.162914162473534,
+            "green_mean_min_across_3_frames": 29.850459364327243,
+            "green_mean_max_across_3_frames": 30.449994563206396,
+            "mean_green_channel_p50_header_black_subtracted": 13.533335367838541,
+            "mean_green_channel_p99_header_black_subtracted": 118.45304361979167
+          },
+          "f3p5": {
+            "frames": [
+              2250,
+              2300,
+              2350
+            ],
+            "green_mean_observed_black_subtracted": 37.01973147689288,
+            "green_mean_min_across_3_frames": 36.65640168676831,
+            "green_mean_max_across_3_frames": 37.64938197137739,
+            "mean_green_channel_p50_header_black_subtracted": 16.131490071614582,
+            "mean_green_channel_p99_header_black_subtracted": 143.5070699055989
+          },
+          "f2p8": {
+            "frames": [
+              2650,
+              2700,
+              2750
+            ],
+            "green_mean_observed_black_subtracted": 58.32810901155642,
+            "green_mean_min_across_3_frames": 57.847291697423806,
+            "green_mean_max_across_3_frames": 58.628733595119265,
+            "mean_green_channel_p50_header_black_subtracted": 26.968668619791668,
+            "mean_green_channel_p99_header_black_subtracted": 210.8005574544271
+          }
+        }
+      },
+      "door_deep": {
+        "observed_black_mean_after_header_subtraction": 0.9748809636683831,
+        "groups": {
+          "f7p1": {
+            "frames": [
+              650,
+              700,
+              750
+            ],
+            "green_mean_observed_black_subtracted": 8.407538379274811,
+            "green_mean_min_across_3_frames": 8.406432670668224,
+            "green_mean_max_across_3_frames": 8.40835560627967,
+            "mean_green_channel_p50_header_black_subtracted": 9.377182006835938,
+            "mean_green_channel_p99_header_black_subtracted": 17.580971069335913
+          },
+          "f5p6": {
+            "frames": [
+              1050,
+              1100,
+              1150
+            ],
+            "green_mean_observed_black_subtracted": 10.931260583049982,
+            "green_mean_min_across_3_frames": 10.921892840901549,
+            "green_mean_max_across_3_frames": 10.948598160898158,
+            "mean_green_channel_p50_header_black_subtracted": 11.7261962890625,
+            "mean_green_channel_p99_header_black_subtracted": 21.412619832356768
+          },
+          "f4p5": {
+            "frames": [
+              1450,
+              1500,
+              1550
+            ],
+            "green_mean_observed_black_subtracted": 18.32042789747915,
+            "green_mean_min_across_3_frames": 18.309895090871933,
+            "green_mean_max_across_3_frames": 18.328506468460446,
+            "mean_green_channel_p50_header_black_subtracted": 19.134379069010418,
+            "mean_green_channel_p99_header_black_subtracted": 31.15692138671875
+          },
+          "f4": {
+            "frames": [
+              1850,
+              1900,
+              1950
+            ],
+            "green_mean_observed_black_subtracted": 22.972663238226207,
+            "green_mean_min_across_3_frames": 22.948257741203875,
+            "green_mean_max_across_3_frames": 22.987748078849123,
+            "mean_green_channel_p50_header_black_subtracted": 24.4735107421875,
+            "mean_green_channel_p99_header_black_subtracted": 35.99755859375
+          },
+          "f3p5": {
+            "frames": [
+              2250,
+              2300,
+              2350
+            ],
+            "green_mean_observed_black_subtracted": 28.013546534221003,
+            "green_mean_min_across_3_frames": 27.99779260380116,
+            "green_mean_max_across_3_frames": 28.023517474074666,
+            "mean_green_channel_p50_header_black_subtracted": 29.3758544921875,
+            "mean_green_channel_p99_header_black_subtracted": 42.149861653645836
+          },
+          "f2p8": {
+            "frames": [
+              2650,
+              2700,
+              2750
+            ],
+            "green_mean_observed_black_subtracted": 49.351594558938,
+            "green_mean_min_across_3_frames": 49.329503862894526,
+            "green_mean_max_across_3_frames": 49.36727436767639,
+            "mean_green_channel_p50_header_black_subtracted": 50.934427897135414,
+            "mean_green_channel_p99_header_black_subtracted": 69.52138305664062
+          }
+        }
+      },
+      "door_shadow": {
+        "observed_black_mean_after_header_subtraction": 0.9981857544902581,
+        "groups": {
+          "f7p1": {
+            "frames": [
+              650,
+              700,
+              750
+            ],
+            "green_mean_observed_black_subtracted": 10.821128451325173,
+            "green_mean_min_across_3_frames": 10.792324877708474,
+            "green_mean_max_across_3_frames": 10.849442653707605,
+            "mean_green_channel_p50_header_black_subtracted": 11.617451985677084,
+            "mean_green_channel_p99_header_black_subtracted": 20.59339050292965
+          },
+          "f5p6": {
+            "frames": [
+              1050,
+              1100,
+              1150
+            ],
+            "green_mean_observed_black_subtracted": 14.472698216016225,
+            "green_mean_min_across_3_frames": 14.448310342296658,
+            "green_mean_max_across_3_frames": 14.488610285691415,
+            "mean_green_channel_p50_header_black_subtracted": 15.169301350911459,
+            "mean_green_channel_p99_header_black_subtracted": 26.186991373697918
+          },
+          "f4p5": {
+            "frames": [
+              1450,
+              1500,
+              1550
+            ],
+            "green_mean_observed_black_subtracted": 24.678249131528123,
+            "green_mean_min_across_3_frames": 24.644392950822386,
+            "green_mean_max_across_3_frames": 24.698279303823462,
+            "mean_green_channel_p50_header_black_subtracted": 25.899088541666668,
+            "mean_green_channel_p99_header_black_subtracted": 36.639180501302086
+          },
+          "f4": {
+            "frames": [
+              1850,
+              1900,
+              1950
+            ],
+            "green_mean_observed_black_subtracted": 30.2398026272196,
+            "green_mean_min_across_3_frames": 30.223877150276145,
+            "green_mean_max_across_3_frames": 30.25824660528665,
+            "mean_green_channel_p50_header_black_subtracted": 31.0361328125,
+            "mean_green_channel_p99_header_black_subtracted": 43.402364095052086
+          },
+          "f3p5": {
+            "frames": [
+              2250,
+              2300,
+              2350
+            ],
+            "green_mean_observed_black_subtracted": 36.685609792018546,
+            "green_mean_min_across_3_frames": 36.63507320628933,
+            "green_mean_max_across_3_frames": 36.720310391415275,
+            "mean_green_channel_p50_header_black_subtracted": 37.320780436197914,
+            "mean_green_channel_p99_header_black_subtracted": 52.37239501953123
+          },
+          "f2p8": {
+            "frames": [
+              2650,
+              2700,
+              2750
+            ],
+            "green_mean_observed_black_subtracted": 71.40507184617472,
+            "green_mean_min_across_3_frames": 71.3975276827774,
+            "green_mean_max_across_3_frames": 71.41798413199817,
+            "mean_green_channel_p50_header_black_subtracted": 72.10850016276042,
+            "mean_green_channel_p99_header_black_subtracted": 92.94783528645833
+          }
+        }
+      },
+      "highlight_lower": {
+        "observed_black_mean_after_header_subtraction": 1.0070801541918897,
+        "groups": {
+          "f7p1": {
+            "frames": [
+              650,
+              700,
+              750
+            ],
+            "green_mean_observed_black_subtracted": 3088.2242605508322,
+            "green_mean_min_across_3_frames": 3074.1496488718763,
+            "green_mean_max_across_3_frames": 3110.93883779276,
+            "mean_green_channel_p50_header_black_subtracted": 2776.0781453450522,
+            "mean_green_channel_p99_header_black_subtracted": 6008.939501953124
+          },
+          "f5p6": {
+            "frames": [
+              1050,
+              1100,
+              1150
+            ],
+            "green_mean_observed_black_subtracted": 4142.1938230904325,
+            "green_mean_min_across_3_frames": 4108.598566951071,
+            "green_mean_max_across_3_frames": 4175.178060482798,
+            "mean_green_channel_p50_header_black_subtracted": 3725.3951416015625,
+            "mean_green_channel_p99_header_black_subtracted": 8024.380175781249
+          },
+          "f4p5": {
+            "frames": [
+              1450,
+              1500,
+              1550
+            ],
+            "green_mean_observed_black_subtracted": 6879.853989770299,
+            "green_mean_min_across_3_frames": 6861.277351939111,
+            "green_mean_max_across_3_frames": 6896.790207650549,
+            "mean_green_channel_p50_header_black_subtracted": 6188.0600179036455,
+            "mean_green_channel_p99_header_black_subtracted": 13140.85597005208
+          },
+          "f4": {
+            "frames": [
+              1850,
+              1900,
+              1950
+            ],
+            "green_mean_observed_black_subtracted": 8294.285882710275,
+            "green_mean_min_across_3_frames": 8229.12461144243,
+            "green_mean_max_across_3_frames": 8333.80290752252,
+            "mean_green_channel_p50_header_black_subtracted": 7413.95068359375,
+            "mean_green_channel_p99_header_black_subtracted": 15384.669401041667
+          },
+          "f3p5": {
+            "frames": [
+              2250,
+              2300,
+              2350
+            ],
+            "green_mean_observed_black_subtracted": 9918.593240558912,
+            "green_mean_min_across_3_frames": 9869.976282570475,
+            "green_mean_max_across_3_frames": 9952.205671325184,
+            "mean_green_channel_p50_header_black_subtracted": 9142.671468098959,
+            "mean_green_channel_p99_header_black_subtracted": 15407.792119140626
+          },
+          "f2p8": {
+            "frames": [
+              2650,
+              2700,
+              2750
+            ],
+            "green_mean_observed_black_subtracted": 13588.382289786186,
+            "green_mean_min_across_3_frames": 13575.089084512847,
+            "green_mean_max_across_3_frames": 13608.8551536526,
+            "mean_green_channel_p50_header_black_subtracted": 15340.94384765625,
+            "mean_green_channel_p99_header_black_subtracted": 15413.5380859375
+          }
+        }
+      },
+      "highlight_upper": {
+        "observed_black_mean_after_header_subtraction": 1.0229263510684206,
+        "groups": {
+          "f7p1": {
+            "frames": [
+              650,
+              700,
+              750
+            ],
+            "green_mean_observed_black_subtracted": 3429.922154917962,
+            "green_mean_min_across_3_frames": 3412.2800315091085,
+            "green_mean_max_across_3_frames": 3442.181799488491,
+            "mean_green_channel_p50_header_black_subtracted": 3137.01953125,
+            "mean_green_channel_p99_header_black_subtracted": 6181.655769042969
+          },
+          "f5p6": {
+            "frames": [
+              1050,
+              1100,
+              1150
+            ],
+            "green_mean_observed_black_subtracted": 4513.391170017377,
+            "green_mean_min_across_3_frames": 4489.713361711674,
+            "green_mean_max_across_3_frames": 4534.0125275828805,
+            "mean_green_channel_p50_header_black_subtracted": 4111.4564208984375,
+            "mean_green_channel_p99_header_black_subtracted": 8166.679353841146
+          },
+          "f4p5": {
+            "frames": [
+              1450,
+              1500,
+              1550
+            ],
+            "green_mean_observed_black_subtracted": 7490.146716809417,
+            "green_mean_min_across_3_frames": 7481.472760194549,
+            "green_mean_max_across_3_frames": 7506.218560387457,
+            "mean_green_channel_p50_header_black_subtracted": 6836.531005859375,
+            "mean_green_channel_p99_header_black_subtracted": 13353.202221679687
+          },
+          "f4": {
+            "frames": [
+              1850,
+              1900,
+              1950
+            ],
+            "green_mean_observed_black_subtracted": 9513.40803488746,
+            "green_mean_min_across_3_frames": 9485.899514070663,
+            "green_mean_max_across_3_frames": 9566.576857515909,
+            "mean_green_channel_p50_header_black_subtracted": 8782.205159505209,
+            "mean_green_channel_p99_header_black_subtracted": 15395.632965494791
+          },
+          "f3p5": {
+            "frames": [
+              2250,
+              2300,
+              2350
+            ],
+            "green_mean_observed_black_subtracted": 11144.065060299192,
+            "green_mean_min_across_3_frames": 11111.542629046844,
+            "green_mean_max_across_3_frames": 11160.554375182242,
+            "mean_green_channel_p50_header_black_subtracted": 10758.042561848959,
+            "mean_green_channel_p99_header_black_subtracted": 15411.212630208332
+          },
+          "f2p8": {
+            "frames": [
+              2650,
+              2700,
+              2750
+            ],
+            "green_mean_observed_black_subtracted": 14363.666752855148,
+            "green_mean_min_across_3_frames": 14351.004911775231,
+            "green_mean_max_across_3_frames": 14381.025647644195,
+            "mean_green_channel_p50_header_black_subtracted": 15363.337890625,
+            "mean_green_channel_p99_header_black_subtracted": 15412.495921223957
+          }
+        }
+      },
+      "paper_plain": {
+        "observed_black_mean_after_header_subtraction": 1.0055854151828214,
+        "groups": {
+          "f7p1": {
+            "frames": [
+              650,
+              700,
+              750
+            ],
+            "green_mean_observed_black_subtracted": 241.70134331763325,
+            "green_mean_min_across_3_frames": 241.39536772383022,
+            "green_mean_max_across_3_frames": 242.0448847699436,
+            "mean_green_channel_p50_header_black_subtracted": 242.46659342447916,
+            "mean_green_channel_p99_header_black_subtracted": 268.3564506022135
+          },
+          "f5p6": {
+            "frames": [
+              1050,
+              1100,
+              1150
+            ],
+            "green_mean_observed_black_subtracted": 320.96763598969375,
+            "green_mean_min_across_3_frames": 320.72951029897536,
+            "green_mean_max_across_3_frames": 321.21744799845953,
+            "mean_green_channel_p50_header_black_subtracted": 321.95530192057294,
+            "mean_green_channel_p99_header_black_subtracted": 352.95155436197916
+          },
+          "f4p5": {
+            "frames": [
+              1450,
+              1500,
+              1550
+            ],
+            "green_mean_observed_black_subtracted": 530.0019495793805,
+            "green_mean_min_across_3_frames": 529.8154273532551,
+            "green_mean_max_across_3_frames": 530.1804192285224,
+            "mean_green_channel_p50_header_black_subtracted": 530.8983968098959,
+            "mean_green_channel_p99_header_black_subtracted": 575.095615641276
+          },
+          "f4": {
+            "frames": [
+              1850,
+              1900,
+              1950
+            ],
+            "green_mean_observed_black_subtracted": 658.4649211517154,
+            "green_mean_min_across_3_frames": 658.1365938521682,
+            "green_mean_max_across_3_frames": 658.8809720240232,
+            "mean_green_channel_p50_header_black_subtracted": 659.5775553385416,
+            "mean_green_channel_p99_header_black_subtracted": 709.3810786946615
+          },
+          "f3p5": {
+            "frames": [
+              2250,
+              2300,
+              2350
+            ],
+            "green_mean_observed_black_subtracted": 810.2216320626122,
+            "green_mean_min_across_3_frames": 810.0470223191664,
+            "green_mean_max_across_3_frames": 810.4415081979889,
+            "mean_green_channel_p50_header_black_subtracted": 811.7004801432291,
+            "mean_green_channel_p99_header_black_subtracted": 868.0522111002605
+          },
+          "f2p8": {
+            "frames": [
+              2650,
+              2700,
+              2750
+            ],
+            "green_mean_observed_black_subtracted": 1421.3511056553452,
+            "green_mean_min_across_3_frames": 1420.9660433543195,
+            "green_mean_max_across_3_frames": 1421.9753313487697,
+            "mean_green_channel_p50_header_black_subtracted": 1424.0289306640625,
+            "mean_green_channel_p99_header_black_subtracted": 1506.1951090494792
+          }
+        }
+      },
+      "rack_dark": {
+        "observed_black_mean_after_header_subtraction": 1.0700263499685647,
+        "groups": {
+          "f7p1": {
+            "frames": [
+              650,
+              700,
+              750
+            ],
+            "green_mean_observed_black_subtracted": 5.05919420348624,
+            "green_mean_min_across_3_frames": 5.035551176778746,
+            "green_mean_max_across_3_frames": 5.0805420086629525,
+            "mean_green_channel_p50_header_black_subtracted": 6.204396565755208,
+            "mean_green_channel_p99_header_black_subtracted": 14.080459187825511
+          },
+          "f5p6": {
+            "frames": [
+              1050,
+              1100,
+              1150
+            ],
+            "green_mean_observed_black_subtracted": 6.573479864825248,
+            "green_mean_min_across_3_frames": 6.554283386686713,
+            "green_mean_max_across_3_frames": 6.603164307434817,
+            "mean_green_channel_p50_header_black_subtracted": 7.762227376302083,
+            "mean_green_channel_p99_header_black_subtracted": 15.987615152994787
+          },
+          "f4p5": {
+            "frames": [
+              1450,
+              1500,
+              1550
+            ],
+            "green_mean_observed_black_subtracted": 10.209788906481831,
+            "green_mean_min_across_3_frames": 10.18296134796649,
+            "green_mean_max_across_3_frames": 10.248474838831363,
+            "mean_green_channel_p50_header_black_subtracted": 10.844594319661459,
+            "mean_green_channel_p99_header_black_subtracted": 22.2829742431641
+          },
+          "f4": {
+            "frames": [
+              1850,
+              1900,
+              1950
+            ],
+            "green_mean_observed_black_subtracted": 12.68475696553861,
+            "green_mean_min_across_3_frames": 12.676374179421863,
+            "green_mean_max_across_3_frames": 12.689315227707063,
+            "mean_green_channel_p50_header_black_subtracted": 13.340606689453125,
+            "mean_green_channel_p99_header_black_subtracted": 26.28294576009114
+          },
+          "f3p5": {
+            "frames": [
+              2250,
+              2300,
+              2350
+            ],
+            "green_mean_observed_black_subtracted": 15.785372783566551,
+            "green_mean_min_across_3_frames": 15.740456512468064,
+            "green_mean_max_across_3_frames": 15.817628252149781,
+            "mean_green_channel_p50_header_black_subtracted": 16.273844401041668,
+            "mean_green_channel_p99_header_black_subtracted": 30.204294840494793
+          },
+          "f2p8": {
+            "frames": [
+              2650,
+              2700,
+              2750
+            ],
+            "green_mean_observed_black_subtracted": 31.2775947805963,
+            "green_mean_min_across_3_frames": 31.258559553330066,
+            "green_mean_max_across_3_frames": 31.311751538231285,
+            "mean_green_channel_p50_header_black_subtracted": 32.132853190104164,
+            "mean_green_channel_p99_header_black_subtracted": 48.449142659505206
+          }
+        }
+      },
+      "ref_wall": {
+        "observed_black_mean_after_header_subtraction": 1.0260351019536458,
+        "groups": {
+          "f7p1": {
+            "frames": [
+              650,
+              700,
+              750
+            ],
+            "green_mean_observed_black_subtracted": 166.34788150541885,
+            "green_mean_min_across_3_frames": 166.22745171842155,
+            "green_mean_max_across_3_frames": 166.4714339607051,
+            "mean_green_channel_p50_header_black_subtracted": 170.1666463216146,
+            "mean_green_channel_p99_header_black_subtracted": 193.46270751953125
+          },
+          "f5p6": {
+            "frames": [
+              1050,
+              1100,
+              1150
+            ],
+            "green_mean_observed_black_subtracted": 221.42659614030705,
+            "green_mean_min_across_3_frames": 221.25597728626758,
+            "green_mean_max_across_3_frames": 221.52812093879868,
+            "mean_green_channel_p50_header_black_subtracted": 226.5759480794271,
+            "mean_green_channel_p99_header_black_subtracted": 253.43413736979167
+          },
+          "f4p5": {
+            "frames": [
+              1450,
+              1500,
+              1550
+            ],
+            "green_mean_observed_black_subtracted": 364.8014581890024,
+            "green_mean_min_across_3_frames": 364.5448633341682,
+            "green_mean_max_across_3_frames": 365.1417687980012,
+            "mean_green_channel_p50_header_black_subtracted": 372.465576171875,
+            "mean_green_channel_p99_header_black_subtracted": 407.42734781901044
+          },
+          "f4": {
+            "frames": [
+              1850,
+              1900,
+              1950
+            ],
+            "green_mean_observed_black_subtracted": 454.16218877766374,
+            "green_mean_min_across_3_frames": 453.8019124978281,
+            "green_mean_max_across_3_frames": 454.48427165917064,
+            "mean_green_channel_p50_header_black_subtracted": 464.3063456217448,
+            "mean_green_channel_p99_header_black_subtracted": 503.9071649169922
+          },
+          "f3p5": {
+            "frames": [
+              2250,
+              2300,
+              2350
+            ],
+            "green_mean_observed_black_subtracted": 558.294471939281,
+            "green_mean_min_across_3_frames": 557.9150541497181,
+            "green_mean_max_across_3_frames": 558.8308183867713,
+            "mean_green_channel_p50_header_black_subtracted": 570.7301432291666,
+            "mean_green_channel_p99_header_black_subtracted": 614.8929646809896
+          },
+          "f2p8": {
+            "frames": [
+              2650,
+              2700,
+              2750
+            ],
+            "green_mean_observed_black_subtracted": 990.1249085414344,
+            "green_mean_min_across_3_frames": 989.6403968175396,
+            "green_mean_max_across_3_frames": 990.4134935886765,
+            "mean_green_channel_p50_header_black_subtracted": 1012.6593831380209,
+            "mean_green_channel_p99_header_black_subtracted": 1074.6904996744793
+          }
+        }
+      }
+    },
+    "R3_SDR_64": {
+      "deep_right": {
+        "observed_black_mean_after_header_subtraction": 0.9574834733710063,
+        "groups": {
+          "f7p1": {
+            "frames": [
+              650,
+              700,
+              750
+            ],
+            "green_mean_observed_black_subtracted": 7.931511169402614,
+            "green_mean_min_across_3_frames": 7.916336081424028,
+            "green_mean_max_across_3_frames": 7.947349196235088,
+            "mean_green_channel_p50_header_black_subtracted": 4.852803548177083,
+            "mean_green_channel_p99_header_black_subtracted": 29.3625069173177
+          },
+          "f5p6": {
+            "frames": [
+              1050,
+              1100,
+              1150
+            ],
+            "green_mean_observed_black_subtracted": 10.268746257695112,
+            "green_mean_min_across_3_frames": 10.266758494391162,
+            "green_mean_max_across_3_frames": 10.272393889819092,
+            "mean_green_channel_p50_header_black_subtracted": 6.621388753255208,
+            "mean_green_channel_p99_header_black_subtracted": 38.136492919921885
+          },
+          "f4p5": {
+            "frames": [
+              1450,
+              1500,
+              1550
+            ],
+            "green_mean_observed_black_subtracted": 18.794915274003962,
+            "green_mean_min_across_3_frames": 18.763482877431308,
+            "green_mean_max_across_3_frames": 18.81906577000766,
+            "mean_green_channel_p50_header_black_subtracted": 8.771402994791666,
+            "mean_green_channel_p99_header_black_subtracted": 69.76416870117187
+          },
+          "f4": {
+            "frames": [
+              1850,
+              1900,
+              1950
+            ],
+            "green_mean_observed_black_subtracted": 23.18664363374112,
+            "green_mean_min_across_3_frames": 23.066686512689763,
+            "green_mean_max_across_3_frames": 23.420529976545915,
+            "mean_green_channel_p50_header_black_subtracted": 10.043986002604166,
+            "mean_green_channel_p99_header_black_subtracted": 84.87786865234375
+          },
+          "f3p5": {
+            "frames": [
+              2250,
+              2300,
+              2350
+            ],
+            "green_mean_observed_black_subtracted": 24.28482247421567,
+            "green_mean_min_across_3_frames": 23.865598557209047,
+            "green_mean_max_across_3_frames": 24.734413985972175,
+            "mean_green_channel_p50_header_black_subtracted": 10.43096923828125,
+            "mean_green_channel_p99_header_black_subtracted": 91.33986409505208
+          },
+          "f2p8": {
+            "frames": [
+              2650,
+              2700,
+              2750
+            ],
+            "green_mean_observed_black_subtracted": 38.30132551564916,
+            "green_mean_min_across_3_frames": 38.265856391040735,
+            "green_mean_max_across_3_frames": 38.326262730401915,
+            "mean_green_channel_p50_header_black_subtracted": 17.108011881510418,
+            "mean_green_channel_p99_header_black_subtracted": 134.62459309895834
+          }
+        }
+      },
+      "door_deep": {
+        "observed_black_mean_after_header_subtraction": 0.8855144341195853,
+        "groups": {
+          "f7p1": {
+            "frames": [
+              650,
+              700,
+              750
+            ],
+            "green_mean_observed_black_subtracted": 5.949308744526064,
+            "green_mean_min_across_3_frames": 5.943536154057682,
+            "green_mean_max_across_3_frames": 5.9526498292648,
+            "mean_green_channel_p50_header_black_subtracted": 7.022176106770833,
+            "mean_green_channel_p99_header_black_subtracted": 12.246923319498686
+          },
+          "f5p6": {
+            "frames": [
+              1050,
+              1100,
+              1150
+            ],
+            "green_mean_observed_black_subtracted": 7.455409403281171,
+            "green_mean_min_across_3_frames": 7.447624005932056,
+            "green_mean_max_across_3_frames": 7.465784318967536,
+            "mean_green_channel_p50_header_black_subtracted": 8.416310628255209,
+            "mean_green_channel_p99_header_black_subtracted": 13.730967203776041
+          },
+          "f4p5": {
+            "frames": [
+              1450,
+              1500,
+              1550
+            ],
+            "green_mean_observed_black_subtracted": 12.876864332383766,
+            "green_mean_min_across_3_frames": 12.867463885402032,
+            "green_mean_max_across_3_frames": 12.881664539434354,
+            "mean_green_channel_p50_header_black_subtracted": 13.77191162109375,
+            "mean_green_channel_p99_header_black_subtracted": 22.10675048828125
+          },
+          "f4": {
+            "frames": [
+              1850,
+              1900,
+              1950
+            ],
+            "green_mean_observed_black_subtracted": 15.981170078226294,
+            "green_mean_min_across_3_frames": 15.96539704028558,
+            "green_mean_max_across_3_frames": 15.9924003754534,
+            "mean_green_channel_p50_header_black_subtracted": 16.910563151041668,
+            "mean_green_channel_p99_header_black_subtracted": 26.272176106770832
+          },
+          "f3p5": {
+            "frames": [
+              2250,
+              2300,
+              2350
+            ],
+            "green_mean_observed_black_subtracted": 17.32942305181828,
+            "green_mean_min_across_3_frames": 17.306506715907204,
+            "green_mean_max_across_3_frames": 17.34745086446074,
+            "mean_green_channel_p50_header_black_subtracted": 18.20806884765625,
+            "mean_green_channel_p99_header_black_subtracted": 27.92354248046873
+          },
+          "f2p8": {
+            "frames": [
+              2650,
+              2700,
+              2750
+            ],
+            "green_mean_observed_black_subtracted": 31.00338056872934,
+            "green_mean_min_across_3_frames": 30.97525763564832,
+            "green_mean_max_across_3_frames": 31.034461853495287,
+            "mean_green_channel_p50_header_black_subtracted": 31.958821614583332,
+            "mean_green_channel_p99_header_black_subtracted": 43.505246785481745
+          }
+        }
+      },
+      "door_shadow": {
+        "observed_black_mean_after_header_subtraction": 0.8831682512810488,
+        "groups": {
+          "f7p1": {
+            "frames": [
+              650,
+              700,
+              750
+            ],
+            "green_mean_observed_black_subtracted": 7.428032585104153,
+            "green_mean_min_across_3_frames": 7.42204137955828,
+            "green_mean_max_across_3_frames": 7.439508380962096,
+            "mean_green_channel_p50_header_black_subtracted": 8.318257649739584,
+            "mean_green_channel_p99_header_black_subtracted": 13.378011067708334
+          },
+          "f5p6": {
+            "frames": [
+              1050,
+              1100,
+              1150
+            ],
+            "green_mean_observed_black_subtracted": 9.378719702322272,
+            "green_mean_min_across_3_frames": 9.374162736792655,
+            "green_mean_max_across_3_frames": 9.383736140002,
+            "mean_green_channel_p50_header_black_subtracted": 10.097300211588541,
+            "mean_green_channel_p99_header_black_subtracted": 16.505900065104168
+          },
+          "f4p5": {
+            "frames": [
+              1450,
+              1500,
+              1550
+            ],
+            "green_mean_observed_black_subtracted": 17.531378295249223,
+            "green_mean_min_across_3_frames": 17.527543705496115,
+            "green_mean_max_across_3_frames": 17.536537855033785,
+            "mean_green_channel_p50_header_black_subtracted": 18.218668619791668,
+            "mean_green_channel_p99_header_black_subtracted": 27.275675455729168
+          },
+          "f4": {
+            "frames": [
+              1850,
+              1900,
+              1950
+            ],
+            "green_mean_observed_black_subtracted": 21.86544748788016,
+            "green_mean_min_across_3_frames": 21.859031797071808,
+            "green_mean_max_across_3_frames": 21.87541546307365,
+            "mean_green_channel_p50_header_black_subtracted": 22.919169108072918,
+            "mean_green_channel_p99_header_black_subtracted": 31.187312622070294
+          },
+          "f3p5": {
+            "frames": [
+              2250,
+              2300,
+              2350
+            ],
+            "green_mean_observed_black_subtracted": 23.664712157950035,
+            "green_mean_min_across_3_frames": 23.648306536346936,
+            "green_mean_max_across_3_frames": 23.674338883131227,
+            "mean_green_channel_p50_header_black_subtracted": 24.7239990234375,
+            "mean_green_channel_p99_header_black_subtracted": 32.82436462402336
+          },
+          "f2p8": {
+            "frames": [
+              2650,
+              2700,
+              2750
+            ],
+            "green_mean_observed_black_subtracted": 45.101853816223425,
+            "green_mean_min_across_3_frames": 45.088790800962116,
+            "green_mean_max_across_3_frames": 45.12090442894727,
+            "mean_green_channel_p50_header_black_subtracted": 45.770548502604164,
+            "mean_green_channel_p99_header_black_subtracted": 58.4573974609375
+          }
+        }
+      },
+      "highlight_lower": {
+        "observed_black_mean_after_header_subtraction": 0.9106607732318821,
+        "groups": {
+          "f7p1": {
+            "frames": [
+              650,
+              700,
+              750
+            ],
+            "green_mean_observed_black_subtracted": 1954.686644031131,
+            "green_mean_min_across_3_frames": 1950.9737352076029,
+            "green_mean_max_across_3_frames": 1958.7932666029249,
+            "mean_green_channel_p50_header_black_subtracted": 1767.6607869466145,
+            "mean_green_channel_p99_header_black_subtracted": 3773.337497558592
+          },
+          "f5p6": {
+            "frames": [
+              1050,
+              1100,
+              1150
+            ],
+            "green_mean_observed_black_subtracted": 2618.0768484577297,
+            "green_mean_min_across_3_frames": 2617.5659732886725,
+            "green_mean_max_across_3_frames": 2619.085076411565,
+            "mean_green_channel_p50_header_black_subtracted": 2360.877197265625,
+            "mean_green_channel_p99_header_black_subtracted": 5048.676287434895
+          },
+          "f4p5": {
+            "frames": [
+              1450,
+              1500,
+              1550
+            ],
+            "green_mean_observed_black_subtracted": 4961.722382503843,
+            "green_mean_min_across_3_frames": 4960.208020725704,
+            "green_mean_max_across_3_frames": 4963.783682503019,
+            "mean_green_channel_p50_header_black_subtracted": 4460.3346761067705,
+            "mean_green_channel_p99_header_black_subtracted": 9452.796064453123
+          },
+          "f4": {
+            "frames": [
+              1850,
+              1900,
+              1950
+            ],
+            "green_mean_observed_black_subtracted": 6129.322258399025,
+            "green_mean_min_across_3_frames": 6104.047000937235,
+            "green_mean_max_across_3_frames": 6177.162947298231,
+            "mean_green_channel_p50_header_black_subtracted": 5526.9556070963545,
+            "mean_green_channel_p99_header_black_subtracted": 11593.475594075519
+          },
+          "f3p5": {
+            "frames": [
+              2250,
+              2300,
+              2350
+            ],
+            "green_mean_observed_black_subtracted": 6631.405035858305,
+            "green_mean_min_across_3_frames": 6608.509947402137,
+            "green_mean_max_across_3_frames": 6663.366856327511,
+            "mean_green_channel_p50_header_black_subtracted": 5985.0717366536455,
+            "mean_green_channel_p99_header_black_subtracted": 12517.213035481771
+          },
+          "f2p8": {
+            "frames": [
+              2650,
+              2700,
+              2750
+            ],
+            "green_mean_observed_black_subtracted": 10585.706970176243,
+            "green_mean_min_across_3_frames": 10583.228114679881,
+            "green_mean_max_across_3_frames": 10588.041350698471,
+            "mean_green_channel_p50_header_black_subtracted": 10091.600748697916,
+            "mean_green_channel_p99_header_black_subtracted": 15399.900716145834
+          }
+        }
+      },
+      "highlight_upper": {
+        "observed_black_mean_after_header_subtraction": 0.8935476764726573,
+        "groups": {
+          "f7p1": {
+            "frames": [
+              650,
+              700,
+              750
+            ],
+            "green_mean_observed_black_subtracted": 2154.6367609521826,
+            "green_mean_min_across_3_frames": 2148.5033594685683,
+            "green_mean_max_across_3_frames": 2157.8796622009118,
+            "mean_green_channel_p50_header_black_subtracted": 1976.340311686198,
+            "mean_green_channel_p99_header_black_subtracted": 3860.69848063151
+          },
+          "f5p6": {
+            "frames": [
+              1050,
+              1100,
+              1150
+            ],
+            "green_mean_observed_black_subtracted": 2897.842605653208,
+            "green_mean_min_across_3_frames": 2896.5594895167096,
+            "green_mean_max_across_3_frames": 2898.942083462597,
+            "mean_green_channel_p50_header_black_subtracted": 2657.2401529947915,
+            "mean_green_channel_p99_header_black_subtracted": 5162.808902994791
+          },
+          "f4p5": {
+            "frames": [
+              1450,
+              1500,
+              1550
+            ],
+            "green_mean_observed_black_subtracted": 5493.508227956995,
+            "green_mean_min_across_3_frames": 5490.7095088303995,
+            "green_mean_max_across_3_frames": 5495.714594028198,
+            "mean_green_channel_p50_header_black_subtracted": 5042.24462890625,
+            "mean_green_channel_p99_header_black_subtracted": 9627.65331217448
+          },
+          "f4": {
+            "frames": [
+              1850,
+              1900,
+              1950
+            ],
+            "green_mean_observed_black_subtracted": 6761.065688323931,
+            "green_mean_min_across_3_frames": 6735.138195049085,
+            "green_mean_max_across_3_frames": 6774.509518125351,
+            "mean_green_channel_p50_header_black_subtracted": 6209.138671875,
+            "mean_green_channel_p99_header_black_subtracted": 11772.026500651042
+          },
+          "f3p5": {
+            "frames": [
+              2250,
+              2300,
+              2350
+            ],
+            "green_mean_observed_black_subtracted": 7326.576828065317,
+            "green_mean_min_across_3_frames": 7314.760864898666,
+            "green_mean_max_across_3_frames": 7334.397538359056,
+            "mean_green_channel_p50_header_black_subtracted": 6737.7685546875,
+            "mean_green_channel_p99_header_black_subtracted": 12717.826002604166
+          },
+          "f2p8": {
+            "frames": [
+              2650,
+              2700,
+              2750
+            ],
+            "green_mean_observed_black_subtracted": 11528.131649162611,
+            "green_mean_min_across_3_frames": 11526.511227406014,
+            "green_mean_max_across_3_frames": 11530.353742819718,
+            "mean_green_channel_p50_header_black_subtracted": 11314.163981119791,
+            "mean_green_channel_p99_header_black_subtracted": 15400.7677734375
+          }
+        }
+      },
+      "paper_plain": {
+        "observed_black_mean_after_header_subtraction": 0.9342333746294642,
+        "groups": {
+          "f7p1": {
+            "frames": [
+              650,
+              700,
+              750
+            ],
+            "green_mean_observed_black_subtracted": 151.01619279699855,
+            "green_mean_min_across_3_frames": 150.97238283630804,
+            "green_mean_max_across_3_frames": 151.07877725094386,
+            "mean_green_channel_p50_header_black_subtracted": 151.82039388020834,
+            "mean_green_channel_p99_header_black_subtracted": 168.34943033854168
+          },
+          "f5p6": {
+            "frames": [
+              1050,
+              1100,
+              1150
+            ],
+            "green_mean_observed_black_subtracted": 202.72262996677986,
+            "green_mean_min_across_3_frames": 202.70682469008875,
+            "green_mean_max_across_3_frames": 202.73372236903344,
+            "mean_green_channel_p50_header_black_subtracted": 203.4595743815104,
+            "mean_green_channel_p99_header_black_subtracted": 222.9538456217448
+          },
+          "f4p5": {
+            "frames": [
+              1450,
+              1500,
+              1550
+            ],
+            "green_mean_observed_black_subtracted": 381.86313961775045,
+            "green_mean_min_across_3_frames": 381.7967215526543,
+            "green_mean_max_across_3_frames": 381.9272818423017,
+            "mean_green_channel_p50_header_black_subtracted": 382.8393147786458,
+            "mean_green_channel_p99_header_black_subtracted": 410.73352905273435
+          },
+          "f4": {
+            "frames": [
+              1850,
+              1900,
+              1950
+            ],
+            "green_mean_observed_black_subtracted": 470.04240741170815,
+            "green_mean_min_across_3_frames": 469.8501979532797,
+            "green_mean_max_across_3_frames": 470.2276555771838,
+            "mean_green_channel_p50_header_black_subtracted": 471.13104248046875,
+            "mean_green_channel_p99_header_black_subtracted": 503.897041015625
+          },
+          "f3p5": {
+            "frames": [
+              2250,
+              2300,
+              2350
+            ],
+            "green_mean_observed_black_subtracted": 507.88764766412294,
+            "green_mean_min_across_3_frames": 507.7848739875694,
+            "green_mean_max_across_3_frames": 507.97298473173805,
+            "mean_green_channel_p50_header_black_subtracted": 508.9954833984375,
+            "mean_green_channel_p99_header_black_subtracted": 542.1205773925782
+          },
+          "f2p8": {
+            "frames": [
+              2650,
+              2700,
+              2750
+            ],
+            "green_mean_observed_black_subtracted": 893.0203459325111,
+            "green_mean_min_across_3_frames": 892.7647002325699,
+            "green_mean_max_across_3_frames": 893.2127819347555,
+            "mean_green_channel_p50_header_black_subtracted": 894.972412109375,
+            "mean_green_channel_p99_header_black_subtracted": 947.0576277669271
+          }
+        }
+      },
+      "rack_dark": {
+        "observed_black_mean_after_header_subtraction": 0.9048820839899747,
+        "groups": {
+          "f7p1": {
+            "frames": [
+              650,
+              700,
+              750
+            ],
+            "green_mean_observed_black_subtracted": 3.7473110056047005,
+            "green_mean_min_across_3_frames": 3.7376657785899567,
+            "green_mean_max_across_3_frames": 3.765390408580373,
+            "mean_green_channel_p50_header_black_subtracted": 4.262929280598958,
+            "mean_green_channel_p99_header_black_subtracted": 10.397958984375009
+          },
+          "f5p6": {
+            "frames": [
+              1050,
+              1100,
+              1150
+            ],
+            "green_mean_observed_black_subtracted": 4.8173126183387,
+            "green_mean_min_across_3_frames": 4.810885611879456,
+            "green_mean_max_across_3_frames": 4.824435847463036,
+            "mean_green_channel_p50_header_black_subtracted": 5.6381785074869795,
+            "mean_green_channel_p99_header_black_subtracted": 11.339678344726545
+          },
+          "f4p5": {
+            "frames": [
+              1450,
+              1500,
+              1550
+            ],
+            "green_mean_observed_black_subtracted": 7.771373657460316,
+            "green_mean_min_across_3_frames": 7.763472740409924,
+            "green_mean_max_across_3_frames": 7.775374994668681,
+            "mean_green_channel_p50_header_black_subtracted": 8.583628336588541,
+            "mean_green_channel_p99_header_black_subtracted": 15.450252583821603
+          },
+          "f4": {
+            "frames": [
+              1850,
+              1900,
+              1950
+            ],
+            "green_mean_observed_black_subtracted": 9.244601598354516,
+            "green_mean_min_across_3_frames": 9.233202547303591,
+            "green_mean_max_across_3_frames": 9.262981523997524,
+            "mean_green_channel_p50_header_black_subtracted": 9.935567220052084,
+            "mean_green_channel_p99_header_black_subtracted": 17.91697631835935
+          },
+          "f3p5": {
+            "frames": [
+              2250,
+              2300,
+              2350
+            ],
+            "green_mean_observed_black_subtracted": 9.915474149423053,
+            "green_mean_min_across_3_frames": 9.887480349662184,
+            "green_mean_max_across_3_frames": 9.95712130410331,
+            "mean_green_channel_p50_header_black_subtracted": 10.485850016276041,
+            "mean_green_channel_p99_header_black_subtracted": 19.022155354817716
+          },
+          "f2p8": {
+            "frames": [
+              2650,
+              2700,
+              2750
+            ],
+            "green_mean_observed_black_subtracted": 20.176717163725215,
+            "green_mean_min_across_3_frames": 20.148115881099187,
+            "green_mean_max_across_3_frames": 20.19816029549699,
+            "mean_green_channel_p50_header_black_subtracted": 21.090535481770832,
+            "mean_green_channel_p99_header_black_subtracted": 31.226677042643246
+          }
+        }
+      },
+      "ref_wall": {
+        "observed_black_mean_after_header_subtraction": 0.876762681256082,
+        "groups": {
+          "f7p1": {
+            "frames": [
+              650,
+              700,
+              750
+            ],
+            "green_mean_observed_black_subtracted": 103.95226253883614,
+            "green_mean_min_across_3_frames": 103.9297085308765,
+            "green_mean_max_across_3_frames": 103.98555451783079,
+            "mean_green_channel_p50_header_black_subtracted": 106.87030029296875,
+            "mean_green_channel_p99_header_black_subtracted": 122.05449645996093
+          },
+          "f5p6": {
+            "frames": [
+              1050,
+              1100,
+              1150
+            ],
+            "green_mean_observed_black_subtracted": 139.5080326326367,
+            "green_mean_min_across_3_frames": 139.4499495347162,
+            "green_mean_max_across_3_frames": 139.57908933479757,
+            "mean_green_channel_p50_header_black_subtracted": 143.3716837565104,
+            "mean_green_channel_p99_header_black_subtracted": 160.51692708333334
+          },
+          "f4p5": {
+            "frames": [
+              1450,
+              1500,
+              1550
+            ],
+            "green_mean_observed_black_subtracted": 264.2619932350245,
+            "green_mean_min_across_3_frames": 264.15275753500987,
+            "green_mean_max_across_3_frames": 264.36049703123024,
+            "mean_green_channel_p50_header_black_subtracted": 271.1568603515625,
+            "mean_green_channel_p99_header_black_subtracted": 293.19395833333334
+          },
+          "f4": {
+            "frames": [
+              1850,
+              1900,
+              1950
+            ],
+            "green_mean_observed_black_subtracted": 324.67131642703146,
+            "green_mean_min_across_3_frames": 324.46665317710244,
+            "green_mean_max_across_3_frames": 324.9819058337097,
+            "mean_green_channel_p50_header_black_subtracted": 332.58107503255206,
+            "mean_green_channel_p99_header_black_subtracted": 357.8162394205729
+          },
+          "f3p5": {
+            "frames": [
+              2250,
+              2300,
+              2350
+            ],
+            "green_mean_observed_black_subtracted": 350.7988272678344,
+            "green_mean_min_across_3_frames": 350.5518398895574,
+            "green_mean_max_across_3_frames": 351.0955062869657,
+            "mean_green_channel_p50_header_black_subtracted": 359.36932373046875,
+            "mean_green_channel_p99_header_black_subtracted": 386.58888956705727
+          },
+          "f2p8": {
+            "frames": [
+              2650,
+              2700,
+              2750
+            ],
+            "green_mean_observed_black_subtracted": 625.0370895237598,
+            "green_mean_min_across_3_frames": 624.8447750144093,
+            "green_mean_max_across_3_frames": 625.3883083278909,
+            "mean_green_channel_p50_header_black_subtracted": 641.3509114583334,
+            "mean_green_channel_p99_header_black_subtracted": 679.4469807942709
+          }
+        }
+      }
+    },
+    "R3_NLOG_800": {
+      "deep_right": {
+        "observed_black_mean_after_header_subtraction": 1.7241569793972005,
+        "groups": {
+          "f7p1": {
+            "frames": [
+              650,
+              700,
+              750
+            ],
+            "green_mean_observed_black_subtracted": 11.070721001100999,
+            "green_mean_min_across_3_frames": 11.03279385917154,
+            "green_mean_max_across_3_frames": 11.12920347010914,
+            "mean_green_channel_p50_header_black_subtracted": 6.453704833984375,
+            "mean_green_channel_p99_header_black_subtracted": 47.80076863606769
+          },
+          "f5p6": {
+            "frames": [
+              1050,
+              1100,
+              1150
+            ],
+            "green_mean_observed_black_subtracted": 14.985889262811845,
+            "green_mean_min_across_3_frames": 14.623011502227548,
+            "green_mean_max_across_3_frames": 15.360974837101146,
+            "mean_green_channel_p50_header_black_subtracted": 7.671875,
+            "mean_green_channel_p99_header_black_subtracted": 61.922200520833336
+          },
+          "f4p5": {
+            "frames": [
+              1450,
+              1500,
+              1550
+            ],
+            "green_mean_observed_black_subtracted": 24.43507482653252,
+            "green_mean_min_across_3_frames": 23.70690424747034,
+            "green_mean_max_across_3_frames": 25.11493072897941,
+            "mean_green_channel_p50_header_black_subtracted": 11.423797607421875,
+            "mean_green_channel_p99_header_black_subtracted": 97.96046305338541
+          },
+          "f4": {
+            "frames": [
+              1850,
+              1900,
+              1950
+            ],
+            "green_mean_observed_black_subtracted": 30.54138073469328,
+            "green_mean_min_across_3_frames": 30.077260950552848,
+            "green_mean_max_across_3_frames": 31.022867737372742,
+            "mean_green_channel_p50_header_black_subtracted": 13.802846272786459,
+            "mean_green_channel_p99_header_black_subtracted": 120.19600870768227
+          },
+          "f3p5": {
+            "frames": [
+              2250,
+              2300,
+              2350
+            ],
+            "green_mean_observed_black_subtracted": 34.14781144258954,
+            "green_mean_min_across_3_frames": 33.2438886289549,
+            "green_mean_max_across_3_frames": 34.989574909410756,
+            "mean_green_channel_p50_header_black_subtracted": 15.806355794270834,
+            "mean_green_channel_p99_header_black_subtracted": 142.0598588053385
+          },
+          "f2p8": {
+            "frames": [
+              2650,
+              2700,
+              2750
+            ],
+            "green_mean_observed_black_subtracted": 60.44166539002205,
+            "green_mean_min_across_3_frames": 59.68981878791329,
+            "green_mean_max_across_3_frames": 61.31492770075625,
+            "mean_green_channel_p50_header_black_subtracted": 26.66387939453125,
+            "mean_green_channel_p99_header_black_subtracted": 214.24430338541666
+          }
+        }
+      },
+      "door_deep": {
+        "observed_black_mean_after_header_subtraction": 1.6987313719803439,
+        "groups": {
+          "f7p1": {
+            "frames": [
+              650,
+              700,
+              750
+            ],
+            "green_mean_observed_black_subtracted": 7.2439597405845815,
+            "green_mean_min_across_3_frames": 7.218520137545838,
+            "green_mean_max_across_3_frames": 7.263464423841626,
+            "mean_green_channel_p50_header_black_subtracted": 8.836293538411459,
+            "mean_green_channel_p99_header_black_subtracted": 17.771280924479168
+          },
+          "f5p6": {
+            "frames": [
+              1050,
+              1100,
+              1150
+            ],
+            "green_mean_observed_black_subtracted": 10.025958787354591,
+            "green_mean_min_across_3_frames": 10.009756361849483,
+            "green_mean_max_across_3_frames": 10.038530878582591,
+            "mean_green_channel_p50_header_black_subtracted": 11.706654866536459,
+            "mean_green_channel_p99_header_black_subtracted": 21.343851725260418
+          },
+          "f4p5": {
+            "frames": [
+              1450,
+              1500,
+              1550
+            ],
+            "green_mean_observed_black_subtracted": 17.161231965760432,
+            "green_mean_min_across_3_frames": 17.136248751238767,
+            "green_mean_max_across_3_frames": 17.196056268219067,
+            "mean_green_channel_p50_header_black_subtracted": 18.922119140625,
+            "mean_green_channel_p99_header_black_subtracted": 30.292236328125
+          },
+          "f4": {
+            "frames": [
+              1850,
+              1900,
+              1950
+            ],
+            "green_mean_observed_black_subtracted": 21.58792380999628,
+            "green_mean_min_across_3_frames": 21.57629954023558,
+            "green_mean_max_across_3_frames": 21.599082903727876,
+            "mean_green_channel_p50_header_black_subtracted": 23.38836669921875,
+            "mean_green_channel_p99_header_black_subtracted": 35.813069661458336
+          },
+          "f3p5": {
+            "frames": [
+              2250,
+              2300,
+              2350
+            ],
+            "green_mean_observed_black_subtracted": 26.370538970689328,
+            "green_mean_min_across_3_frames": 26.356602552882904,
+            "green_mean_max_across_3_frames": 26.39091341613276,
+            "mean_green_channel_p50_header_black_subtracted": 28.271341959635418,
+            "mean_green_channel_p99_header_black_subtracted": 41.69590311686196
+          },
+          "f2p8": {
+            "frames": [
+              2650,
+              2700,
+              2750
+            ],
+            "green_mean_observed_black_subtracted": 48.087655305009875,
+            "green_mean_min_across_3_frames": 48.046590450629296,
+            "green_mean_max_across_3_frames": 48.11042004462193,
+            "mean_green_channel_p50_header_black_subtracted": 50.16094970703125,
+            "mean_green_channel_p99_header_black_subtracted": 68.93212890625
+          }
+        }
+      },
+      "door_shadow": {
+        "observed_black_mean_after_header_subtraction": 1.6963134248196141,
+        "groups": {
+          "f7p1": {
+            "frames": [
+              650,
+              700,
+              750
+            ],
+            "green_mean_observed_black_subtracted": 9.993379427722603,
+            "green_mean_min_across_3_frames": 9.969013272703755,
+            "green_mean_max_across_3_frames": 10.007269539882024,
+            "mean_green_channel_p50_header_black_subtracted": 11.600779215494791,
+            "mean_green_channel_p99_header_black_subtracted": 20.79962870279947
+          },
+          "f5p6": {
+            "frames": [
+              1050,
+              1100,
+              1150
+            ],
+            "green_mean_observed_black_subtracted": 13.730963212036094,
+            "green_mean_min_across_3_frames": 13.707138198431657,
+            "green_mean_max_across_3_frames": 13.746120295754103,
+            "mean_green_channel_p50_header_black_subtracted": 15.33282470703125,
+            "mean_green_channel_p99_header_black_subtracted": 25.354288736979168
+          },
+          "f4p5": {
+            "frames": [
+              1450,
+              1500,
+              1550
+            ],
+            "green_mean_observed_black_subtracted": 23.386816708427368,
+            "green_mean_min_across_3_frames": 23.37107191788305,
+            "green_mean_max_across_3_frames": 23.41031340999819,
+            "mean_green_channel_p50_header_black_subtracted": 24.955098470052082,
+            "mean_green_channel_p99_header_black_subtracted": 36.6842041015625
+          },
+          "f4": {
+            "frames": [
+              1850,
+              1900,
+              1950
+            ],
+            "green_mean_observed_black_subtracted": 29.26356146928486,
+            "green_mean_min_across_3_frames": 29.251613425156215,
+            "green_mean_max_across_3_frames": 29.277686564155083,
+            "mean_green_channel_p50_header_black_subtracted": 30.883707682291668,
+            "mean_green_channel_p99_header_black_subtracted": 43.52874755859375
+          },
+          "f3p5": {
+            "frames": [
+              2250,
+              2300,
+              2350
+            ],
+            "green_mean_observed_black_subtracted": 35.66178327652238,
+            "green_mean_min_across_3_frames": 35.66047539941558,
+            "green_mean_max_across_3_frames": 35.662466064832806,
+            "mean_green_channel_p50_header_black_subtracted": 37.09759521484375,
+            "mean_green_channel_p99_header_black_subtracted": 51.453561401367175
+          },
+          "f2p8": {
+            "frames": [
+              2650,
+              2700,
+              2750
+            ],
+            "green_mean_observed_black_subtracted": 70.38589991768778,
+            "green_mean_min_across_3_frames": 70.34724588537546,
+            "green_mean_max_across_3_frames": 70.40577986185457,
+            "mean_green_channel_p50_header_black_subtracted": 71.65531412760417,
+            "mean_green_channel_p99_header_black_subtracted": 92.64186604817708
+          }
+        }
+      },
+      "highlight_lower": {
+        "observed_black_mean_after_header_subtraction": 1.6861053234055063,
+        "groups": {
+          "f7p1": {
+            "frames": [
+              650,
+              700,
+              750
+            ],
+            "green_mean_observed_black_subtracted": 3199.5014080673927,
+            "green_mean_min_across_3_frames": 3189.0815205216404,
+            "green_mean_max_across_3_frames": 3210.1730655448778,
+            "mean_green_channel_p50_header_black_subtracted": 2932.5696411132812,
+            "mean_green_channel_p99_header_black_subtracted": 6073.608589680988
+          },
+          "f5p6": {
+            "frames": [
+              1050,
+              1100,
+              1150
+            ],
+            "green_mean_observed_black_subtracted": 4256.236061510019,
+            "green_mean_min_across_3_frames": 4219.705267765977,
+            "green_mean_max_across_3_frames": 4292.286601371426,
+            "mean_green_channel_p50_header_black_subtracted": 3892.6791178385415,
+            "mean_green_channel_p99_header_black_subtracted": 8050.567439778645
+          },
+          "f4p5": {
+            "frames": [
+              1450,
+              1500,
+              1550
+            ],
+            "green_mean_observed_black_subtracted": 6893.312808468796,
+            "green_mean_min_across_3_frames": 6788.906576325212,
+            "green_mean_max_across_3_frames": 6979.845926562378,
+            "mean_green_channel_p50_header_black_subtracted": 6246.425944010417,
+            "mean_green_channel_p99_header_black_subtracted": 13059.031347656248
+          },
+          "f4": {
+            "frames": [
+              1850,
+              1900,
+              1950
+            ],
+            "green_mean_observed_black_subtracted": 8650.140436238144,
+            "green_mean_min_across_3_frames": 8607.722967752386,
+            "green_mean_max_across_3_frames": 8712.621931480793,
+            "mean_green_channel_p50_header_black_subtracted": 7887.538167317708,
+            "mean_green_channel_p99_header_black_subtracted": 15389.475061848958
+          },
+          "f3p5": {
+            "frames": [
+              2250,
+              2300,
+              2350
+            ],
+            "green_mean_observed_black_subtracted": 9876.050626154361,
+            "green_mean_min_across_3_frames": 9782.009366122315,
+            "green_mean_max_across_3_frames": 9958.276674711704,
+            "mean_green_channel_p50_header_black_subtracted": 9108.8291015625,
+            "mean_green_channel_p99_header_black_subtracted": 15407.876432291667
+          },
+          "f2p8": {
+            "frames": [
+              2650,
+              2700,
+              2750
+            ],
+            "green_mean_observed_black_subtracted": 13841.337522463382,
+            "green_mean_min_across_3_frames": 13798.807101936,
+            "green_mean_max_across_3_frames": 13866.75102723042,
+            "mean_green_channel_p50_header_black_subtracted": 15352.37255859375,
+            "mean_green_channel_p99_header_black_subtracted": 15416.622526041667
+          }
+        }
+      },
+      "highlight_upper": {
+        "observed_black_mean_after_header_subtraction": 1.701219523002628,
+        "groups": {
+          "f7p1": {
+            "frames": [
+              650,
+              700,
+              750
+            ],
+            "green_mean_observed_black_subtracted": 3393.35796638159,
+            "green_mean_min_across_3_frames": 3378.0130312611427,
+            "green_mean_max_across_3_frames": 3403.0551811157416,
+            "mean_green_channel_p50_header_black_subtracted": 3115.5831502278647,
+            "mean_green_channel_p99_header_black_subtracted": 6112.045506998697
+          },
+          "f5p6": {
+            "frames": [
+              1050,
+              1100,
+              1150
+            ],
+            "green_mean_observed_black_subtracted": 4586.331368679147,
+            "green_mean_min_across_3_frames": 4568.2079416148035,
+            "green_mean_max_across_3_frames": 4604.563904794013,
+            "mean_green_channel_p50_header_black_subtracted": 4226.0875244140625,
+            "mean_green_channel_p99_header_black_subtracted": 8149.217529296875
+          },
+          "f4p5": {
+            "frames": [
+              1450,
+              1500,
+              1550
+            ],
+            "green_mean_observed_black_subtracted": 7692.73583618381,
+            "green_mean_min_across_3_frames": 7649.980999369892,
+            "green_mean_max_across_3_frames": 7760.460084892675,
+            "mean_green_channel_p50_header_black_subtracted": 7090.172932942708,
+            "mean_green_channel_p99_header_black_subtracted": 13363.376376953125
+          },
+          "f4": {
+            "frames": [
+              1850,
+              1900,
+              1950
+            ],
+            "green_mean_observed_black_subtracted": 9440.857322151001,
+            "green_mean_min_across_3_frames": 9399.398312499885,
+            "green_mean_max_across_3_frames": 9466.273727386571,
+            "mean_green_channel_p50_header_black_subtracted": 8736.907063802084,
+            "mean_green_channel_p99_header_black_subtracted": 15396.882314453125
+          },
+          "f3p5": {
+            "frames": [
+              2250,
+              2300,
+              2350
+            ],
+            "green_mean_observed_black_subtracted": 11191.645993297981,
+            "green_mean_min_across_3_frames": 11150.23090248399,
+            "green_mean_max_across_3_frames": 11250.3026225385,
+            "mean_green_channel_p50_header_black_subtracted": 10823.689697265625,
+            "mean_green_channel_p99_header_black_subtracted": 15413.710286458332
+          },
+          "f2p8": {
+            "frames": [
+              2650,
+              2700,
+              2750
+            ],
+            "green_mean_observed_black_subtracted": 14310.345890757226,
+            "green_mean_min_across_3_frames": 14295.081698150476,
+            "green_mean_max_across_3_frames": 14326.489131944687,
+            "mean_green_channel_p50_header_black_subtracted": 15363.8056640625,
+            "mean_green_channel_p99_header_black_subtracted": 15414.162044270834
+          }
+        }
+      },
+      "paper_plain": {
+        "observed_black_mean_after_header_subtraction": 1.7112205633723008,
+        "groups": {
+          "f7p1": {
+            "frames": [
+              650,
+              700,
+              750
+            ],
+            "green_mean_observed_black_subtracted": 238.9758591198647,
+            "green_mean_min_across_3_frames": 238.89470806936606,
+            "green_mean_max_across_3_frames": 239.13420959968448,
+            "mean_green_channel_p50_header_black_subtracted": 240.66986083984375,
+            "mean_green_channel_p99_header_black_subtracted": 267.1711307779948
+          },
+          "f5p6": {
+            "frames": [
+              1050,
+              1100,
+              1150
+            ],
+            "green_mean_observed_black_subtracted": 318.75457781687294,
+            "green_mean_min_across_3_frames": 318.55902868274336,
+            "green_mean_max_across_3_frames": 318.876353500268,
+            "mean_green_channel_p50_header_black_subtracted": 320.37860107421875,
+            "mean_green_channel_p99_header_black_subtracted": 352.1919868977865
+          },
+          "f4p5": {
+            "frames": [
+              1450,
+              1500,
+              1550
+            ],
+            "green_mean_observed_black_subtracted": 525.4245511031451,
+            "green_mean_min_across_3_frames": 524.7905116350997,
+            "green_mean_max_across_3_frames": 525.8623773253006,
+            "mean_green_channel_p50_header_black_subtracted": 527.3120524088541,
+            "mean_green_channel_p99_header_black_subtracted": 569.7704707845053
+          },
+          "f4": {
+            "frames": [
+              1850,
+              1900,
+              1950
+            ],
+            "green_mean_observed_black_subtracted": 656.2678454216282,
+            "green_mean_min_across_3_frames": 655.7458192333617,
+            "green_mean_max_across_3_frames": 656.8023134565346,
+            "mean_green_channel_p50_header_black_subtracted": 657.8778483072916,
+            "mean_green_channel_p99_header_black_subtracted": 707.6953515625
+          },
+          "f3p5": {
+            "frames": [
+              2250,
+              2300,
+              2350
+            ],
+            "green_mean_observed_black_subtracted": 797.1422553278719,
+            "green_mean_min_across_3_frames": 796.6617823900729,
+            "green_mean_max_across_3_frames": 797.4477721429316,
+            "mean_green_channel_p50_header_black_subtracted": 799.37451171875,
+            "mean_green_channel_p99_header_black_subtracted": 855.1107189941406
+          },
+          "f2p8": {
+            "frames": [
+              2650,
+              2700,
+              2750
+            ],
+            "green_mean_observed_black_subtracted": 1415.5063706042054,
+            "green_mean_min_across_3_frames": 1414.8963979368416,
+            "green_mean_max_across_3_frames": 1415.8936150639083,
+            "mean_green_channel_p50_header_black_subtracted": 1418.4020182291667,
+            "mean_green_channel_p99_header_black_subtracted": 1501.9921223958333
+          }
+        }
+      },
+      "rack_dark": {
+        "observed_black_mean_after_header_subtraction": 1.7298073999905483,
+        "groups": {
+          "f7p1": {
+            "frames": [
+              650,
+              700,
+              750
+            ],
+            "green_mean_observed_black_subtracted": 3.7351726303156787,
+            "green_mean_min_across_3_frames": 3.7189075666408797,
+            "green_mean_max_across_3_frames": 3.7509868674631974,
+            "mean_green_channel_p50_header_black_subtracted": 5.323974609375,
+            "mean_green_channel_p99_header_black_subtracted": 13.746956075032548
+          },
+          "f5p6": {
+            "frames": [
+              1050,
+              1100,
+              1150
+            ],
+            "green_mean_observed_black_subtracted": 5.265194746153351,
+            "green_mean_min_across_3_frames": 5.2517957438134175,
+            "green_mean_max_across_3_frames": 5.284839276749992,
+            "mean_green_channel_p50_header_black_subtracted": 6.802052815755208,
+            "mean_green_channel_p99_header_black_subtracted": 16.17103942871093
+          },
+          "f4p5": {
+            "frames": [
+              1450,
+              1500,
+              1550
+            ],
+            "green_mean_observed_black_subtracted": 9.299526636835486,
+            "green_mean_min_across_3_frames": 9.25328187889697,
+            "green_mean_max_across_3_frames": 9.342550359031051,
+            "mean_green_channel_p50_header_black_subtracted": 10.8714599609375,
+            "mean_green_channel_p99_header_black_subtracted": 21.845408732096377
+          },
+          "f4": {
+            "frames": [
+              1850,
+              1900,
+              1950
+            ],
+            "green_mean_observed_black_subtracted": 11.917468262915696,
+            "green_mean_min_across_3_frames": 11.8943455462704,
+            "green_mean_max_across_3_frames": 11.956304785262702,
+            "mean_green_channel_p50_header_black_subtracted": 13.481516520182291,
+            "mean_green_channel_p99_header_black_subtracted": 25.349163818359404
+          },
+          "f3p5": {
+            "frames": [
+              2250,
+              2300,
+              2350
+            ],
+            "green_mean_observed_black_subtracted": 14.80285909384456,
+            "green_mean_min_across_3_frames": 14.785669393740065,
+            "green_mean_max_across_3_frames": 14.833161921833877,
+            "mean_green_channel_p50_header_black_subtracted": 16.272165934244793,
+            "mean_green_channel_p99_header_black_subtracted": 29.379602254231752
+          },
+          "f2p8": {
+            "frames": [
+              2650,
+              2700,
+              2750
+            ],
+            "green_mean_observed_black_subtracted": 30.541719819030547,
+            "green_mean_min_across_3_frames": 30.511540520204377,
+            "green_mean_max_across_3_frames": 30.560336660889945,
+            "mean_green_channel_p50_header_black_subtracted": 32.28131103515625,
+            "mean_green_channel_p99_header_black_subtracted": 48.55238403320311
+          }
+        }
+      },
+      "ref_wall": {
+        "observed_black_mean_after_header_subtraction": 1.7091330849739492,
+        "groups": {
+          "f7p1": {
+            "frames": [
+              650,
+              700,
+              750
+            ],
+            "green_mean_observed_black_subtracted": 165.2095810440671,
+            "green_mean_min_across_3_frames": 165.1410697063654,
+            "green_mean_max_across_3_frames": 165.2714043223419,
+            "mean_green_channel_p50_header_black_subtracted": 169.52301025390625,
+            "mean_green_channel_p99_header_black_subtracted": 193.22909729003905
+          },
+          "f5p6": {
+            "frames": [
+              1050,
+              1100,
+              1150
+            ],
+            "green_mean_observed_black_subtracted": 221.14705901592012,
+            "green_mean_min_across_3_frames": 220.91207009834633,
+            "green_mean_max_across_3_frames": 221.40213156704655,
+            "mean_green_channel_p50_header_black_subtracted": 226.51289876302084,
+            "mean_green_channel_p99_header_black_subtracted": 253.44466145833334
+          },
+          "f4p5": {
+            "frames": [
+              1450,
+              1500,
+              1550
+            ],
+            "green_mean_observed_black_subtracted": 363.96644214714246,
+            "green_mean_min_across_3_frames": 363.2926630491703,
+            "green_mean_max_across_3_frames": 364.40911803496397,
+            "mean_green_channel_p50_header_black_subtracted": 372.65968831380206,
+            "mean_green_channel_p99_header_black_subtracted": 407.90159098307294
+          },
+          "f4": {
+            "frames": [
+              1850,
+              1900,
+              1950
+            ],
+            "green_mean_observed_black_subtracted": 454.11488471617946,
+            "green_mean_min_across_3_frames": 453.65883972071504,
+            "green_mean_max_across_3_frames": 454.41961185251193,
+            "mean_green_channel_p50_header_black_subtracted": 465.2008056640625,
+            "mean_green_channel_p99_header_black_subtracted": 504.82749430338544
+          },
+          "f3p5": {
+            "frames": [
+              2250,
+              2300,
+              2350
+            ],
+            "green_mean_observed_black_subtracted": 550.3609250338898,
+            "green_mean_min_across_3_frames": 549.4517117308881,
+            "green_mean_max_across_3_frames": 551.1576636908044,
+            "mean_green_channel_p50_header_black_subtracted": 565.4156697591146,
+            "mean_green_channel_p99_header_black_subtracted": 609.47900390625
+          },
+          "f2p8": {
+            "frames": [
+              2650,
+              2700,
+              2750
+            ],
+            "green_mean_observed_black_subtracted": 990.1822755573727,
+            "green_mean_min_across_3_frames": 989.1038121726233,
+            "green_mean_max_across_3_frames": 990.9315764216383,
+            "mean_green_channel_p50_header_black_subtracted": 1013.7536010742188,
+            "mean_green_channel_p99_header_black_subtracted": 1077.3280175781251
+          }
+        }
+      }
+    },
+    "R3_NLOG_LO0P7": {
+      "deep_right": {
+        "observed_black_mean_after_header_subtraction": 1.7210860785638005,
+        "groups": {
+          "f7p1": {
+            "frames": [
+              650,
+              700,
+              750
+            ],
+            "green_mean_observed_black_subtracted": 10.89900946447905,
+            "green_mean_min_across_3_frames": 10.876176303771572,
+            "green_mean_max_across_3_frames": 10.913937216808122,
+            "mean_green_channel_p50_header_black_subtracted": 6.393168131510417,
+            "mean_green_channel_p99_header_black_subtracted": 47.31177571614584
+          },
+          "f5p6": {
+            "frames": [
+              1050,
+              1100,
+              1150
+            ],
+            "green_mean_observed_black_subtracted": 14.725047451243649,
+            "green_mean_min_across_3_frames": 14.700061298210883,
+            "green_mean_max_across_3_frames": 14.749031411281706,
+            "mean_green_channel_p50_header_black_subtracted": 7.620646158854167,
+            "mean_green_channel_p99_header_black_subtracted": 61.94553629557288
+          },
+          "f4p5": {
+            "frames": [
+              1450,
+              1500,
+              1550
+            ],
+            "green_mean_observed_black_subtracted": 24.825880730709812,
+            "green_mean_min_across_3_frames": 24.46021131827986,
+            "green_mean_max_across_3_frames": 25.122235348225402,
+            "mean_green_channel_p50_header_black_subtracted": 11.47613525390625,
+            "mean_green_channel_p99_header_black_subtracted": 98.46377970377603
+          },
+          "f4": {
+            "frames": [
+              1850,
+              1900,
+              1950
+            ],
+            "green_mean_observed_black_subtracted": 30.601188583994936,
+            "green_mean_min_across_3_frames": 30.26543280345875,
+            "green_mean_max_across_3_frames": 30.777330477683748,
+            "mean_green_channel_p50_header_black_subtracted": 13.757222493489584,
+            "mean_green_channel_p99_header_black_subtracted": 119.83579956054685
+          },
+          "f3p5": {
+            "frames": [
+              2250,
+              2300,
+              2350
+            ],
+            "green_mean_observed_black_subtracted": 37.73667442334969,
+            "green_mean_min_across_3_frames": 37.06249623451181,
+            "green_mean_max_across_3_frames": 38.260610343300826,
+            "mean_green_channel_p50_header_black_subtracted": 16.393534342447918,
+            "mean_green_channel_p99_header_black_subtracted": 145.29048421223956
+          },
+          "f2p8": {
+            "frames": [
+              2650,
+              2700,
+              2750
+            ],
+            "green_mean_observed_black_subtracted": 57.458252852005856,
+            "green_mean_min_across_3_frames": 56.400549872392574,
+            "green_mean_max_across_3_frames": 58.41963544948392,
+            "mean_green_channel_p50_header_black_subtracted": 26.258951822916668,
+            "mean_green_channel_p99_header_black_subtracted": 213.17620849609375
+          }
+        }
+      },
+      "door_deep": {
+        "observed_black_mean_after_header_subtraction": 1.6907031243112058,
+        "groups": {
+          "f7p1": {
+            "frames": [
+              650,
+              700,
+              750
+            ],
+            "green_mean_observed_black_subtracted": 7.09478686571249,
+            "green_mean_min_across_3_frames": 7.071025761479227,
+            "green_mean_max_across_3_frames": 7.117299320060901,
+            "mean_green_channel_p50_header_black_subtracted": 8.661712646484375,
+            "mean_green_channel_p99_header_black_subtracted": 17.632670084635418
+          },
+          "f5p6": {
+            "frames": [
+              1050,
+              1100,
+              1150
+            ],
+            "green_mean_observed_black_subtracted": 10.034689838397954,
+            "green_mean_min_across_3_frames": 10.030766893002912,
+            "green_mean_max_across_3_frames": 10.039588327554718,
+            "mean_green_channel_p50_header_black_subtracted": 11.720591227213541,
+            "mean_green_channel_p99_header_black_subtracted": 21.278910319010418
+          },
+          "f4p5": {
+            "frames": [
+              1450,
+              1500,
+              1550
+            ],
+            "green_mean_observed_black_subtracted": 17.195051110717177,
+            "green_mean_min_across_3_frames": 17.19025583191239,
+            "green_mean_max_across_3_frames": 17.19998075208695,
+            "mean_green_channel_p50_header_black_subtracted": 18.9508056640625,
+            "mean_green_channel_p99_header_black_subtracted": 30.38787841796875
+          },
+          "f4": {
+            "frames": [
+              1850,
+              1900,
+              1950
+            ],
+            "green_mean_observed_black_subtracted": 21.425734339758144,
+            "green_mean_min_across_3_frames": 21.41910392915201,
+            "green_mean_max_across_3_frames": 21.436994558689882,
+            "mean_green_channel_p50_header_black_subtracted": 23.220662434895832,
+            "mean_green_channel_p99_header_black_subtracted": 35.62815002441406
+          },
+          "f3p5": {
+            "frames": [
+              2250,
+              2300,
+              2350
+            ],
+            "green_mean_observed_black_subtracted": 26.770951450987386,
+            "green_mean_min_across_3_frames": 26.737251142156417,
+            "green_mean_max_across_3_frames": 26.82298059387528,
+            "mean_green_channel_p50_header_black_subtracted": 28.705240885416668,
+            "mean_green_channel_p99_header_black_subtracted": 42.12066874186193
+          },
+          "f2p8": {
+            "frames": [
+              2650,
+              2700,
+              2750
+            ],
+            "green_mean_observed_black_subtracted": 48.002277659036196,
+            "green_mean_min_across_3_frames": 47.94249573260378,
+            "green_mean_max_across_3_frames": 48.041887539394104,
+            "mean_green_channel_p50_header_black_subtracted": 50.04296875,
+            "mean_green_channel_p99_header_black_subtracted": 68.83382588704426
+          }
+        }
+      },
+      "door_shadow": {
+        "observed_black_mean_after_header_subtraction": 1.7005476459030646,
+        "groups": {
+          "f7p1": {
+            "frames": [
+              650,
+              700,
+              750
+            ],
+            "green_mean_observed_black_subtracted": 9.795046161247946,
+            "green_mean_min_across_3_frames": 9.766389315178607,
+            "green_mean_max_across_3_frames": 9.821133927778057,
+            "mean_green_channel_p50_header_black_subtracted": 11.401641845703125,
+            "mean_green_channel_p99_header_black_subtracted": 20.589189453124998
+          },
+          "f5p6": {
+            "frames": [
+              1050,
+              1100,
+              1150
+            ],
+            "green_mean_observed_black_subtracted": 13.761881389807057,
+            "green_mean_min_across_3_frames": 13.758635668715932,
+            "green_mean_max_across_3_frames": 13.763859862497306,
+            "mean_green_channel_p50_header_black_subtracted": 15.36822509765625,
+            "mean_green_channel_p99_header_black_subtracted": 25.39178466796875
+          },
+          "f4p5": {
+            "frames": [
+              1450,
+              1500,
+              1550
+            ],
+            "green_mean_observed_black_subtracted": 23.36393818775686,
+            "green_mean_min_across_3_frames": 23.34605537199989,
+            "green_mean_max_across_3_frames": 23.377338863762795,
+            "mean_green_channel_p50_header_black_subtracted": 24.934427897135418,
+            "mean_green_channel_p99_header_black_subtracted": 36.737243448893196
+          },
+          "f4": {
+            "frames": [
+              1850,
+              1900,
+              1950
+            ],
+            "green_mean_observed_black_subtracted": 28.985018274772507,
+            "green_mean_min_across_3_frames": 28.975009760219656,
+            "green_mean_max_across_3_frames": 29.004618655917035,
+            "mean_green_channel_p50_header_black_subtracted": 30.616739908854168,
+            "mean_green_channel_p99_header_black_subtracted": 43.147779947916625
+          },
+          "f3p5": {
+            "frames": [
+              2250,
+              2300,
+              2350
+            ],
+            "green_mean_observed_black_subtracted": 35.90041787206145,
+            "green_mean_min_across_3_frames": 35.898204038587984,
+            "green_mean_max_across_3_frames": 35.903107368011185,
+            "mean_green_channel_p50_header_black_subtracted": 37.346211751302086,
+            "mean_green_channel_p99_header_black_subtracted": 51.696268717447914
+          },
+          "f2p8": {
+            "frames": [
+              2650,
+              2700,
+              2750
+            ],
+            "green_mean_observed_black_subtracted": 70.43653362387644,
+            "green_mean_min_across_3_frames": 70.42118431660728,
+            "green_mean_max_across_3_frames": 70.44797728522528,
+            "mean_green_channel_p50_header_black_subtracted": 71.71893310546875,
+            "mean_green_channel_p99_header_black_subtracted": 92.74639892578125
+          }
+        }
+      },
+      "highlight_lower": {
+        "observed_black_mean_after_header_subtraction": 1.6992047315552057,
+        "groups": {
+          "f7p1": {
+            "frames": [
+              650,
+              700,
+              750
+            ],
+            "green_mean_observed_black_subtracted": 3114.338109171769,
+            "green_mean_min_across_3_frames": 3113.0818587025005,
+            "green_mean_max_across_3_frames": 3115.6538170173058,
+            "mean_green_channel_p50_header_black_subtracted": 2843.028076171875,
+            "mean_green_channel_p99_header_black_subtracted": 5944.599957682291
+          },
+          "f5p6": {
+            "frames": [
+              1050,
+              1100,
+              1150
+            ],
+            "green_mean_observed_black_subtracted": 4216.620525836377,
+            "green_mean_min_across_3_frames": 4213.794644950117,
+            "green_mean_max_across_3_frames": 4218.171819418385,
+            "mean_green_channel_p50_header_black_subtracted": 3821.387939453125,
+            "mean_green_channel_p99_header_black_subtracted": 8051.760553385416
+          },
+          "f4p5": {
+            "frames": [
+              1450,
+              1500,
+              1550
+            ],
+            "green_mean_observed_black_subtracted": 6943.728126205906,
+            "green_mean_min_across_3_frames": 6912.680863402571,
+            "green_mean_max_across_3_frames": 6982.278530406385,
+            "mean_green_channel_p50_header_black_subtracted": 6283.1451416015625,
+            "mean_green_channel_p99_header_black_subtracted": 13168.4721875
+          },
+          "f4": {
+            "frames": [
+              1850,
+              1900,
+              1950
+            ],
+            "green_mean_observed_black_subtracted": 8504.831917633519,
+            "green_mean_min_across_3_frames": 8490.549074040708,
+            "green_mean_max_across_3_frames": 8513.451762802828,
+            "mean_green_channel_p50_header_black_subtracted": 7694.567789713542,
+            "mean_green_channel_p99_header_black_subtracted": 15387.770764973959
+          },
+          "f3p5": {
+            "frames": [
+              2250,
+              2300,
+              2350
+            ],
+            "green_mean_observed_black_subtracted": 10094.605098416503,
+            "green_mean_min_across_3_frames": 10008.803000090804,
+            "green_mean_max_across_3_frames": 10249.272690104872,
+            "mean_green_channel_p50_header_black_subtracted": 9408.875325520834,
+            "mean_green_channel_p99_header_black_subtracted": 15409.457747395832
+          },
+          "f2p8": {
+            "frames": [
+              2650,
+              2700,
+              2750
+            ],
+            "green_mean_observed_black_subtracted": 13508.372698448764,
+            "green_mean_min_across_3_frames": 13465.33765726941,
+            "green_mean_max_across_3_frames": 13563.823577403455,
+            "mean_green_channel_p50_header_black_subtracted": 15330.040120442709,
+            "mean_green_channel_p99_header_black_subtracted": 15414.852669270833
+          }
+        }
+      },
+      "highlight_upper": {
+        "observed_black_mean_after_header_subtraction": 1.6965387790113766,
+        "groups": {
+          "f7p1": {
+            "frames": [
+              650,
+              700,
+              750
+            ],
+            "green_mean_observed_black_subtracted": 3401.1197511006767,
+            "green_mean_min_across_3_frames": 3400.82814685184,
+            "green_mean_max_across_3_frames": 3401.439263893397,
+            "mean_green_channel_p50_header_black_subtracted": 3126.952107747396,
+            "mean_green_channel_p99_header_black_subtracted": 6064.290667317708
+          },
+          "f5p6": {
+            "frames": [
+              1050,
+              1100,
+              1150
+            ],
+            "green_mean_observed_black_subtracted": 4605.821806355863,
+            "green_mean_min_across_3_frames": 4604.983476287614,
+            "green_mean_max_across_3_frames": 4606.978480938899,
+            "mean_green_channel_p50_header_black_subtracted": 4227.7392985026045,
+            "mean_green_channel_p99_header_black_subtracted": 8177.609326171874
+          },
+          "f4p5": {
+            "frames": [
+              1450,
+              1500,
+              1550
+            ],
+            "green_mean_observed_black_subtracted": 7603.204274464359,
+            "green_mean_min_across_3_frames": 7572.442245685112,
+            "green_mean_max_across_3_frames": 7626.250804727187,
+            "mean_green_channel_p50_header_black_subtracted": 6991.6702880859375,
+            "mean_green_channel_p99_header_black_subtracted": 13338.670096028645
+          },
+          "f4": {
+            "frames": [
+              1850,
+              1900,
+              1950
+            ],
+            "green_mean_observed_black_subtracted": 9371.23756438739,
+            "green_mean_min_across_3_frames": 9366.263644902949,
+            "green_mean_max_across_3_frames": 9375.667552752897,
+            "mean_green_channel_p50_header_black_subtracted": 8641.630696614584,
+            "mean_green_channel_p99_header_black_subtracted": 15392.406448567708
+          },
+          "f3p5": {
+            "frames": [
+              2250,
+              2300,
+              2350
+            ],
+            "green_mean_observed_black_subtracted": 11266.300986009785,
+            "green_mean_min_across_3_frames": 11146.810139449062,
+            "green_mean_max_across_3_frames": 11345.695706149907,
+            "mean_green_channel_p50_header_black_subtracted": 10932.202880859375,
+            "mean_green_channel_p99_header_black_subtracted": 15412.391861979166
+          },
+          "f2p8": {
+            "frames": [
+              2650,
+              2700,
+              2750
+            ],
+            "green_mean_observed_black_subtracted": 14559.993012713328,
+            "green_mean_min_across_3_frames": 14545.165704619372,
+            "green_mean_max_across_3_frames": 14571.465779859382,
+            "mean_green_channel_p50_header_black_subtracted": 15366.508626302084,
+            "mean_green_channel_p99_header_black_subtracted": 15414.578385416666
+          }
+        }
+      },
+      "paper_plain": {
+        "observed_black_mean_after_header_subtraction": 1.7111696724291505,
+        "groups": {
+          "f7p1": {
+            "frames": [
+              650,
+              700,
+              750
+            ],
+            "green_mean_observed_black_subtracted": 235.3689448005181,
+            "green_mean_min_across_3_frames": 235.19911806036419,
+            "green_mean_max_across_3_frames": 235.4695340936263,
+            "mean_green_channel_p50_header_black_subtracted": 236.9806111653646,
+            "mean_green_channel_p99_header_black_subtracted": 262.8598999023438
+          },
+          "f5p6": {
+            "frames": [
+              1050,
+              1100,
+              1150
+            ],
+            "green_mean_observed_black_subtracted": 319.42610774605697,
+            "green_mean_min_across_3_frames": 319.29340570932095,
+            "green_mean_max_across_3_frames": 319.50929883516176,
+            "mean_green_channel_p50_header_black_subtracted": 321.05385335286456,
+            "mean_green_channel_p99_header_black_subtracted": 352.90028035481777
+          },
+          "f4p5": {
+            "frames": [
+              1450,
+              1500,
+              1550
+            ],
+            "green_mean_observed_black_subtracted": 527.1738830751804,
+            "green_mean_min_across_3_frames": 526.7713223784036,
+            "green_mean_max_across_3_frames": 527.5554267257899,
+            "mean_green_channel_p50_header_black_subtracted": 528.9108479817709,
+            "mean_green_channel_p99_header_black_subtracted": 571.8010937500001
+          },
+          "f4": {
+            "frames": [
+              1850,
+              1900,
+              1950
+            ],
+            "green_mean_observed_black_subtracted": 650.2715219833975,
+            "green_mean_min_across_3_frames": 650.1278172901474,
+            "green_mean_max_across_3_frames": 650.5515211301334,
+            "mean_green_channel_p50_header_black_subtracted": 651.8281046549479,
+            "mean_green_channel_p99_header_black_subtracted": 702.2145947265625
+          },
+          "f3p5": {
+            "frames": [
+              2250,
+              2300,
+              2350
+            ],
+            "green_mean_observed_black_subtracted": 804.8391724694023,
+            "green_mean_min_across_3_frames": 804.1338423348764,
+            "green_mean_max_across_3_frames": 805.7826791958665,
+            "mean_green_channel_p50_header_black_subtracted": 807.0256144205729,
+            "mean_green_channel_p99_header_black_subtracted": 864.1325512695313
+          },
+          "f2p8": {
+            "frames": [
+              2650,
+              2700,
+              2750
+            ],
+            "green_mean_observed_black_subtracted": 1409.3303719642786,
+            "green_mean_min_across_3_frames": 1409.0097061992772,
+            "green_mean_max_across_3_frames": 1409.8625543736869,
+            "mean_green_channel_p50_header_black_subtracted": 1413.5427652994792,
+            "mean_green_channel_p99_header_black_subtracted": 1492.5561857096354
+          }
+        }
+      },
+      "rack_dark": {
+        "observed_black_mean_after_header_subtraction": 1.7263167103527692,
+        "groups": {
+          "f7p1": {
+            "frames": [
+              650,
+              700,
+              750
+            ],
+            "green_mean_observed_black_subtracted": 3.6676492001043286,
+            "green_mean_min_across_3_frames": 3.6470890368337834,
+            "green_mean_max_across_3_frames": 3.6807050464161577,
+            "mean_green_channel_p50_header_black_subtracted": 5.217295328776042,
+            "mean_green_channel_p99_header_black_subtracted": 13.667191467285155
+          },
+          "f5p6": {
+            "frames": [
+              1050,
+              1100,
+              1150
+            ],
+            "green_mean_observed_black_subtracted": 5.31888278899221,
+            "green_mean_min_across_3_frames": 5.286852733109349,
+            "green_mean_max_across_3_frames": 5.345276529263508,
+            "mean_green_channel_p50_header_black_subtracted": 6.859578450520833,
+            "mean_green_channel_p99_header_black_subtracted": 16.14978698730469
+          },
+          "f4p5": {
+            "frames": [
+              1450,
+              1500,
+              1550
+            ],
+            "green_mean_observed_black_subtracted": 9.341332083850292,
+            "green_mean_min_across_3_frames": 9.327232347110332,
+            "green_mean_max_across_3_frames": 9.352752320341317,
+            "mean_green_channel_p50_header_black_subtracted": 10.913060506184896,
+            "mean_green_channel_p99_header_black_subtracted": 21.882855428059923
+          },
+          "f4": {
+            "frames": [
+              1850,
+              1900,
+              1950
+            ],
+            "green_mean_observed_black_subtracted": 11.798824236022476,
+            "green_mean_min_across_3_frames": 11.778394465272235,
+            "green_mean_max_across_3_frames": 11.834940822047933,
+            "mean_green_channel_p50_header_black_subtracted": 13.361378987630209,
+            "mean_green_channel_p99_header_black_subtracted": 25.292955118815144
+          },
+          "f3p5": {
+            "frames": [
+              2250,
+              2300,
+              2350
+            ],
+            "green_mean_observed_black_subtracted": 14.874221205051215,
+            "green_mean_min_across_3_frames": 14.858478193610374,
+            "green_mean_max_across_3_frames": 14.891046737172353,
+            "mean_green_channel_p50_header_black_subtracted": 16.337076822916668,
+            "mean_green_channel_p99_header_black_subtracted": 29.420361938476542
+          },
+          "f2p8": {
+            "frames": [
+              2650,
+              2700,
+              2750
+            ],
+            "green_mean_observed_black_subtracted": 30.632046532798153,
+            "green_mean_min_across_3_frames": 30.627354719894917,
+            "green_mean_max_across_3_frames": 30.634690417377435,
+            "mean_green_channel_p50_header_black_subtracted": 32.3284912109375,
+            "mean_green_channel_p99_header_black_subtracted": 48.67794006347655
+          }
+        }
+      },
+      "ref_wall": {
+        "observed_black_mean_after_header_subtraction": 1.7009676410694823,
+        "groups": {
+          "f7p1": {
+            "frames": [
+              650,
+              700,
+              750
+            ],
+            "green_mean_observed_black_subtracted": 162.84897059614812,
+            "green_mean_min_across_3_frames": 162.77817425369335,
+            "green_mean_max_across_3_frames": 162.96688155912602,
+            "mean_green_channel_p50_header_black_subtracted": 167.1767578125,
+            "mean_green_channel_p99_header_black_subtracted": 190.72172037760416
+          },
+          "f5p6": {
+            "frames": [
+              1050,
+              1100,
+              1150
+            ],
+            "green_mean_observed_black_subtracted": 221.2832138126695,
+            "green_mean_min_across_3_frames": 221.18691420418384,
+            "green_mean_max_across_3_frames": 221.44839464008032,
+            "mean_green_channel_p50_header_black_subtracted": 227.1815388997396,
+            "mean_green_channel_p99_header_black_subtracted": 254.16799560546875
+          },
+          "f4p5": {
+            "frames": [
+              1450,
+              1500,
+              1550
+            ],
+            "green_mean_observed_black_subtracted": 364.1626264201928,
+            "green_mean_min_across_3_frames": 363.82086065993883,
+            "green_mean_max_across_3_frames": 364.376389960011,
+            "mean_green_channel_p50_header_black_subtracted": 373.33945719401044,
+            "mean_green_channel_p99_header_black_subtracted": 408.49586466471357
+          },
+          "f4": {
+            "frames": [
+              1850,
+              1900,
+              1950
+            ],
+            "green_mean_observed_black_subtracted": 449.5423293477966,
+            "green_mean_min_across_3_frames": 449.0748129336714,
+            "green_mean_max_across_3_frames": 449.92273146947366,
+            "mean_green_channel_p50_header_black_subtracted": 461.21417236328125,
+            "mean_green_channel_p99_header_black_subtracted": 500.3407220458985
+          },
+          "f3p5": {
+            "frames": [
+              2250,
+              2300,
+              2350
+            ],
+            "green_mean_observed_black_subtracted": 557.4347556570901,
+            "green_mean_min_across_3_frames": 556.73614797112,
+            "green_mean_max_across_3_frames": 557.9755818071363,
+            "mean_green_channel_p50_header_black_subtracted": 571.0706176757812,
+            "mean_green_channel_p99_header_black_subtracted": 615.2880859375
+          },
+          "f2p8": {
+            "frames": [
+              2650,
+              2700,
+              2750
+            ],
+            "green_mean_observed_black_subtracted": 987.4075389279247,
+            "green_mean_min_across_3_frames": 986.1708161286668,
+            "green_mean_max_across_3_frames": 988.3241383001965,
+            "mean_green_channel_p50_header_black_subtracted": 1013.1663818359375,
+            "mean_green_channel_p99_header_black_subtracted": 1076.0104956054688
+          }
+        }
+      }
+    }
+  },
+  "ratios": {
+    "ref_wall": {
+      "f7p1": {
+        "Lo_over_N800": 0.9857114191985674,
+        "SDR64_over_SDR100": 0.6249088452349774,
+        "N800_over_SDR100": 0.9931571087587631
+      },
+      "f5p6": {
+        "Lo_over_N800": 1.00061567536713,
+        "SDR64_over_SDR100": 0.63004189679291,
+        "N800_over_SDR100": 0.9987375630151953
+      },
+      "f4p5": {
+        "Lo_over_N800": 1.0005390174761524,
+        "SDR64_over_SDR100": 0.7243994981459511,
+        "N800_over_SDR100": 0.9977110397365042
+      },
+      "f4": {
+        "Lo_over_N800": 0.989930840141387,
+        "SDR64_over_SDR100": 0.714879671733252,
+        "N800_over_SDR100": 0.9998958432413504
+      },
+      "f3p5": {
+        "Lo_over_N800": 1.012853075684406,
+        "SDR64_over_SDR100": 0.6283401410895334,
+        "N800_over_SDR100": 0.9857896731847738
+      },
+      "f2p8": {
+        "Lo_over_N800": 0.9971977516686147,
+        "SDR64_over_SDR100": 0.6312709478691026,
+        "N800_over_SDR100": 1.0000579391705464
+      }
+    },
+    "paper_plain": {
+      "f7p1": {
+        "Lo_over_N800": 0.9849067837536785,
+        "SDR64_over_SDR100": 0.6248049378796365,
+        "N800_over_SDR100": 0.9887237523782115
+      },
+      "f5p6": {
+        "Lo_over_N800": 1.002106730305752,
+        "SDR64_over_SDR100": 0.6315983520945684,
+        "N800_over_SDR100": 0.9931050426127952
+      },
+      "f4p5": {
+        "Lo_over_N800": 1.0033293685427576,
+        "SDR64_over_SDR100": 0.7204938395430511,
+        "N800_over_SDR100": 0.9913634308706446
+      },
+      "f4": {
+        "Lo_over_N800": 0.9908629936998082,
+        "SDR64_over_SDR100": 0.71384578329482,
+        "N800_over_SDR100": 0.99666333671011
+      },
+      "f3p5": {
+        "Lo_over_N800": 1.0096556381123776,
+        "SDR64_over_SDR100": 0.6268502685754932,
+        "N800_over_SDR100": 0.9838570383495641
+      },
+      "f2p8": {
+        "Lo_over_N800": 0.9956368980259054,
+        "SDR64_over_SDR100": 0.6282897606223512,
+        "N800_over_SDR100": 0.9958879019913627
+      }
+    }
+  },
+  "measured_exposure_steps": {
+    "SDR100": {
+      "f5p6_to_f4": {
+        "measured_ratio_ref_wall": 2.051073343013789,
+        "measured_EV_ref_wall": 1.036379081145132
+      },
+      "f4_to_f2p8": {
+        "measured_ratio_ref_wall": 2.1801130367243156,
+        "measured_EV_ref_wall": 1.1244029392654267
+      }
+    },
+    "SDR64": {
+      "f5p6_to_f4": {
+        "measured_ratio_ref_wall": 2.3272589420136183,
+        "measured_EV_ref_wall": 1.2186317408572773
+      },
+      "f4_to_f2p8": {
+        "measured_ratio_ref_wall": 1.9251380023410056,
+        "measured_EV_ref_wall": 0.9449618682266648
+      }
+    },
+    "N-Log800": {
+      "f5p6_to_f4": {
+        "measured_ratio_ref_wall": 2.0534520636943596,
+        "measured_EV_ref_wall": 1.0380512690712251
+      },
+      "f4_to_f2p8": {
+        "measured_ratio_ref_wall": 2.1804664609842814,
+        "measured_EV_ref_wall": 1.1246367996633702
+      }
+    },
+    "N-Log Lo0.7": {
+      "f5p6_to_f4": {
+        "measured_ratio_ref_wall": 2.03152476684636,
+        "measured_EV_ref_wall": 1.0225629529463665
+      },
+      "f4_to_f2p8": {
+        "measured_ratio_ref_wall": 2.1964728891280867,
+        "measured_EV_ref_wall": 1.1351886924824182
+      }
+    }
+  },
+  "limits": [
+    "SDR64 f4.5 and f4 have persistent excess response and prior aperture reversal; cannot treat the aperture label as proof of equal physical exposure.",
+    "Bright target has a spatial gradient, and there is camera movement. P99 is an upper-tail plateau, not proof that the whole ROI is saturated.",
+    "SDR64 has only one sampled aperture at the upper-tail plateau; exact clipping-EV and absolute DR are not established.",
+    "Eight-frame black data are used for offset correction only in this report. No absolute read-noise or DR result is reported.",
+    "Clip shutter metadata says 1/100s; provisional NRMT decoding gives about 1/90s for every clip. Actual shutter is not independently confirmed.",
+    "RAW-domain response similarity does not identify an analog gain circuit or establish Adobe ISO interpretation."
+  ],
+  "public_sample_rule": "R3 identifies the new low-ISO capture. Values are unchanged; private original file identifiers are replaced.",
+  "method_data": "low_iso_capture_method.json"
+}

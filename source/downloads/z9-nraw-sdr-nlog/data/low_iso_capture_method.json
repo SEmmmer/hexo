@@ -1,0 +1,581 @@
+{
+  "scope": "One more thing low-ISO RAW response test; public and pseudonymous.",
+  "camera": "Nikon Z9",
+  "samples": [
+    {
+      "sample_id": "R3_SDR_100",
+      "round": 3,
+      "mode": "SDR",
+      "iso": 100
+    },
+    {
+      "sample_id": "R3_SDR_64",
+      "round": 3,
+      "mode": "SDR",
+      "iso": 64
+    },
+    {
+      "sample_id": "R3_NLOG_800",
+      "round": 3,
+      "mode": "N-Log",
+      "iso": 800
+    },
+    {
+      "sample_id": "R3_NLOG_LO0P7",
+      "round": 3,
+      "mode": "N-Log",
+      "iso_setting": "Lo0.7",
+      "recommended_exposure_index_metadata": 500,
+      "nominal_iso_equivalent_approximate": 500,
+      "note": "500是机内元数据和名义ISO标度，不是独立测得的传感器模拟增益。"
+    }
+  ],
+  "frame_rate": 50,
+  "active_size": [
+    8256,
+    4644
+  ],
+  "coded_size": [
+    8268,
+    4652
+  ],
+  "cfa_plane_size": [
+    4134,
+    2326
+  ],
+  "quality": "Video sample sizes match the earlier known N-RAW Normal recording; no directly named Normal/High-quality tag was identified.",
+  "clip_shutter_metadata_seconds": 0.01,
+  "provisional_nrmt_shutter_field_seconds": 0.011111111380159855,
+  "shutter_caveat": "The clip and provisional NRMT interpretations differ; all four clips share the same values. Actual exposure time is not independently resolved.",
+  "white_balance_kelvin": 5500,
+  "focus_mode": "MF",
+  "vibration_reduction_metadata": "On",
+  "decode": "Blue Compressor v0.1.3; decode_frame, inverse_wavelet, inverse_star_tetrix, continuous Transfer.to_raw_f; no integer clamp, WB, ISO exposure adjustment, demosaic, display curve or denoise.",
+  "header_transfer": {
+    "black": 1008,
+    "gain": 84429,
+    "knee": 16255
+  },
+  "black_correction": "Reference response subtracts each clip/ROI observed 8-frame black mean. Header black subtraction alone retains a formula offset. Highlight quantiles in the chart subtract header black, not observed black.",
+  "spatial_method": "Median proxy-derived cross-clip translation rounded to integer CFA-plane ROI offsets. No spatial resampling. Residual camera motion is possible.",
+  "green_method": "Mean G1 and G2 response. Spatial quantiles are computed per channel per frame and then averaged, not pooled quantiles.",
+  "frame_index_base": 0,
+  "refined_frames": 104,
+  "frame_groups": {
+    "R3_SDR_100": [
+      {
+        "frames": [
+          150,
+          151,
+          152,
+          153,
+          154,
+          155,
+          156,
+          157
+        ],
+        "group": "black_3s_8frames"
+      },
+      {
+        "frames": [
+          650,
+          700,
+          750
+        ],
+        "group": "f7p1"
+      },
+      {
+        "frames": [
+          1050,
+          1100,
+          1150
+        ],
+        "group": "f5p6"
+      },
+      {
+        "frames": [
+          1450,
+          1500,
+          1550
+        ],
+        "group": "f4p5"
+      },
+      {
+        "frames": [
+          1850,
+          1900,
+          1950
+        ],
+        "group": "f4"
+      },
+      {
+        "frames": [
+          2250,
+          2300,
+          2350
+        ],
+        "group": "f3p5"
+      },
+      {
+        "frames": [
+          2650,
+          2700,
+          2750
+        ],
+        "group": "f2p8"
+      }
+    ],
+    "R3_SDR_64": [
+      {
+        "frames": [
+          150,
+          151,
+          152,
+          153,
+          154,
+          155,
+          156,
+          157
+        ],
+        "group": "black_3s_8frames"
+      },
+      {
+        "frames": [
+          650,
+          700,
+          750
+        ],
+        "group": "f7p1"
+      },
+      {
+        "frames": [
+          1050,
+          1100,
+          1150
+        ],
+        "group": "f5p6"
+      },
+      {
+        "frames": [
+          1450,
+          1500,
+          1550
+        ],
+        "group": "f4p5"
+      },
+      {
+        "frames": [
+          1850,
+          1900,
+          1950
+        ],
+        "group": "f4"
+      },
+      {
+        "frames": [
+          2250,
+          2300,
+          2350
+        ],
+        "group": "f3p5"
+      },
+      {
+        "frames": [
+          2650,
+          2700,
+          2750
+        ],
+        "group": "f2p8"
+      }
+    ],
+    "R3_NLOG_800": [
+      {
+        "frames": [
+          150,
+          151,
+          152,
+          153,
+          154,
+          155,
+          156,
+          157
+        ],
+        "group": "black_3s_8frames"
+      },
+      {
+        "frames": [
+          650,
+          700,
+          750
+        ],
+        "group": "f7p1"
+      },
+      {
+        "frames": [
+          1050,
+          1100,
+          1150
+        ],
+        "group": "f5p6"
+      },
+      {
+        "frames": [
+          1450,
+          1500,
+          1550
+        ],
+        "group": "f4p5"
+      },
+      {
+        "frames": [
+          1850,
+          1900,
+          1950
+        ],
+        "group": "f4"
+      },
+      {
+        "frames": [
+          2250,
+          2300,
+          2350
+        ],
+        "group": "f3p5"
+      },
+      {
+        "frames": [
+          2650,
+          2700,
+          2750
+        ],
+        "group": "f2p8"
+      }
+    ],
+    "R3_NLOG_LO0P7": [
+      {
+        "frames": [
+          150,
+          151,
+          152,
+          153,
+          154,
+          155,
+          156,
+          157
+        ],
+        "group": "black_3s_8frames"
+      },
+      {
+        "frames": [
+          650,
+          700,
+          750
+        ],
+        "group": "f7p1"
+      },
+      {
+        "frames": [
+          1050,
+          1100,
+          1150
+        ],
+        "group": "f5p6"
+      },
+      {
+        "frames": [
+          1450,
+          1500,
+          1550
+        ],
+        "group": "f4p5"
+      },
+      {
+        "frames": [
+          1850,
+          1900,
+          1950
+        ],
+        "group": "f4"
+      },
+      {
+        "frames": [
+          2250,
+          2300,
+          2350
+        ],
+        "group": "f3p5"
+      },
+      {
+        "frames": [
+          2650,
+          2700,
+          2750
+        ],
+        "group": "f2p8"
+      }
+    ]
+  },
+  "roi_geometry": {
+    "R3_SDR_100": [
+      {
+        "name": "highlight_upper",
+        "x": 1190,
+        "y": 608,
+        "w": 103,
+        "h": 56
+      },
+      {
+        "name": "highlight_lower",
+        "x": 1186,
+        "y": 727,
+        "w": 112,
+        "h": 60
+      },
+      {
+        "name": "paper_plain",
+        "x": 1465,
+        "y": 905,
+        "w": 129,
+        "h": 47
+      },
+      {
+        "name": "ref_wall",
+        "x": 2046,
+        "y": 582,
+        "w": 206,
+        "h": 215
+      },
+      {
+        "name": "door_shadow",
+        "x": 1465,
+        "y": 1270,
+        "w": 215,
+        "h": 430
+      },
+      {
+        "name": "door_deep",
+        "x": 702,
+        "y": 1206,
+        "w": 140,
+        "h": 538
+      },
+      {
+        "name": "rack_dark",
+        "x": 3142,
+        "y": 1120,
+        "w": 140,
+        "h": 129
+      },
+      {
+        "name": "deep_right",
+        "x": 3905,
+        "y": 862,
+        "w": 129,
+        "h": 387
+      }
+    ],
+    "R3_SDR_64": [
+      {
+        "name": "highlight_upper",
+        "x": 1176,
+        "y": 608,
+        "w": 103,
+        "h": 56
+      },
+      {
+        "name": "highlight_lower",
+        "x": 1172,
+        "y": 727,
+        "w": 112,
+        "h": 60
+      },
+      {
+        "name": "paper_plain",
+        "x": 1451,
+        "y": 905,
+        "w": 129,
+        "h": 47
+      },
+      {
+        "name": "ref_wall",
+        "x": 2032,
+        "y": 582,
+        "w": 206,
+        "h": 215
+      },
+      {
+        "name": "door_shadow",
+        "x": 1451,
+        "y": 1270,
+        "w": 215,
+        "h": 430
+      },
+      {
+        "name": "door_deep",
+        "x": 688,
+        "y": 1206,
+        "w": 140,
+        "h": 538
+      },
+      {
+        "name": "rack_dark",
+        "x": 3128,
+        "y": 1120,
+        "w": 140,
+        "h": 129
+      },
+      {
+        "name": "deep_right",
+        "x": 3891,
+        "y": 862,
+        "w": 129,
+        "h": 387
+      }
+    ],
+    "R3_NLOG_800": [
+      {
+        "name": "highlight_upper",
+        "x": 1178,
+        "y": 607,
+        "w": 103,
+        "h": 56
+      },
+      {
+        "name": "highlight_lower",
+        "x": 1174,
+        "y": 726,
+        "w": 112,
+        "h": 60
+      },
+      {
+        "name": "paper_plain",
+        "x": 1453,
+        "y": 904,
+        "w": 129,
+        "h": 47
+      },
+      {
+        "name": "ref_wall",
+        "x": 2034,
+        "y": 581,
+        "w": 206,
+        "h": 215
+      },
+      {
+        "name": "door_shadow",
+        "x": 1453,
+        "y": 1269,
+        "w": 215,
+        "h": 430
+      },
+      {
+        "name": "door_deep",
+        "x": 690,
+        "y": 1205,
+        "w": 140,
+        "h": 538
+      },
+      {
+        "name": "rack_dark",
+        "x": 3130,
+        "y": 1119,
+        "w": 140,
+        "h": 129
+      },
+      {
+        "name": "deep_right",
+        "x": 3893,
+        "y": 861,
+        "w": 129,
+        "h": 387
+      }
+    ],
+    "R3_NLOG_LO0P7": [
+      {
+        "name": "highlight_upper",
+        "x": 1177,
+        "y": 608,
+        "w": 103,
+        "h": 56
+      },
+      {
+        "name": "highlight_lower",
+        "x": 1173,
+        "y": 727,
+        "w": 112,
+        "h": 60
+      },
+      {
+        "name": "paper_plain",
+        "x": 1452,
+        "y": 905,
+        "w": 129,
+        "h": 47
+      },
+      {
+        "name": "ref_wall",
+        "x": 2033,
+        "y": 582,
+        "w": 206,
+        "h": 215
+      },
+      {
+        "name": "door_shadow",
+        "x": 1452,
+        "y": 1270,
+        "w": 215,
+        "h": 430
+      },
+      {
+        "name": "door_deep",
+        "x": 689,
+        "y": 1206,
+        "w": 140,
+        "h": 538
+      },
+      {
+        "name": "rack_dark",
+        "x": 3129,
+        "y": 1120,
+        "w": 140,
+        "h": 129
+      },
+      {
+        "name": "deep_right",
+        "x": 3892,
+        "y": 862,
+        "w": 129,
+        "h": 387
+      }
+    ]
+  },
+  "roi_offsets_cfa_plane": {
+    "R3_SDR_100": {
+      "dx_cfa_plane": 0,
+      "dy_cfa_plane": 0
+    },
+    "R3_SDR_64": {
+      "dx_cfa_plane": -14,
+      "dy_cfa_plane": 0
+    },
+    "R3_NLOG_800": {
+      "dx_cfa_plane": -12,
+      "dy_cfa_plane": -1
+    },
+    "R3_NLOG_LO0P7": {
+      "dx_cfa_plane": -13,
+      "dy_cfa_plane": 0
+    }
+  },
+  "highlight_scope": "P99 upper-tail ceiling, not full-ROI clipping; SDR64 only has one sampled aperture near the ceiling. Exact saturation EV and absolute DR remain unmeasured.",
+  "anomaly": "SDR64 f4.5 and f4 remain about 14-15 percent above the baseline ratio after aperture backtracking. Later stable samples retain the anomaly; causal mechanism not established. Excluded from the four-step 0.63 baseline only, retained in attached data and plotted.",
+  "noise_scope": "Three nonconsecutive light frames per aperture are for response/stability; not temporal noise. Eight black frames are used for response offset correction, not an absolute DR result.",
+  "prior_round_caveat": "The R2 sixteen-frame measurements use a different scene, exposure range and black-offset handling. Compare ratios and trends, not absolute DN across rounds.",
+  "pdr_context": {
+    "camera": "Nikon Z9 still-photo RAW",
+    "nominal_iso64_point_EV": 11.27,
+    "iso100_point_EV": 10.61,
+    "source": "https://www.photonstophotos.net/Charts/PDR.htm#Nikon%20Z%209",
+    "scope": "Qualitative context; these values are not a measurement of this N-RAW mode. PDR uses a defined SNR threshold and viewing-scale normalization."
+  }
+}
